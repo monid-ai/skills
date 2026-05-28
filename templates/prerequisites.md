@@ -53,3 +53,8 @@ Verify balance with `monid balance` if you suspect it's empty.
   `monid run -p <provider> -e <endpoint> --query '<json>' -i '<json>' --wait <sec> -j -o <file>`.
 - If an endpoint's params are ever unclear, run
   `monid inspect -p <provider> -e <endpoint>` first.
+- **`-o <file>` strips the API envelope.** Both `monid run -o` and
+  `monid runs get -o` write ONLY the `.output` value, not the full response.
+  If the API docs show a response shape `{ output: { foo, bar } }`, the saved
+  file's top-level keys are `foo` and `bar` — jq paths drop the `.output.`
+  prefix. Without `-o` (i.e. stdout + `-j`), the full envelope is preserved.

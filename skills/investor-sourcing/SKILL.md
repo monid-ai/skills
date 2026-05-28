@@ -75,10 +75,15 @@ Verify balance with `monid balance` if you suspect it's empty.
   `monid run -p <provider> -e <endpoint> --query '<json>' -i '<json>' --wait <sec> -j -o <file>`.
 - If an endpoint's params are ever unclear, run
   `monid inspect -p <provider> -e <endpoint>` first.
+- **`-o <file>` strips the API envelope.** Both `monid run -o` and
+  `monid runs get -o` write ONLY the `.output` value, not the full response.
+  If the API docs show a response shape `{ output: { foo, bar } }`, the saved
+  file's top-level keys are `foo` and `bar` — jq paths drop the `.output.`
+  prefix. Without `-o` (i.e. stdout + `-j`), the full envelope is preserved.
 
 <!-- TEMPLATE:prerequisites.md END -->
 
----
+
 
 ## State & files
 
@@ -196,7 +201,7 @@ Steps:
    - Everyone whose `category` matches the user's `focus_areas` (topic tags: `ai`, `ai_apps`, `crypto`, `robotics`, `biotech`, `defense`, `hardware`, `consumer`), PLUS
    - The user's `custom_influencers`.
    If a focus area has thin coverage in the seed list, ask the user for additional handles. (To keep cost sane, you may cap VCs to the most active/relevant N and let the user widen it.)
-2. **Snapshot** each influencer's full followings (paginate via `next_cursor` until `more_users == false`). Save to `${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/snapshots/<handle>_<date>.json`.
+2. **Snapshot** each influencer's full followings (paginate via `next_cursor` until `more_users == false` — read these from the unwrapped file written by `-o`; see the snippet above). Save to `${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/snapshots/<handle>_<date>.json`.
 3. **Diff** vs. previous snapshot on `user_id` → `new_follows` and `unfollows` (keep unfollows — a quiet unfollow can be a signal too).
 4. **Classify** each new follow: founder / VC / influencer / other. Keep founders (bio matches "founder", "CEO", "building", "co-founder", or links to a company site).
 5. **Filter by focus** (LLM judgment): does this founder's company match the user's thesis? Drop mismatches.
@@ -324,7 +329,7 @@ monid run -p tikhub -e /api/v1/linkedin/web/get_user_profile \
   --wait 30 -j -o linkedin.json
 ```
 
-Fields to extract from the response and merge into the digest's "Founder background" line:
+Fields to extract from the saved file (jq paths are top-level since `-o` unwrapped the envelope) and merge into the digest's "Founder background" line:
 - Base: `full_name`, `headline`, `location.city`, `location.country`
 - From `include_experiences=true`: `experiences[]` (company, title, dates)
 - From `include_educations=true`: `educations[]` (school, degree)
@@ -405,3 +410,37 @@ Run `monid inspect -p <provider> -e <endpoint>` before each run to read the curr
 `fetch_search_timeline` supports X advanced search operators in `keyword`: `since:`/`until:`, `min_faves:`, `-filter:replies`, `lang:en`, `OR`, quoted phrases. `search_type`: `Latest` (chronological) or `Top`.
 
 > **Important — follow ordering**: `fetch_user_followings` does NOT return follows in chronological order (it's algorithmic). You cannot tell "most recent follow" from a single pull. New follows are only detectable by diffing two full snapshots over time.
+
+---
+
+## Recovery from run history (when a saved file is wrong or lost)
+
+Every `monid run` is stored server-side and can be re-downloaded for free.
+Use this when:
+
+- A snapshot/search file is empty, malformed, or written with the wrong shape
+  (e.g. you wrote `.output.X` jq paths and got nulls — the run itself was
+  fine, just the file extraction was wrong).
+- Mode 1 baseline snapshots got lost or partially written.
+- You want to verify what an earlier run actually returned.
+
+```bash
+# List recent runs (newest first).
+monid runs list
+
+# Machine-readable form for filtering by endpoint, status, or time:
+monid runs list -j | jq '[.[] | {runId, provider, endpoint, status, createdAt}]'
+
+# Re-fetch one run's payload. Same file-shape rules as `monid run`:
+# the -o file holds ONLY the unwrapped output (no `.output.` prefix in jq).
+monid runs get -r <runId> -j -o recovered.json
+```
+
+Recovery is **free** — fetching run history does NOT re-charge the run's
+per-call cost. If you find yourself about to re-run Mode 1 because the
+snapshots look empty, **STOP and check `monid runs list` first** — you may
+already have the data and just need to re-extract it with the right jq paths.
+
+When re-fetching a paginated endpoint (Mode 1 followings), list runs for the
+same `screen_name` and re-fetch each page's runId in cursor order to
+reconstruct the full followings list.

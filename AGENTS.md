@@ -19,6 +19,18 @@ $EDITOR skills/my-new-skill/inputs.example.json  # optional
 
 Look at any existing `skills/*/SKILL.md` for the conventions.
 
+## Shared content
+
+Some boilerplate (currently just `prerequisites.md`) lives in `templates/` and
+is **copied verbatim** into each skill that opts in. The `templates/README.md`
+documents conventions (e.g. the first-run bootstrap checklist) authors should
+follow inline.
+
+To opt in for a synced file, create a file with the matching name in your
+skill folder (`touch skills/my-skill/prerequisites.md`) and run
+`cd scripts && deno task sync-templates`. CI's `sync-templates:check` step
+fails if a synced copy drifts.
+
 ## Validating before commit
 
 ```bash
@@ -33,6 +45,7 @@ This regenerates the skill index in the top-level `README.md` and checks every
 CI runs four explicit steps on every PR (`.github/workflows/validate.yml`):
 
 1. `deno task validate:check` — fails on stale README index or bad frontmatter.
-2. `deno task lint` — JSON accessory files + frontmatter sanity.
-3. `deno fmt --check` — TypeScript formatting.
-4. `deno lint` — TypeScript lint rules.
+2. `deno task sync-templates:check` — fails if any synced template copy has drifted.
+3. `deno task lint` — JSON accessory files + frontmatter sanity.
+4. `deno fmt --check` — TypeScript formatting.
+5. `deno lint` — TypeScript lint rules.

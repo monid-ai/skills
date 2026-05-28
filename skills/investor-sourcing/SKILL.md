@@ -1,6 +1,6 @@
 ---
 name: investor-sourcing
-version: 0.2.0
+version: 0.0.1
 description: An AI investor associate that sources early-stage founders before they're obvious. Two signals - (1) monitor who key influencers/investors newly follow on X, (2) monitor viral product launches from small accounts. Tailors to the investor's focus area. Use when asked to "source founders", "find early startups", "who's building", "scout deals", "sourcing digest", or "investor sourcing".
 ---
 
@@ -10,75 +10,123 @@ An associate that finds **early-stage founders before they're obvious**, using t
 
 ## The two approaches
 
-1. **Influencer Following Monitor** (every ~2 days) — when a respected investor/operator follows a new no-name account, that's often the earliest public signal of conviction. Diff their followings over time → surface new founder follows.
-2. **Viral Launch Monitor** (daily) — real founders with no audience still get organic engagement when their product is interesting. Search X for launches in the past 24h, filter to small accounts (<5K followers) with healthy virality.
+1. **Influencer Following Monitor** (scheduled, every ~2 days) — when a respected investor/operator follows a new no-name account, that's often the earliest public signal of conviction. Diff their followings over time → surface new founder follows.
+2. **Viral Launch Monitor** (daily, or ad hoc) — real founders with no audience still get organic engagement when their product is interesting. Search X for launches in the past 24h, filter to small accounts (<5K followers) with healthy virality.
 
 Both modes output: **company, company URL, one-liner, founder background.**
 
 ---
 
-## Prerequisites & first-time setup (check every run)
+## Prerequisites
 
-This skill is **standalone** — it does NOT require the separate "monid" skill to be installed. It only needs the `monid` CLI (a small npm package) plus an API key. The skill bootstraps both itself.
+<!-- TEMPLATE:prerequisites.md START -->
+### What is monid, and why is it needed?
 
-**What is monid, and why is it needed?** This skill gets its data (X/Twitter profiles, follow lists, launch search) from [monid](https://monid.ai), a marketplace that routes to data providers like TikHub. It's **pay-as-you-go** — you fund a small balance and each call costs a fraction of a cent to a few cents (a full sourcing run is typically well under $5). The skill reports costs as it goes. There's no free tier; without a funded monid key, the skill cannot fetch data.
+This skill gets its data through [monid](https://github.com/monid-ai/cli),
+a CLI marketplace that routes to data providers (Twitter, LinkedIn,
+Google Maps, etc.). It's **pay-as-you-go** — you fund a small balance and
+each call costs a fraction of a cent to a few cents. There's no free tier;
+without a funded monid key, this skill cannot fetch data.
 
-> **Surface this to the user — don't just read it silently.** On the **first run** (when `~/.investor-sourcing/` doesn't exist yet) AND whenever the CLI or key is missing, tell the user in your own words, before running any install/setup command: what monid is, that it's the paid data source this skill depends on, and that runs are pay-as-you-go (typically under $5). Never ask a user to `npm install` or fund a balance without first explaining what they're installing and why. Keep it to a sentence or two — don't lecture a returning user who's already set up.
+On first run — or whenever the CLI/key is missing — surface this briefly to
+the user, then proceed to setup. Each skill's SKILL.md gives an *estimated*
+cost up front; actual cost is reported after each run.
 
-**Preflight — run these checks at the start of every invocation:**
+### Install the monid skill
+
+In addition to the CLI, install the upstream **monid skill** — it documents
+the full discover → inspect → run workflow and keeps the agent's CLI
+knowledge fresh:
 
 ```bash
-# 1. Is the CLI installed?
-monid --version || npm install -g @monid-ai/cli
-
-# 2. Is an API key configured?
-monid keys list
+npx skills add https://monid.ai/SKILL.md
 ```
 
-**If the CLI isn't installed**, install it with the command above (global npm). If npm itself is missing, tell the user to install Node.js first (https://nodejs.org).
+(Or fetch <https://monid.ai/SKILL.md> directly and save it to your agent's
+skills directory. The skill file's frontmatter `version` tracks updates;
+re-install when it bumps.)
 
-**If no key is configured**, STOP and walk the user through setup — do not proceed until a key is added:
-1. Create an account → https://app.monid.ai
+### Preflight (run at the start of every invocation)
+
+```bash
+monid --version || npm install -g @monid-ai/cli
+```
+
+If the CLI isn't installed, install it.
+
+Make sure an API key is properly configured and activated (check with
+`monid keys list`). If no active key shows up, walk the user through key
+setup:
+
+1. Create account → https://app.monid.ai
 2. Add funds (pay-as-you-go balance) in the dashboard
 3. Generate an API key → https://app.monid.ai/access/api-keys
 4. Save it: `monid keys add -k <their-key> -l main`
 5. Confirm: `monid keys list`
 
-**Optionally** verify there's balance before a run: `monid balance`. If empty, point them to the dashboard to add funds.
+Verify balance with `monid balance` if you suspect it's empty.
 
-> Use the **CLI**, never an MCP `monid_run` tool — CLI is the reliable source of truth. Set `NO_COLOR=1` for clean scripted output. The CLI workflow is: `monid run -p <provider> -e <endpoint> --query '<json>' -i '<json>' --wait <sec> -j -o <file>`. If an endpoint's params are ever unclear, run `monid inspect -p <provider> -e <endpoint>` first.
+### Agent rules
+
+- Use the **CLI**, never an MCP `monid_run` tool — CLI is the reliable source
+  of truth.
+- Set `NO_COLOR=1` for clean scripted output.
+- The CLI workflow is
+  `monid run -p <provider> -e <endpoint> --query '<json>' -i '<json>' --wait <sec> -j -o <file>`.
+- If an endpoint's params are ever unclear, run
+  `monid inspect -p <provider> -e <endpoint>` first.
+
+<!-- TEMPLATE:prerequisites.md END -->
 
 ---
 
 ## State & files
 
-The skill **ships with** a bundled seed list, and writes per-user state to the home directory:
+The skill **ships with** a bundled seed list and writes per-user state under a single XDG-standard data directory so multiple monid skills don't collide.
 
 ```
-<skill dir>/influencers.seed.json   # SHIPPED with the skill — {_meta, influencers:[...]}, 86 verified influencers tagged by category
+<skill dir>/influencers.seed.json                                              # SHIPPED — {_meta, influencers:[...]}, 86 verified influencers tagged by category
 
-~/.investor-sourcing/               # created on first run (per-user state)
-  profile.json                      # user focus area, geo, custom handles, enrich cap
-  influencers.json                  # the user's working list (seeded from influencers.seed.json, then editable)
-  snapshots/                        # <handle>_<date>.json followings snapshots (Mode 1)
-  digests/                          # YYYY-MM-DD.md output digests
-  last_run.json                     # timestamps per mode (drives "what's due")
+${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/                  # state root
+  profile.json                                                                  # user focus areas, geo, custom handles, enrich cap, schedule choice
+  influencers.json                                                              # working list (seeded from .seed.json, then user-editable)
+  snapshots/<handle>_<date>.json                                                # followings snapshots (Mode 1)
+  digests/YYYY-MM-DD.md                                                         # output digests
+  last_run.json                                                                 # timestamps per mode (drives "what's due")
 ```
 
-**First-run bootstrap** (do this when `~/.investor-sourcing/` doesn't exist):
-```bash
-mkdir -p ~/.investor-sourcing/snapshots ~/.investor-sourcing/digests
-# Copy the shipped seed into the user's editable working list:
-cp "<skill dir>/influencers.seed.json" ~/.investor-sourcing/influencers.json
-```
-Because this directory is absent on a true first run, use its absence as the trigger to give the user the plain-language "what is monid" explanation above — even if the `monid` CLI happens to already be installed. A first-time user should always learn what the paid data dependency is before the skill starts spending.
-Resolve `<skill dir>` to the directory this SKILL.md lives in. From then on, read the user's `~/.investor-sourcing/influencers.json` (so their edits/additions persist); never overwrite it. Snapshots are large — don't commit them anywhere.
+Concrete paths used throughout this skill (substitute these into commands):
+
+- `${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/profile.json`
+- `${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/influencers.json`
+- `${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/snapshots/`
+- `${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/digests/`
+- `${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/last_run.json`
+
+Resolve `<skill dir>` to the directory this SKILL.md lives in. Read the user's `influencers.json` so their edits/additions persist; never overwrite it. Snapshots are large — don't commit them anywhere.
+
+### First-run bootstrap
+
+Triggered when the state directory above doesn't exist OR `monid keys list` shows no active key. In that order:
+
+1. **Briefly** tell the user what monid is and that it's pay-as-you-go, then proceed.
+2. Run the preflight from the Prerequisites section above.
+3. Create the state directories:
+   ```bash
+   DEST="${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing"
+   mkdir -p "$DEST/snapshots" "$DEST/digests"
+   ```
+4. Seed the user's editable influencer list from the shipped seed:
+   ```bash
+   cp "<skill dir>/influencers.seed.json" "$DEST/influencers.json"
+   ```
+   From that point on, treat `influencers.json` as user-owned; never overwrite it.
 
 ---
 
 ## Setup (hybrid: interactive first run, editable config after)
 
-On first run (or when `profile.json` is missing / user says "reset focus"), ask via AskUserQuestion:
+On first run (or when `${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/profile.json` is missing / user says "reset focus"), ask via AskUserQuestion:
 
 1. **Focus areas** (multi-select): AI infra, AI apps, robotics/physical AI, crypto, fintech, biotech, defense, consumer, devtools, climate, hardware
 2. **Geo preference**: SF / NYC / global / other
@@ -86,32 +134,54 @@ On first run (or when `profile.json` is missing / user says "reset focus"), ask 
 
 > Do NOT ask about funding stage. Stage is often impossible to tell from the outside (especially for the earliest founders, who are the whole point). The skill targets "earliest possible" by design — no stage filter needed.
 
-Write answers to `profile.json`. On later runs, read it silently. The user can hand-edit `profile.json` anytime; respect it as-is.
+Write answers to `${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/profile.json`. On later runs, read it silently. The user can hand-edit `profile.json` anytime; respect it as-is.
 
-Example `profile.json`:
+Example `${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/profile.json`:
 ```json
 {
   "focus_areas": ["ai_infra", "robotics"],
   "geo": "global",
   "custom_influencers": ["somevc", "anotherangel"],
-  "enrich_cap": 5
+  "enrich_cap": 5,
+  "schedule": "agent-native"
 }
 ```
 
 ---
 
-## Mode 1 — Influencer Following Monitor (every ~2 days)
+## Mode 1 — Influencer Following Monitor (scheduled, every ~2 days)
 
-### How it works (explain this to the user the first time)
+### Why this needs to be scheduled
 
-X does not tell you *when* someone followed someone else, and the followings list is not sorted by recency — so there's no way to ask "who did this person follow yesterday?" directly.
+This mode is **snapshot-and-diff**. X doesn't tell you *when* someone followed someone else, and the followings list isn't sorted by recency — so the only way to detect new follows is to pull a full list now and compare it to a list pulled earlier.
 
-The workaround is **snapshot-and-diff**:
-1. We pull a full list of everyone an influencer follows and save it as a dated "snapshot."
-2. Two days later, we pull the list again.
-3. We compare the two: anyone in the new list who wasn't in the old one is a **brand-new follow**. Those are the signals we care about.
+**The first run only establishes a baseline — no new-follow results yet.** From the second run onward, every run surfaces what changed since the previous snapshot. That means Mode 1 is only useful if it runs **at least twice**, ~2 days apart. Running it once and then forgetting wastes the cost of the baseline snapshot.
 
-So the **first run just establishes a baseline** (no new-follow results yet — that's expected). From the second run onward, every run surfaces what changed since last time. We do this every ~2 days because founder-follows don't appear minute-to-minute, and each full snapshot has a small cost (~$0.13 per influencer). Tell the user this up front so the empty first run doesn't look broken.
+### Schedule setup (ask once)
+
+On first invocation of Mode 1, **before** taking the baseline snapshot:
+
+1. Explain the above to the user in 2–3 sentences.
+2. Propose **agent-native scheduling** as the recommended option (no system access, no crontab edits, works regardless of OS). Ask via AskUserQuestion: *"Should I register this with the agent's scheduler to run every 2 days?"*
+3. If the user says yes: register the schedule (via the agent's `/schedule`, `/loop`, or equivalent) and store `"schedule": "agent-native"` in `profile.json`.
+4. If the user says no: store `"schedule": "manual"` in `profile.json` and tell them the date to come back on (today + 2). Set a reminder if the agent has that capability.
+
+**Only switch to other mechanisms (cron, launchd) if the user asks for them.** When they do, generate the exact line/plist and walk them through installing it — never modify `crontab` or call `launchctl` automatically. Update `profile.json` accordingly: `"schedule": "cron"` or `"schedule": "launchd"`.
+
+Don't re-ask on subsequent runs — read `profile.json` and respect the stored choice.
+
+### Cost estimate (before each run, dynamic)
+
+Mode 1 cost = `pages-per-influencer × per-page-cost × number-of-influencers-selected`. Estimate it dynamically — **do NOT hard-code prices** into the skill output:
+
+1. Run `monid inspect -p tikhub -e /api/v1/twitter/web/fetch_user_followings` and read the current per-call price from the `Pricing` section.
+2. The endpoint returns ~67 follows per page; pages per influencer ≈ `ceil(followings_count / 67)`. If `followings_count` is unknown for a handle, fetch one page first to read it.
+3. Compute `estimated_cost = mean_pages × per_call_price × N_influencers`.
+4. **Notify** the user up front: *"This Mode 1 run will snapshot N influencers and is estimated to cost ~$X.XX. Starting now."* No permission ask — just a notification.
+
+After the run, sum `cost.value` across all calls and show the **actual** spend in the digest footer alongside the estimate.
+
+### Run
 
 ```bash
 # For each relevant influencer (filtered by focus area):
@@ -121,19 +191,17 @@ monid run -p tikhub -e /api/v1/twitter/web/fetch_user_followings \
 ```
 
 Steps:
-1. **Select influencers**: read the `influencers` array from `~/.investor-sourcing/influencers.json` (structure: `{_meta, influencers:[{handle,name,category,followers,active}]}`; e.g. `jq '.influencers[]'`). Select:
+1. **Select influencers**: read the `influencers` array from `${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/influencers.json` (structure: `{_meta, influencers:[{handle,name,category,followers,active}]}`; e.g. `jq '.influencers[]'`). Select:
    - Everyone tagged `category: "vc_angel"` (early-stage investors/incubator partners — relevant across all focus areas), PLUS
    - Everyone whose `category` matches the user's `focus_areas` (topic tags: `ai`, `ai_apps`, `crypto`, `robotics`, `biotech`, `defense`, `hardware`, `consumer`), PLUS
    - The user's `custom_influencers`.
    If a focus area has thin coverage in the seed list, ask the user for additional handles. (To keep cost sane, you may cap VCs to the most active/relevant N and let the user widen it.)
-2. **Snapshot** each influencer's full followings (paginate ~67/page; ~$0.0015/page; ~87 pages for someone following 5,800 → ~$0.13). Save to `snapshots/<handle>_<date>.json`.
+2. **Snapshot** each influencer's full followings (paginate via `next_cursor` until `more_users == false`). Save to `${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/snapshots/<handle>_<date>.json`.
 3. **Diff** vs. previous snapshot on `user_id` → `new_follows` and `unfollows` (keep unfollows — a quiet unfollow can be a signal too).
 4. **Classify** each new follow: founder / VC / influencer / other. Keep founders (bio matches "founder", "CEO", "building", "co-founder", or links to a company site).
 5. **Filter by focus** (LLM judgment): does this founder's company match the user's thesis? Drop mismatches.
 6. **Enrich** top N founders (N = `enrich_cap`, default 5) — see Enrichment section.
 7. Append to today's digest under "New founder follows".
-
-Cadence: every 2 days (founder follows don't appear faster; snapshots are heavy).
 
 ---
 
@@ -153,7 +221,18 @@ Default is the past 24h. The user can override by passing a natural-language win
 | "this week" / "last 7 days" | `since:2026-05-21` |
 | "May 20 to May 25" | `since:2026-05-20 until:2026-05-26` |
 
-> Wider windows return more results and cost slightly more (still pennies), but recall improves. For windows > 3 days, consider raising `min_faves` to keep the signal-to-noise high.
+> Wider windows return more results and cost slightly more, but recall improves. For windows > 3 days, consider raising `min_faves` to keep the signal-to-noise high.
+
+### Cost estimate (before each run, dynamic)
+
+Estimate Mode 2 spend the same way as Mode 1 — **do NOT hard-code prices**:
+
+1. Run `monid inspect -p tikhub -e /api/v1/twitter/web/fetch_search_timeline` to read the current per-call price.
+2. Multiply by the number of parallel searches you plan to run (4–6 by default).
+3. Notify the user up front: *"This Mode 2 run will fire N searches and is estimated to cost ~$X.XX. Starting now."*
+4. After the run, sum `cost.value` and show the actual spend in the digest footer.
+
+### Run
 
 ```bash
 monid run -p tikhub -e /api/v1/twitter/web/fetch_search_timeline \
@@ -162,7 +241,7 @@ monid run -p tikhub -e /api/v1/twitter/web/fetch_search_timeline \
 ```
 
 Steps:
-1. **Build queries** from focus area (see keyword map) + the resolved time-range operators. Run 4-6 parallel searches, `lang:en`, `-filter:replies`, `min_faves:30` (raise for wider windows). ~$0.0015 each.
+1. **Build queries** from focus area (see keyword map) + the resolved time-range operators. Run 4-6 parallel searches, `lang:en`, `-filter:replies`, `min_faves:30` (raise for wider windows).
 2. **Merge & dedupe** on `tweet_id`.
 3. **Filter — early-stage gate**: keep `user_info.followers_count < 5000` (and > 0).
 4. **Filter — engagement sanity (anti-bought-engagement)**: drop tweets where `retweets / favorites > 0.5`. (Founders often buy reposts/quotes for launches; a RT/like ratio above 50% looks fake. This is the only engagement rule — keep it lenient, just catch the obviously weird ones.)
@@ -216,20 +295,60 @@ Once we have a real founder name from X, build their background from the signals
 - **One-liner** = WebFetch the site for a ≤20-word description (free, via the WebFetch tool, not monid). Fall back to the launch tweet's own words if the site is thin or blocks scraping.
 - **Funding / stage** — only if explicitly stated on the site, in the launch tweet, or in a press link. Never guess. If nothing is found, note "no funding data — likely very early," which is itself a useful early-stage signal.
 
-> The X profile is the gate (founder name + bio); the website fills in the rest. Both are free — enrichment adds essentially no cost beyond the `fetch_user_profile` call. If the user later wants verified background/funding for a *specific* named founder, ask before adding any paid lookup.
+> The X profile is the gate (founder name + bio); the website fills in the rest. Both are free — enrichment adds essentially no cost beyond the `fetch_user_profile` call.
+
+### Step 2.5 — LinkedIn fallback (optional, when X + website are thin)
+
+If after Steps 1–2 the founder's background is still thin (no prior roles, no team page on the website) AND the X bio or launch tweet linked to a LinkedIn profile, fall back to LinkedIn via TikHub.
+
+**Important — the base call returns only thin profile data.** The base response gives you `full_name`, `headline` (e.g. "Co-Founder at Monid"), `location`, profile photo, and account-status booleans. That's **not enough** to fill in "founder background." The unlocks that justify the fallback are `include_experiences` and `include_educations`. Without those flags, this fallback is not worth running — fall back to "no further background found" instead.
+
+**Endpoint**: `tikhub /api/v1/linkedin/web/get_user_profile`. Pricing is per-call. **Each `include_*` flag adds +1 request**, so enabling experiences + education + bio costs 4× the base price. Always estimate first.
+
+Extract the LinkedIn username from a profile URL: `https://www.linkedin.com/in/jack` → `jack`.
+
+Inspect the current price and flag list:
+```bash
+monid inspect -p tikhub -e /api/v1/linkedin/web/get_user_profile
+```
+
+Call (background-rich — this is the one to use):
+```bash
+monid run -p tikhub -e /api/v1/linkedin/web/get_user_profile \
+  --query '{
+    "username":"<linkedin-username>",
+    "include_experiences": true,
+    "include_educations": true,
+    "include_bio": true
+  }' \
+  --wait 30 -j -o linkedin.json
+```
+
+Fields to extract from the response and merge into the digest's "Founder background" line:
+- Base: `full_name`, `headline`, `location.city`, `location.country`
+- From `include_experiences=true`: `experiences[]` (company, title, dates)
+- From `include_educations=true`: `educations[]` (school, degree)
+- From `include_bio=true`: the "About" text
+
+**Triggering rule** — default OFF. Only fall back to LinkedIn when **all three** are true:
+1. X bio gave you nothing usable beyond a name (no prior role, no website).
+2. WebFetch on the company site didn't yield a team/about page either.
+3. The X bio or launch tweet explicitly links a LinkedIn URL — never guess the LinkedIn username from a name.
+
+Report the per-call cost in the run summary so the user sees the marginal spend. If the LinkedIn lookup fails (404 / private profile), fall back gracefully to "no further background found."
 
 ---
 
 ## Output: the digest
 
-Write one markdown file per run to `~/.investor-sourcing/digests/YYYY-MM-DD.md`. Each candidate:
+Write one markdown file per run to `${XDG_DATA_HOME:-$HOME/.local/share}/monid/investor-sourcing/digests/YYYY-MM-DD.md`. Each candidate:
 
 ```markdown
 ### [Founder Name] — @handle
 - **Company**: <name>
 - **URL**: <website>
 - **One-liner**: <what they do, ≤20 words>
-- **Founder background**: <prior roles / companies / education / location, from X bio + website>
+- **Founder background**: <prior roles / companies / education / location, from X bio + website + (optionally) LinkedIn>
 - **Stage signal** *(only if known — never guess)*: <funding stated on site / launch tweet / press, or "no funding data — likely very early">
 - **Why surfaced**: Mode 1 → "followed by @X, @Y" | Mode 2 → "❤️ N, 🔁 M, 👁 V, tweet link"
 ```
@@ -241,7 +360,8 @@ Digest footer:
 - New founder follows: N
 - Viral launches qualifying: N
 - Candidates enriched: N (cap)
-- Total spent this run: $X.XX
+- Estimated spend: $X.XX
+- Actual spend: $Y.YY
 ```
 
 ---
@@ -253,35 +373,34 @@ Digest footer:
   - "check launches today" → Mode 2, past 24h
   - "show me launches from the last 3 days" → Mode 2, `since:` 3 days ago
   - "scan new follows now" → Mode 1, regardless of schedule
-- **Scheduled**: offer to wire recurring jobs via `/schedule` (or `/loop`):
-  - Viral Launch Monitor → daily (past 24h)
-  - Influencer Following Monitor → every 2 days
-  Store schedule state so manual + scheduled runs share the same snapshots/digests and don't double-charge.
+- **Scheduled** (see Mode 1 → "Schedule setup"): the chosen schedule lives in `profile.json`. Mode 2 also benefits from daily scheduling — same agent-native default applies.
 
-> Ad hoc and scheduled runs are independent — running Mode 2 ad hoc over a custom window does NOT reset the daily schedule's clock, and vice versa.
+Store schedule state so manual + scheduled runs share the same snapshots/digests and don't double-charge. Ad hoc and scheduled runs are independent — running Mode 2 ad hoc over a custom window does NOT reset the daily schedule's clock, and vice versa.
 
 ---
 
 ## Cost discipline
 
-- Report `cost.value` per run; show a per-digest total.
-- Before a run with estimated spend > $5, check `monid balance` and confirm with the user.
-- Mode 1 snapshots are the biggest line item (~$0.13/influencer). Only snapshot focus-relevant influencers.
+- **Estimate before, report after** for every run (see Mode 1 and Mode 2 cost-estimate subsections). Never hard-code a price into the output; always read it fresh from `monid inspect`.
+- Report `cost.value` per run; show a per-digest total alongside the estimate.
+- Mode 1 snapshots are the biggest line item. Only snapshot focus-relevant influencers.
 - Enrichment is capped at top N (default 5). List overflow candidates unenriched; enrich-on-request by name.
+- LinkedIn fallback (Enrichment Step 2.5) is OFF by default. When on, each `include_*` flag bills as an extra request — turn on only what you'll use (experiences + education are the unlocks; the base call alone is rarely worth it).
 - Re-run `monid discover` occasionally to catch cheaper/better endpoints, but default to the validated set below.
 
 ---
 
 ## Reference data: validated endpoints
 
-| Purpose | Provider / Endpoint | Cost | Params |
+| Purpose | Provider / Endpoint | Pricing | Params |
 |---|---|---|---|
-| Followings (paginated) | `tikhub /api/v1/twitter/web/fetch_user_followings` | $0.0015/call | `--query` |
-| Profile lookup — founder name + bio (the GATE) | `tikhub /api/v1/twitter/web/fetch_user_profile` | $0.0015/call | `--query` |
-| Launch/keyword search | `tikhub /api/v1/twitter/web/fetch_search_timeline` | $0.0015/call | `--query` |
+| Followings (paginated) | `tikhub /api/v1/twitter/web/fetch_user_followings` | per-call | `--query` |
+| Profile lookup — founder name + bio (the GATE) | `tikhub /api/v1/twitter/web/fetch_user_profile` | per-call | `--query` |
+| Launch/keyword search | `tikhub /api/v1/twitter/web/fetch_search_timeline` | per-call | `--query` |
+| LinkedIn fallback (Step 2.5, optional) | `tikhub /api/v1/linkedin/web/get_user_profile` | per-call (×1 + each `include_*` flag) | `--query` |
 | Company one-liner + founder background | `WebFetch` tool (the site) | free | URL |
 
-> Enrichment is free: the X profile is the gate (founder name + bio), and WebFetch fills in the company one-liner, background, and any stated funding. This skill deliberately uses **no paid people/company data provider** — they 404 on the earliest founders it targets. If the user needs verified background/funding for a specific named founder, ask before adding a paid lookup.
+Run `monid inspect -p <provider> -e <endpoint>` before each run to read the current per-call price and confirm the schema hasn't changed. Cost estimates in this skill rely on `inspect` output, not hard-coded numbers.
 
 `fetch_search_timeline` supports X advanced search operators in `keyword`: `since:`/`until:`, `min_faves:`, `-filter:replies`, `lang:en`, `OR`, quoted phrases. `search_type`: `Latest` (chronological) or `Top`.
 

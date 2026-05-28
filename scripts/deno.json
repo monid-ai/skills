@@ -2,7 +2,9 @@
   "tasks": {
     "validate": "deno run --allow-read --allow-write validate/main.ts",
     "validate:check": "deno run --allow-read validate/main.ts --check",
-    "lint": "deno run --allow-read lint/main.ts"
+    "lint": "deno run --allow-read lint/main.ts",
+    "sync-templates": "deno run --allow-read --allow-write sync-templates/main.ts",
+    "sync-templates:check": "deno run --allow-read sync-templates/main.ts --check"
   },
   "fmt": {
     "lineWidth": 100,

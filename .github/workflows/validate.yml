@@ -21,6 +21,9 @@ jobs:
       - name: Validate SKILL.md frontmatter + README index freshness
         run: deno task validate:check
 
+      - name: Templates synced into each skill
+        run: deno task sync-templates:check
+
       - name: Lint accessory JSON + frontmatter sanity
         run: deno task lint
 

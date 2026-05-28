@@ -1,4 +1,4 @@
-# skills-examples
+# Monid Example Skills
 
 A catalog of [Monid CLI](https://github.com/monid-ai/cli) examples packaged as
 **installable agent skills**. Each skill is a self-contained recipe that teaches
@@ -14,13 +14,13 @@ Codex, Cursor, OpenCode, Gemini CLI, and [50+ other agents](https://github.com/v
 
 ```bash
 # Browse what's in the catalog
-npx skills add monid-ai/skills-examples --list
+npx skills add monid-ai/skills --list
 
 # Install a single skill
-npx skills add monid-ai/skills-examples -s investor-sourcing
+npx skills add monid-ai/skills -s investor-sourcing
 
 # Install to a specific agent
-npx skills add monid-ai/skills-examples -s investor-sourcing -a claude-code
+npx skills add monid-ai/skills -s investor-sourcing -a claude-code
 ```
 
 After install, your agent will pick up the skill automatically next session.
@@ -50,8 +50,8 @@ Every skill ships standalone. Clone the repo and read its `SKILL.md`, or run
 its bundled script directly if it has one:
 
 ```bash
-git clone https://github.com/monid-ai/skills-examples
-cd skills-examples/skills/investor-sourcing
+git clone https://github.com/monid-ai/skills
+cd skills/skills/investor-sourcing
 cat SKILL.md
 ```
 

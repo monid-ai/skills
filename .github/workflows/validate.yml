@@ -1,0 +1,31 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: scripts
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Validate SKILL.md frontmatter + README index freshness
+        run: deno task validate:check
+
+      - name: Lint accessory JSON + frontmatter sanity
+        run: deno task lint
+
+      - name: TypeScript formatting (deno fmt --check)
+        run: deno fmt --check
+
+      - name: TypeScript lint (deno lint)
+        run: deno lint

@@ -1,0 +1,612 @@
+{
+  "_meta": {
+    "description": "Seed list of verified X/Twitter influencers for investor-sourcing, tagged by category. vc_angel = always relevant; other categories filter by the user's focus area.",
+    "verified_as_of": "2026-05",
+    "note": "follower counts and active flags are point-in-time. The skill re-verifies handles live via profile lookups on each run, so stale entries self-heal. Safe to hand-edit; add handles with {handle, name, category, followers, active}.",
+    "count": 86
+  },
+  "influencers": [
+    {
+      "handle": "sama",
+      "name": "Sam Altman",
+      "category": "ai",
+      "followers": 4953498,
+      "active": true
+    },
+    {
+      "handle": "karpathy",
+      "name": "Andrej Karpathy",
+      "category": "ai",
+      "followers": 2710333,
+      "active": true
+    },
+    {
+      "handle": "AndrewYNg",
+      "name": "Andrew Ng",
+      "category": "ai",
+      "followers": 1571054,
+      "active": true
+    },
+    {
+      "handle": "ylecun",
+      "name": "Yann LeCun",
+      "category": "ai",
+      "followers": 1190404,
+      "active": true
+    },
+    {
+      "handle": "gdb",
+      "name": "Greg Brockman",
+      "category": "ai",
+      "followers": 984425,
+      "active": true
+    },
+    {
+      "handle": "drfeifei",
+      "name": "Fei-Fei Li",
+      "category": "ai",
+      "followers": 714708,
+      "active": true
+    },
+    {
+      "handle": "miramurati",
+      "name": "Mira Murati",
+      "category": "ai",
+      "followers": 571468,
+      "active": true
+    },
+    {
+      "handle": "AravSrinivas",
+      "name": "Aravind Srinivas",
+      "category": "ai",
+      "followers": 562781,
+      "active": true
+    },
+    {
+      "handle": "rasbt",
+      "name": "Sebastian Raschka",
+      "category": "ai",
+      "followers": 456521,
+      "active": true
+    },
+    {
+      "handle": "drjimfan",
+      "name": "Jim Fan",
+      "category": "ai",
+      "followers": 422977,
+      "active": true
+    },
+    {
+      "handle": "hardmaru",
+      "name": "hardmaru",
+      "category": "ai",
+      "followers": 409412,
+      "active": true
+    },
+    {
+      "handle": "emostaque",
+      "name": "Emad",
+      "category": "ai",
+      "followers": 324093,
+      "active": true
+    },
+    {
+      "handle": "soumithchintala",
+      "name": "Soumith Chintala",
+      "category": "ai",
+      "followers": 303732,
+      "active": true
+    },
+    {
+      "handle": "mckaywrigley",
+      "name": "Mckay Wrigley",
+      "category": "ai",
+      "followers": 227989,
+      "active": true
+    },
+    {
+      "handle": "goodside",
+      "name": "Riley Goodside",
+      "category": "ai",
+      "followers": 209470,
+      "active": true
+    },
+    {
+      "handle": "simonw",
+      "name": "Simon Willison",
+      "category": "ai",
+      "followers": 187617,
+      "active": true
+    },
+    {
+      "handle": "swyx",
+      "name": "swyx",
+      "category": "ai",
+      "followers": 161413,
+      "active": true
+    },
+    {
+      "handle": "austen",
+      "name": "Austen Allred",
+      "category": "ai_apps",
+      "followers": 468151,
+      "active": true
+    },
+    {
+      "handle": "bryan_johnson",
+      "name": "Bryan Johnson",
+      "category": "biotech",
+      "followers": 1230624,
+      "active": true
+    },
+    {
+      "handle": "laurademing",
+      "name": "Laura \ud83c\udf32 \u26f0\ufe0f",
+      "category": "biotech",
+      "followers": 102291,
+      "active": true
+    },
+    {
+      "handle": "casey",
+      "name": "Casey Neistat",
+      "category": "consumer",
+      "followers": 1880609,
+      "active": true
+    },
+    {
+      "handle": "cz_binance",
+      "name": "CZ \ud83d\udd36 BNB",
+      "category": "crypto",
+      "followers": 11507680,
+      "active": true
+    },
+    {
+      "handle": "VitalikButerin",
+      "name": "vitalik.eth",
+      "category": "crypto",
+      "followers": 6551771,
+      "active": true
+    },
+    {
+      "handle": "brian_armstrong",
+      "name": "Brian Armstrong",
+      "category": "crypto",
+      "followers": 2422273,
+      "active": true
+    },
+    {
+      "handle": "balajis",
+      "name": "Balaji",
+      "category": "crypto",
+      "followers": 1561221,
+      "active": true
+    },
+    {
+      "handle": "cobie",
+      "name": "Cobie",
+      "category": "crypto",
+      "followers": 973117,
+      "active": true
+    },
+    {
+      "handle": "aantonop",
+      "name": "Andreas (aantonop Team)",
+      "category": "crypto",
+      "followers": 781350,
+      "active": true
+    },
+    {
+      "handle": "punk6529",
+      "name": "6529",
+      "category": "crypto",
+      "followers": 492915,
+      "active": true
+    },
+    {
+      "handle": "gavofyork",
+      "name": "Gavin Wood",
+      "category": "crypto",
+      "followers": 447402,
+      "active": true
+    },
+    {
+      "handle": "sassal0x",
+      "name": "sassal.eth/acc \ud83e\udd87\ud83d\udd0a",
+      "category": "crypto",
+      "followers": 298638,
+      "active": true
+    },
+    {
+      "handle": "hasufl",
+      "name": "Hasu\u26a1\ufe0f\ud83e\udd16",
+      "category": "crypto",
+      "followers": 257556,
+      "active": true
+    },
+    {
+      "handle": "hosseeb",
+      "name": "Haseeb \uff1e|\uff1c",
+      "category": "crypto",
+      "followers": 144746,
+      "active": true
+    },
+    {
+      "handle": "drakefjustin",
+      "name": "Justin Drake",
+      "category": "crypto",
+      "followers": 111082,
+      "active": true
+    },
+    {
+      "handle": "jessepollak",
+      "name": "jesse.base.eth",
+      "category": "crypto",
+      "followers": 353283,
+      "active": true
+    },
+    {
+      "handle": "PalmerLuckey",
+      "name": "Palmer Luckey",
+      "category": "defense",
+      "followers": 788696,
+      "active": true
+    },
+    {
+      "handle": "dylan522p",
+      "name": "Dylan Patel",
+      "category": "hardware",
+      "followers": 131116,
+      "active": true
+    },
+    {
+      "handle": "adcock_brett",
+      "name": "Brett Adcock",
+      "category": "robotics",
+      "followers": 475707,
+      "active": true
+    },
+    {
+      "handle": "ericjang11",
+      "name": "Eric Jang",
+      "category": "robotics",
+      "followers": 131895,
+      "active": true
+    },
+    {
+      "handle": "svlevine",
+      "name": "Sergey Levine",
+      "category": "robotics",
+      "followers": 128245,
+      "active": true
+    },
+    {
+      "handle": "AnimaAnandkumar",
+      "name": "Prof. Anima Anandkumar",
+      "category": "robotics",
+      "followers": 38380,
+      "active": true
+    },
+    {
+      "handle": "chris_j_paxton",
+      "name": "Chris Paxton",
+      "category": "robotics",
+      "followers": 32701,
+      "active": true
+    },
+    {
+      "handle": "yukez",
+      "name": "Yuke Zhu",
+      "category": "robotics",
+      "followers": 22142,
+      "active": true
+    },
+    {
+      "handle": "chelseafinn",
+      "name": "Chelsea Finn",
+      "category": "robotics",
+      "followers": 59,
+      "active": true
+    },
+    {
+      "handle": "naval",
+      "name": "Naval",
+      "category": "vc_angel",
+      "followers": 3317048,
+      "active": true
+    },
+    {
+      "handle": "paulg",
+      "name": "Paul Graham",
+      "category": "vc_angel",
+      "followers": 2907659,
+      "active": true
+    },
+    {
+      "handle": "levie",
+      "name": "Aaron Levie",
+      "category": "vc_angel",
+      "followers": 2728593,
+      "active": true
+    },
+    {
+      "handle": "DavidSacks",
+      "name": "David Sacks",
+      "category": "vc_angel",
+      "followers": 1525619,
+      "active": true
+    },
+    {
+      "handle": "sacca",
+      "name": "Chris Sacca \ud83c\uddfa\ud83c\uddf8",
+      "category": "vc_angel",
+      "followers": 1494705,
+      "active": true
+    },
+    {
+      "handle": "garrytan",
+      "name": "Garry Tan",
+      "category": "vc_angel",
+      "followers": 837953,
+      "active": true
+    },
+    {
+      "handle": "bgurley",
+      "name": "Bill Gurley",
+      "category": "vc_angel",
+      "followers": 741063,
+      "active": true
+    },
+    {
+      "handle": "fredwilson",
+      "name": "Fred Wilson",
+      "category": "vc_angel",
+      "followers": 641205,
+      "active": true
+    },
+    {
+      "handle": "rabois",
+      "name": "Keith Rabois",
+      "category": "vc_angel",
+      "followers": 430252,
+      "active": true
+    },
+    {
+      "handle": "eladgil",
+      "name": "Elad Gil",
+      "category": "vc_angel",
+      "followers": 373600,
+      "active": true
+    },
+    {
+      "handle": "rrhoover",
+      "name": "Ryan Hoover",
+      "category": "vc_angel",
+      "followers": 365835,
+      "active": true
+    },
+    {
+      "handle": "andrewchen",
+      "name": "andrew chen",
+      "category": "vc_angel",
+      "followers": 365721,
+      "active": true
+    },
+    {
+      "handle": "msuster",
+      "name": "Mark Suster",
+      "category": "vc_angel",
+      "followers": 352660,
+      "active": true
+    },
+    {
+      "handle": "bfeld",
+      "name": "Brad Feld",
+      "category": "vc_angel",
+      "followers": 336939,
+      "active": true
+    },
+    {
+      "handle": "jess",
+      "name": "Jessica Verrilli",
+      "category": "vc_angel",
+      "followers": 319539,
+      "active": true
+    },
+    {
+      "handle": "mwseibel",
+      "name": "Michael Seibel",
+      "category": "vc_angel",
+      "followers": 289526,
+      "active": true
+    },
+    {
+      "handle": "zebulgar",
+      "name": "delian",
+      "category": "vc_angel",
+      "followers": 265034,
+      "active": true
+    },
+    {
+      "handle": "hunterwalk",
+      "name": "\ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbb\u2615\ufe0f",
+      "category": "vc_angel",
+      "followers": 247460,
+      "active": true
+    },
+    {
+      "handle": "jasonlk",
+      "name": "Jason \u2728\ud83d\udc7eSaaStr.Ai\u2728 Lemkin",
+      "category": "vc_angel",
+      "followers": 241455,
+      "active": true
+    },
+    {
+      "handle": "packym",
+      "name": "Packy McCormick",
+      "category": "vc_angel",
+      "followers": 225606,
+      "active": true
+    },
+    {
+      "handle": "ljin18",
+      "name": "Li Jin",
+      "category": "vc_angel",
+      "followers": 178730,
+      "active": true
+    },
+    {
+      "handle": "semil",
+      "name": "Semil",
+      "category": "vc_angel",
+      "followers": 163939,
+      "active": true
+    },
+    {
+      "handle": "daltonc",
+      "name": "Dalton Caldwell",
+      "category": "vc_angel",
+      "followers": 154540,
+      "active": true
+    },
+    {
+      "handle": "saranormous",
+      "name": "sarah guo",
+      "category": "vc_angel",
+      "followers": 142372,
+      "active": true
+    },
+    {
+      "handle": "yoheinakajima",
+      "name": "Yohei",
+      "category": "vc_angel",
+      "followers": 124902,
+      "active": true
+    },
+    {
+      "handle": "ttunguz",
+      "name": "Tomasz Tunguz",
+      "category": "vc_angel",
+      "followers": 124801,
+      "active": true
+    },
+    {
+      "handle": "lessin",
+      "name": "sam lessin \ud83c\udff4\u200d\u2620\ufe0f",
+      "category": "vc_angel",
+      "followers": 120814,
+      "active": true
+    },
+    {
+      "handle": "jmj",
+      "name": "Jeff Morris Jr.",
+      "category": "vc_angel",
+      "followers": 119974,
+      "active": true
+    },
+    {
+      "handle": "adityaag",
+      "name": "Aditya Agarwal",
+      "category": "vc_angel",
+      "followers": 72832,
+      "active": true
+    },
+    {
+      "handle": "lpolovets",
+      "name": "Leo Polovets",
+      "category": "vc_angel",
+      "followers": 69011,
+      "active": true
+    },
+    {
+      "handle": "loganbartlett",
+      "name": "logan bartlett",
+      "category": "vc_angel",
+      "followers": 65704,
+      "active": true
+    },
+    {
+      "handle": "hthieblot",
+      "name": "Hubert Thieblot",
+      "category": "vc_angel",
+      "followers": 59463,
+      "active": true
+    },
+    {
+      "handle": "satyap",
+      "name": "Satya Patel",
+      "category": "vc_angel",
+      "followers": 50687,
+      "active": true
+    },
+    {
+      "handle": "chudson",
+      "name": "Charles Hudson",
+      "category": "vc_angel",
+      "followers": 45216,
+      "active": true
+    },
+    {
+      "handle": "jefielding",
+      "name": "Jenny Fielding",
+      "category": "vc_angel",
+      "followers": 43365,
+      "active": true
+    },
+    {
+      "handle": "stevejang",
+      "name": "steve jang",
+      "category": "vc_angel",
+      "followers": 42092,
+      "active": true
+    },
+    {
+      "handle": "harjtaggar",
+      "name": "Harj Taggar",
+      "category": "vc_angel",
+      "followers": 37920,
+      "active": true
+    },
+    {
+      "handle": "gustaf",
+      "name": "Gustaf Alstr\u00f6mer",
+      "category": "vc_angel",
+      "followers": 35241,
+      "active": true
+    },
+    {
+      "handle": "roybahat",
+      "name": "Roy E. Bahat",
+      "category": "vc_angel",
+      "followers": 31184,
+      "active": true
+    },
+    {
+      "handle": "tkexpress11",
+      "name": "Troy Kirwin",
+      "category": "vc_angel",
+      "followers": 13367,
+      "active": true
+    },
+    {
+      "handle": "btrenchard",
+      "name": "Bill Trenchard",
+      "category": "vc_angel",
+      "followers": 8680,
+      "active": true
+    },
+    {
+      "handle": "ruchi",
+      "name": "Ruchi",
+      "category": "vc_angel",
+      "followers": 2310,
+      "active": true
+    },
+    {
+      "handle": "sahil",
+      "name": "sahil",
+      "category": "vc_angel",
+      "followers": 1867,
+      "active": true
+    }
+  ]
+}

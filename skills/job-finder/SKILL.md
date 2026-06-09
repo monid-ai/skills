@@ -1,6 +1,6 @@
 ---
 name: job-finder
-version: 0.1.1
+version: 0.1.2
 description: A personal job-hunting associate that surfaces roles NOT on the obvious job boards — especially startup jobs posted from founders' personal accounts. Three signals daily — (1) X posts about hiring, (2) LinkedIn posts about hiring, (3) LinkedIn job board listings — tailored to the user's role, skills, industry, and location. Use when asked to "find jobs", "scan for roles", "what's hiring", "job radar", "job search", "find me work", or "job finder".
 ---
 
@@ -118,6 +118,7 @@ Search keywords are generated on the fly from the user's profile (see "Building 
 On first run (or when `${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder/profile.json` is missing / user says "reset profile"), ask via AskUserQuestion:
 
 1. **Role(s)** you want (multi-select + free-text): founding engineer, senior eng, staff eng, ML researcher, product designer, founding designer, PM, founding PM, data scientist, GTM/sales, other...
+   - **1b. Seniority level(s)** *(optional, multi-select — skip to let titles + judgment decide)*: entry / associate / mid-senior / director / executive. Pick one or more. Level is orthogonal to role (so "PM" + "mid-senior" compose), and it's the one lever LinkedIn's jobs board filters on server-side. **Skip** if your target roles are founding/first-hire — those don't map to LinkedIn's levels, so the skill judges them from context instead.
 2. **Industries / focus areas** (multi-select): AI, robotics/physical AI, crypto, fintech, biotech, devtools, consumer, climate, defense, hardware, any
 3. **Location / remote**: remote-only / SF / NYC / London / hybrid-OK / anywhere
 4. **Company stage** (multi-select; stage IS relevant here — it's a fit signal candidates care about): stealth, seed, Series A, Series B+, any
@@ -133,6 +134,7 @@ Example `${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder/profile.json`:
 ```json
 {
   "roles": ["founding engineer", "senior eng"],
+  "levels": ["mid_senior", "director"],
   "industries": ["ai", "robotics"],
   "location": "sf_or_remote",
   "stages": ["seed", "series_a"],
@@ -143,6 +145,8 @@ Example `${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder/profile.json`:
   "linkedin_jobs_cap": 25
 }
 ```
+
+`levels` is an **optional list** — any of `entry_level`, `associate`, `mid_senior`, `director`, `executive`. Empty or omitted = current behavior (no seniority filter; rely on the Role-level discipline LLM pass). `internship` is a valid LinkedIn bucket but isn't offered in setup; it's accepted if hand-edited. Omit `levels` for founding/first-hire targets — those don't map to LinkedIn's buckets.
 
 ---
 
@@ -168,6 +172,15 @@ Construct search queries on the fly from the user's `profile.json` — no seed f
 5. **Location** (when not remote-anywhere) — append `location:"<city>"` for LinkedIn jobs, or include city name in X queries.
 
 6. **Time window — DEFAULT PAST 2 DAYS, hard cap**: job posts go stale fast. Default `since:` is **2 days ago** (e.g. today=2026-06-07 → `since:2026-06-05`). Never go wider than past 2 days unless the user explicitly asks for a longer window. LinkedIn endpoints: use `date_posted: "past_24_hours"` and either run twice (today + yesterday) or filter post-hoc to keep only `listed_at >= now - 2 days`. Drop anything older.
+
+7. **Seniority** (only when `levels` is set and the role isn't founding/first-hire) — applied differently per source, because only the LinkedIn jobs board has a server-side filter:
+
+   - **LinkedIn jobs (Mode 3)** — pass `experience_level` in `--query`. It accepts **one** value per call, so with N selected levels, run one Mode 3 query per level and merge results. Skip the param entirely for founding roles or empty `levels`.
+   - **X (Mode 1) & LinkedIn posts (Mode 2)** — no API filter exists. Build the level OR-group from **all** selected levels, and add **negative operators** only for the levels NOT selected:
+     - `["mid_senior"]` → add `("senior" OR "staff")`, strict: `-"junior" -"intern" -"new grad"`
+     - `["entry_level","associate"]` → `("junior" OR "new grad" OR "early career" OR "associate")`, strict: `-"senior" -"staff" -"principal"`
+     - `["director","executive"]` → `("director" OR "VP" OR "head of" OR "chief")`, strict: `-"junior" -"associate"`
+   - Whatever the source, the **Role-level discipline** LLM pass below is the final backstop — keyword filters narrow, judgment decides.
 
 ### Role-level discipline
 
@@ -232,12 +245,13 @@ Cost: ~$0.025/day for 4-5 queries.
 
 Endpoint: `tikhub /api/v1/linkedin/web/search_jobs` (**$0.006/call**) — use **v1**, not v2. (The v2 endpoint at `/api/v1/linkedin/web_v2/search_jobs` returns 400 on otherwise-valid input at time of writing — verified 2026-06.) Params go in **`--query`**, NOT `-i`.
 - Required: `keyword` (singular!)
-- Optional: `date_posted` ("anytime"/"past_month"/"past_week"/"past_24_hours"), `sort_by` ("recent"/"relevant"), `remote` ("onsite"/"remote"/"hybrid"), `experience_level` ("entry_level"/"associate"/"mid_senior"/"director"/"executive"), `job_type` ("full_time"/"part_time"/"contract"), `geocode` (city geocode), `page`, `easy_apply`
+- Optional: `date_posted` ("anytime"/"past_month"/"past_week"/"past_24_hours"), `sort_by` ("recent"/"relevant"), `remote` ("onsite"/"remote"/"hybrid"), `experience_level` ("internship"/"entry_level"/"associate"/"mid_senior"/"director"/"executive" — **one value per call**; verified 2026-06), `job_type` ("full_time"/"part_time"/"contract"), `geocode` (city geocode), `page`, `easy_apply`
+- **Seniority**: when the profile's `levels` is set (and the role isn't founding), send `experience_level`. It's the only server-side seniority filter across the three sources — wire it here. One bucket per call, so loop over selected `levels` and merge. Omit it for founding roles or empty `levels`.
 - Note: location is **`geocode`** (not free text). Either get geocode via the "Search Geocode Location" endpoint, or filter results client-side by `.location` string after the fact.
 
 ```bash
 monid run -p tikhub -e /api/v1/linkedin/web/search_jobs \
-  --query '{"keyword":"<role keywords>","date_posted":"past_24_hours","sort_by":"recent","remote":"remote"}' \
+  --query '{"keyword":"<role keywords>","experience_level":"mid_senior","date_posted":"past_24_hours","sort_by":"recent","remote":"remote"}' \
   --wait 30 -j -o li_jobs.json
 ```
 
@@ -246,15 +260,15 @@ monid run -p tikhub -e /api/v1/linkedin/web/search_jobs \
 Response shape: `{output: {data: [{id, title, url, listed_at, location, company:{name,verified,url}, is_easy_apply}, ...], has_more, page, total}}`. The unverified `company.verified` flag is a useful "small company" proxy.
 
 Steps:
-1. Build 2-3 queries: one per role × location combination. Use `date_posted: "past_week"` then **filter client-side** to `listed_at >= now - 2 days`.
-2. **Role-level filter** (CRITICAL): drop titles that don't match the user's level. If profile says `product manager`, drop "Senior PM", "Staff PM", "Lead PM", "Principal PM", "Group PM". See Role-level discipline section above.
+1. Build 2-3 queries: one per role × location combination. Use `date_posted: "past_week"` then **filter client-side** to `listed_at >= now - 2 days`. When `levels` is set (and role isn't founding), add `experience_level` and run one query per selected level, then merge — each adds a $0.006 call, so keep the level count small.
+2. **Role-level filter** (CRITICAL): drop titles that don't match the user's level. If profile says `product manager`, drop "Senior PM", "Staff PM", "Lead PM", "Principal PM", "Group PM". The `experience_level` param pre-narrows server-side; this LLM pass is still the backstop. See Role-level discipline section above.
 3. Cap total kept at `linkedin_jobs_cap` (default 25/day).
 4. **Filter by industry/focus** (match company industry to profile `industries` when present in result).
 5. **Stage proxy**: if result includes company size, treat `<50 employees` as startup-friendly; larger orgs deprioritized unless `stages` includes "Series B+" / "any".
 6. Apply exclusions.
 7. Continue to dedup + enrich.
 
-Cost: ~$0.005/day for 2-3 queries.
+Cost: ~$0.005/day for 2-3 queries (add ~$0.006 per extra `levels` entry, since each is a separate call).
 
 ---
 

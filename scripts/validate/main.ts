@@ -16,22 +16,22 @@
 
 import { README_PATH } from "../lib/paths.ts";
 import { readSkills, validateSkillFrontmatter } from "../lib/skill.ts";
-import { extractProvider, firstRealSentence } from "../lib/summary.ts";
+import { firstRealSentence } from "../lib/summary.ts";
 
 const CHECK_ONLY = Deno.args.includes("--check");
 
 interface IndexRow {
   name: string;
   summary: string;
-  provider: string;
 }
 
 function renderIndex(rows: IndexRow[]): string {
   const lines = [
-    "| Skill | What it does | Provider |",
+    "| Skill | What it does | Install |",
     "|---|---|---|",
     ...rows.map(
-      (r) => `| [\`${r.name}\`](skills/${r.name}/) | ${r.summary} | ${r.provider} |`,
+      (r) =>
+        `| [\`${r.name}\`](skills/${r.name}/) | ${r.summary} | \`npx skills add monid-ai/skills -s ${r.name}\` |`,
     ),
   ];
   return `<!-- SKILL_INDEX_START -->\n\n${lines.join("\n")}\n\n<!-- SKILL_INDEX_END -->`;
@@ -47,7 +47,6 @@ function main(): number {
     rows.push({
       name: skill.name,
       summary: firstRealSentence(skill.frontmatter.description ?? ""),
-      provider: skill.frontmatter.provider ?? extractProvider(skill.name, skill.source),
     });
   }
 

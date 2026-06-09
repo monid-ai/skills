@@ -31,6 +31,20 @@ skill folder (`touch skills/my-skill/prerequisites.md`) and run
 `cd scripts && deno task sync-templates`. CI's `sync-templates:check` step
 fails if a synced copy drifts.
 
+## Per-user state (XDG)
+
+Skills that persist state (profiles, snapshots, digests, run timestamps) MUST
+write under a single XDG-standard data root so multiple monid skills don't
+collide:
+
+```
+${XDG_DATA_HOME:-$HOME/.local/share}/monid/<skill-name>/
+```
+
+Never write to `~/.<skill-name>/` or other ad-hoc home-dir paths. Use the
+`DEST="${XDG_DATA_HOME:-$HOME/.local/share}/monid/<skill-name>"` bootstrap
+pattern. See `skills/investor-sourcing/SKILL.md` for the reference shape.
+
 ## Validating before commit
 
 ```bash

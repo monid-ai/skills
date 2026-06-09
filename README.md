@@ -39,6 +39,7 @@ any other one-time setup. You don't need to read anything else first.
 | Skill | What it does | Provider |
 |---|---|---|
 | [`investor-sourcing`](skills/investor-sourcing/) | An AI investor associate that sources early-stage founders before they're obvious. | `tikhub` |
+| [`job-finder`](skills/job-finder/) | A personal job-hunt associate that surfaces roles NOT on the obvious job boards — especially startup jobs from founders' personal accounts. | `tikhub` |
 
 <!-- SKILL_INDEX_END -->
 

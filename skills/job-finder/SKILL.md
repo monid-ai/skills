@@ -1,6 +1,6 @@
 ---
 name: job-finder
-version: 0.1.0
+version: 0.1.1
 description: A personal job-hunting associate that surfaces roles NOT on the obvious job boards — especially startup jobs posted from founders' personal accounts. Three signals daily — (1) X posts about hiring, (2) LinkedIn posts about hiring, (3) LinkedIn job board listings — tailored to the user's role, skills, industry, and location. Use when asked to "find jobs", "scan for roles", "what's hiring", "job radar", "job search", "find me work", or "job finder".
 ---
 
@@ -89,16 +89,25 @@ Verify balance with `monid balance` if you suspect it's empty.
 
 ## State & files
 
+The skill writes per-user state under a single XDG-standard data directory so multiple monid skills don't collide.
+
 ```
-~/.job-finder/                    # created on first run (per-user state)
-  profile.json                    # user role, skills, industries, location, stage, exclusions
-  digests/                        # YYYY-MM-DD.md output digests
-  last_run.json                   # timestamps per mode
+${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder/   # state root
+  profile.json                                           # user role, skills, industries, location, stage, exclusions
+  digests/                                               # YYYY-MM-DD.md output digests
+  last_run.json                                          # timestamps per mode
 ```
 
-**First-run bootstrap** (when `~/.job-finder/` doesn't exist):
+Concrete paths used throughout this skill (substitute these into commands):
+
+- `${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder/profile.json`
+- `${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder/digests/`
+- `${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder/last_run.json`
+
+**First-run bootstrap** (when the state directory above doesn't exist):
 ```bash
-mkdir -p ~/.job-finder/digests
+DEST="${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder"
+mkdir -p "$DEST/digests"
 ```
 Search keywords are generated on the fly from the user's profile (see "Building queries" below) — no seed file needed.
 
@@ -106,7 +115,7 @@ Search keywords are generated on the fly from the user's profile (see "Building 
 
 ## Setup (hybrid: interactive first run, editable config after)
 
-On first run (or when `profile.json` is missing / user says "reset profile"), ask via AskUserQuestion:
+On first run (or when `${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder/profile.json` is missing / user says "reset profile"), ask via AskUserQuestion:
 
 1. **Role(s)** you want (multi-select + free-text): founding engineer, senior eng, staff eng, ML researcher, product designer, founding designer, PM, founding PM, data scientist, GTM/sales, other...
 2. **Industries / focus areas** (multi-select): AI, robotics/physical AI, crypto, fintech, biotech, devtools, consumer, climate, defense, hardware, any
@@ -118,9 +127,9 @@ On first run (or when `profile.json` is missing / user says "reset profile"), as
 
 > Don't ask about compensation in setup — too personal and often unknown until conversation. Surface comp in the digest only when the post mentions it.
 
-Write to `profile.json`. Read it silently on later runs. User can hand-edit anytime; respect as-is.
+Write to `${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder/profile.json` (i.e. `"$DEST/profile.json"`). Read it silently on later runs. User can hand-edit anytime; respect as-is.
 
-Example `profile.json`:
+Example `${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder/profile.json`:
 ```json
 {
   "roles": ["founding engineer", "senior eng"],
@@ -271,7 +280,7 @@ Enrichment cost: ~$1/day (WebFetch free + optional PDL company × ≤10).
 
 ## Output: the digest
 
-Write one markdown file per run to `~/.job-finder/digests/YYYY-MM-DD.md`, grouped by source priority and match score:
+Write one markdown file per run to `${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder/digests/YYYY-MM-DD.md`, grouped by source priority and match score:
 
 ```markdown
 # Job digest — 2026-06-07
@@ -316,7 +325,7 @@ Write one markdown file per run to `~/.job-finder/digests/YYYY-MM-DD.md`, groupe
      # Open the crontab editor
      crontab -e
      # Add a line — runs daily at 8am local, writes a digest, logs cost:
-     0 8 * * * /usr/local/bin/claude --print "/job-finder" >> ~/.job-finder/cron.log 2>&1
+     0 8 * * * /usr/local/bin/claude --print "/job-finder" >> "${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder/cron.log" 2>&1
      ```
      Adjust the `claude` path (`which claude`) and the time. On Windows, use Task Scheduler with the same one-shot command.
 
@@ -324,7 +333,7 @@ Write one markdown file per run to `~/.job-finder/digests/YYYY-MM-DD.md`, groupe
 
   3. **`/loop` skill** (gstack `loop`): runs in the foreground at an interval. Better for "keep poking every N hours during this session" than a daily background job.
 
-Whichever path they pick, store the schedule choice in `last_run.json` so manual + scheduled runs share the same digests and don't double-charge for overlapping windows.
+Whichever path they pick, store the schedule choice in `${XDG_DATA_HOME:-$HOME/.local/share}/monid/job-finder/last_run.json` so manual + scheduled runs share the same digests and don't double-charge for overlapping windows.
 
 Ad hoc and scheduled runs are independent — running ad hoc over a custom window does NOT reset the daily schedule's clock.
 

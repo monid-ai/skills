@@ -39,7 +39,7 @@ any other one-time setup. You don't need to read anything else first.
 | Skill | What it does | Provider |
 |---|---|---|
 | [`investor-sourcing`](skills/investor-sourcing/) | An AI investor associate that sources early-stage founders before they're obvious. | `tikhub` |
-| [`job-finder`](skills/job-finder/) | A personal job-hunt associate that surfaces roles NOT on the obvious job boards — especially startup jobs from founders' personal accounts. | `tikhub` |
+| [`job-finder`](skills/job-finder/) | A personal job-hunting associate that surfaces roles NOT on the obvious job boards — especially startup jobs posted from founders' personal accounts. | `tikhub` |
 
 <!-- SKILL_INDEX_END -->
 
@@ -77,6 +77,8 @@ Rules of thumb:
 
 - Folder name = `SKILL.md` frontmatter `name` (lowercase, hyphens).
 - Bump `version:` whenever you change the instructions.
+- Per-user state goes under `${XDG_DATA_HOME:-$HOME/.local/share}/monid/<skill-name>/`
+  — never `~/.<skill-name>/`. See `investor-sourcing` for the reference shape.
 - Each `SKILL.md` is standalone — it must explain Monid setup itself so users
   don't need to read this README first.
 - If you ship a `run.sh`, keep `inputs.example.json` minimal (`maxItems: 5` etc.)

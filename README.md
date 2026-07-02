@@ -22,6 +22,8 @@ or read.
 |---|---|---|
 | [`investor-sourcing`](skills/investor-sourcing/) | An AI investor associate that sources early-stage founders before they're obvious. | `npx skills add monid-ai/skills -s investor-sourcing` |
 | [`job-finder`](skills/job-finder/) | A personal job-hunting associate that surfaces roles NOT on the obvious job boards — especially startup jobs posted from founders' personal accounts. | `npx skills add monid-ai/skills -s job-finder` |
+| [`reddit-monitor`](skills/reddit-monitor/) | A Reddit engagement associate that finds the timeliest posts to reply to and drafts subreddit-native replies. | `npx skills add monid-ai/skills -s reddit-monitor` |
+| [`reddit-research`](skills/reddit-research/) | A Reddit go-to-market research associate that tells you where to post, when, and whether an idea has demand. | `npx skills add monid-ai/skills -s reddit-research` |
 
 <!-- SKILL_INDEX_END -->
 

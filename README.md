@@ -20,8 +20,16 @@ or read.
 
 | Skill | What it does | Install |
 |---|---|---|
+| [`ai-visibility`](skills/ai-visibility/) | Checks whether AI answer engines (ChatGPT, Perplexity, Gemini, Google AI Mode and AI Overviews) mention your brand, and which sources they cite. | `npx skills add monid-ai/skills -s ai-visibility` |
+| [`buyer-signals`](skills/buyer-signals/) | A daily brief of fresh buying signals for what you sell: people asking for alternatives, companies hiring for the role, and the week's trigger events. | `npx skills add monid-ai/skills -s buyer-signals` |
+| [`competitor-watch`](skills/competitor-watch/) | A weekly watch report on one to three competitors: site and pricing changes, social posts, open jobs, news, and what customers say. | `npx skills add monid-ai/skills -s competitor-watch` |
+| [`growth-teardown`](skills/growth-teardown/) | Works out how a company gets its users (search, backlinks, social, ads, community, creators) and returns five plays you can copy. | `npx skills add monid-ai/skills -s growth-teardown` |
 | [`investor-sourcing`](skills/investor-sourcing/) | An AI investor associate that sources early-stage founders before they're obvious. | `npx skills add monid-ai/skills -s investor-sourcing` |
 | [`job-finder`](skills/job-finder/) | A personal job-hunting associate that surfaces roles NOT on the obvious job boards — especially startup jobs posted from founders' personal accounts. | `npx skills add monid-ai/skills -s job-finder` |
+| [`lead-list`](skills/lead-list/) | Turns an ideal customer description into a short list of companies, one decision-maker at each, and a verified work email. | `npx skills add monid-ai/skills -s lead-list` |
+| [`local-leads`](skills/local-leads/) | Builds a list of local businesses worth contacting in one trade and one city, each with a reason to contact them and a short outreach draft. | `npx skills add monid-ai/skills -s local-leads` |
+| [`outlier-creators`](skills/outlier-creators/) | Finds small and mid-size creators in a niche whose recent videos far outperform their own usual numbers. | `npx skills add monid-ai/skills -s outlier-creators` |
+| [`topic-pulse`](skills/topic-pulse/) | Reports what people are saying right now about a topic, brand or product across Reddit, TikTok, Instagram, YouTube, Hacker News and news. | `npx skills add monid-ai/skills -s topic-pulse` |
 
 <!-- SKILL_INDEX_END -->
 

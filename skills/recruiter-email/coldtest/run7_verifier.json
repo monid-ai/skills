@@ -1,0 +1,67 @@
+{
+  "runId": "01M83XMT7505AK9A7PHQ893E95",
+  "caller": "API_KEY#OgYHeuwF",
+  "owner": "user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "provider": "hunterio",
+  "providerName": "Hunter",
+  "endpoint": "/email-verifier",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "email": "k***@cohere.com"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_RESULT",
+    "amount": {
+      "value": 0.01225,
+      "currency": "USD"
+    },
+    "notes": [
+      "Charged only on a definitive verdict — unknown results and disposable/webmail addresses are free."
+    ]
+  },
+  "cost": {
+    "value": 0.01225,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "billedUnits": 1,
+  "createdAt": "2026-11-23T10:01:24.254Z",
+  "startedAt": "2026-11-23T10:01:24.435Z",
+  "completedAt": "2026-11-23T10:01:25.839Z",
+  "hints": {
+    "retrieve the response later": "monid runs get -r 01M83XMT7505AK9A7PHQ893E95"
+  },
+  "output": {
+    "data": {
+      "status": "accept_all",
+      "score": 71,
+      "email": "k***@cohere.com",
+      "regexp": true,
+      "gibberish": false,
+      "disposable": false,
+      "webmail": false,
+      "mx_records": true,
+      "smtp_server": true,
+      "smtp_check": true,
+      "accept_all": true,
+      "block": false,
+      "verification": {
+        "date": "2026-11-23",
+        "status": "accept_all"
+      },
+      "sources": [],
+      "result": "risky",
+      "_deprecation_notice": "Using result is deprecated, use status instead"
+    },
+    "meta": {
+      "params": {
+        "email": "k***@cohere.com"
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "runId": "01M83W2DYPTYAXBHS9T7FSG5PP",
+  "caller": "USER#user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "owner": "user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "provider": "litescrape",
+  "providerName": "Litescrape",
+  "endpoint": "/linkedin/job",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "job_id": "4468033424"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": {
+      "value": 0.00015,
+      "currency": "USD"
+    }
+  },
+  "cost": {
+    "value": 0.00015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "billedUnits": 1,
+  "createdAt": "2026-11-23T09:33:53.271Z",
+  "startedAt": "2026-11-23T09:33:53.431Z",
+  "completedAt": "2026-11-23T09:33:57.981Z",
+  "hints": {
+    "retrieve the response later": "monid runs get -r 01M83W2DYPTYAXBHS9T7FSG5PP"
+  },
+  "output": {
+    "search_parameters": {
+      "job_id": "4468033424"
+    },
+    "job": {
+      "job_id": "4468033424",
+      "title": "Senior Product Designer, AI",
+      "link": "https://www.linkedin.com/jobs/view/4468033424/",
+      "company": "MaintainX",
+      "location": "New York, NY",
+      "posted_at": null,
+      "description": "MaintainX is a leading mobile-first work execution platform for industrial and frontline teams. More than 15,000 customers , including McDonalds, Michaels, Cintas, Redimix, and U.S. LBM, use MaintainX to cut unplanned downtime and run better operations, across 16 million managed assets and 92 million completed work orders. In August 2026 MaintainX became part of Autodesk, joining Autodesk Operations Solutions , the organization unifying Autodesk's operations platform alongside Tandem, FlexSim and Fusion Operations. Autodesk's strategy is to converge design, make and operate into one continuous lifecycle: design an asset, build it, run it, then feed what you learn running it back into the next design. Autodesk had design and make. Operate is the phase that tells you what actually happened, and it is ours. We're growing fast and hiring the Design talent to match. We’re looking for a Senior Product Designer who combines exceptional craft with deep product thinking to shape MaintainX’s AI-first product experience. You’ll lead end-to-end design across web and mobile, partnering with Product Managers, Engineers, and designers to turn complex workflows into simple, intuitive tools for frontline workers. What You'll Do Own end-to-end design for AI-powered product surfaces across web and mobile — from problem framing through high-fidelity delivery. Design AI-powered experiences for frontline users like maintenance technicians and facility managers, making workflows simpler and smarter without adding complexity. Translate ambiguous, fast-moving AI problem spaces into clear, testable design solutions in close partnership with product and engineering. Think in systems: spot patterns, build for reuse, and contribute to our design system with a focus on consistency, scalability, and high craft. Present design work with clear rationale, integrate feedback from stakeholders, and champion high quality across the product lifecycle. Use AI tools in your own design process to accelerate your work and push the quality ceiling of your output. About You 6+ years of product design experience in B2B SaaS or enterprise platforms. Hands-on experience designing AI-powered features such as natural language interfaces, agents, and predictive insights for real users solving real problems. Exceptional visual and interaction design skills with a sharp eye for typography, spacing, color, layout, and motion. A systems thinker who naturally spots patterns, builds for reuse, and considers how design decisions scale across a product. Excellent communication and storytelling skills to articulate design intent, navigate ambiguous product spaces, and influence cross-functional peers. An expert level of English, both spoken and written, is required, as the individual will need to work across multiple teams and present work to executive stakeholders. Our mission is to keep the physical world running. Factories, fleets, hospitals and campuses stay up because the people who maintain them have tools worth using. That is what we build. Compensation and benefits. Base pay is one part of the package. Depending on the role, compensation may also include commission, an annual bonus and equity. Benefits differ by country. For roles in the United States, Autodesk’s benefits are described at benefits.autodesk.com. For roles in Canada and other countries, the plan differs on health coverage, retirement and leave, and your recruiter will walk you through it. Belonging. We take pride in a culture where everyone can thrive. More at autodesk.com/company/global-belonging. More on where this is going: Autodesk CEO Andrew Anagnost on building the future of connected operations, and AOS SVP Stephen Hooper on welcoming MaintainX to Autodesk. Compensation Range: $130K - $230K",
+      "seniority": "Not Applicable",
+      "employment_type": "Full-time",
+      "job_function": null,
+      "industries": "Software Development",
+      "posted_relative": "17 hours ago",
+      "applicants": "Over 200 applicants",
+      "salary": "$130,000.00/yr - $230,000.00/yr",
+      "company_url": "https://www.linkedin.com/company/getmaintainx",
+      "company_logo": "https://media.licdn.com/dms/image/v2/D560BAQEOOm1IB8UHxQ/company-logo_100_100/company-logo_100_100/0/1719255662141/getmaintainx_logo?e=2147483647&v=beta&t=I6qwuVTvD_U70IZid7kFqRB2F4v_urD8DtwSJNJlPRA"
+    },
+    "billed": true
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "runId": "01M83XJZXG7Y0AZSEBN8FBTS54",
+  "provider": "apollo",
+  "endpoint": "/mixed_people/api_search",
+  "status": "COMPLETED",
+  "output": {
+    "total_entries": 3,
+    "people": [
+      {
+        "id": "690b8735897b6100015ef8d8",
+        "first_name": "Katherine",
+        "last_name_obfuscated": "Ca***s",
+        "title": "Product Design Director",
+        "last_refreshed_at": "2026-11-11T17:02:51.000+00:00",
+        "has_email": false,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "Cohere",
+          "has_industry": true,
+          "has_phone": false,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "5b3d5365a6da98a0c26729f6",
+        "first_name": "Andy",
+        "last_name_obfuscated": "Luo",
+        "title": "Staff Design Project Manager",
+        "last_refreshed_at": "2026-11-08T14:08:36.000+00:00",
+        "has_email": false,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "Cohere",
+          "has_industry": true,
+          "has_phone": false,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "66fb7a4b556cca0001f2d474",
+        "first_name": "Paul",
+        "last_name_obfuscated": "Te***r",
+        "title": "Product & Design",
+        "last_refreshed_at": "2026-11-20T02:23:10.824+00:00",
+        "has_email": true,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "Cohere",
+          "has_industry": true,
+          "has_phone": false,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      }
+    ]
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": {
+      "value": 0,
+      "currency": "USD"
+    },
+    "notes": [
+      "Free — searching consumes no Apollo credits."
+    ]
+  },
+  "billing": {
+    "reportedCost": {
+      "currency": "USD",
+      "value": 0,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 3,
+  "billedUnits": 3,
+  "createdAt": "2026-11-23T10:00:24.744Z",
+  "completedAt": "2026-11-23T10:00:27.022Z",
+  "hints": {
+    "retrieve the response later": "monid runs get -r 01M83XJZXG7Y0AZSEBN8FBTS54",
+    "enrich a person from the results": "monid run -p apollo -e /people/match -i '<BODY>' --query '<QUERY_PARAMS>' --path '<PATH_PARAMS>'  # pass the returned person id (or name + domain) to reveal contact data"
+  }
+}

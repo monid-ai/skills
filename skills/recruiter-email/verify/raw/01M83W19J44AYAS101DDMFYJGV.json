@@ -1,0 +1,185 @@
+{
+  "runId": "01M83W19J44AYAS101DDMFYJGV",
+  "caller": "USER#user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "owner": "user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "provider": "litescrape",
+  "providerName": "Litescrape",
+  "endpoint": "/linkedin/jobs",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "q": "Senior Product Designer",
+      "location": "New York",
+      "page": 1
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": {
+      "value": 0.00015,
+      "currency": "USD"
+    }
+  },
+  "cost": {
+    "value": 0.00015,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "billedUnits": 1,
+  "createdAt": "2026-11-23T09:33:15.977Z",
+  "startedAt": "2026-11-23T09:33:16.129Z",
+  "completedAt": "2026-11-23T09:33:18.349Z",
+  "hints": {
+    "retrieve the response later": "monid runs get -r 01M83W19J44AYAS101DDMFYJGV",
+    "get a job's full description (often null in search results)": "monid run -p litescrape -e /linkedin/job -i '<BODY>' --query '<QUERY_PARAMS>' --path '<PATH_PARAMS>'  # pass the job_id"
+  },
+  "output": {
+    "search_parameters": {
+      "q": "Senior Product Designer",
+      "location": "New York",
+      "page": 1,
+      "remote": "all"
+    },
+    "jobs": [
+      {
+        "job_id": "4485477256",
+        "title": "Senior Product Designer",
+        "link": "https://www.linkedin.com/jobs/view/4485477256/",
+        "company": "Cohere",
+        "location": "New York, NY",
+        "posted_at": "2026-11-02",
+        "description": null,
+        "seniority": null,
+        "employment_type": null,
+        "job_function": null,
+        "industries": null
+      },
+      {
+        "job_id": "4458023364",
+        "title": "Senior Product Designer, Trading",
+        "link": "https://www.linkedin.com/jobs/view/4458023364/",
+        "company": "Robinhood",
+        "location": "New York, NY",
+        "posted_at": "2026-11-01",
+        "description": null,
+        "seniority": null,
+        "employment_type": null,
+        "job_function": null,
+        "industries": null
+      },
+      {
+        "job_id": "4485632070",
+        "title": "Senior Product Designer",
+        "link": "https://www.linkedin.com/jobs/view/4485632070/",
+        "company": "C1",
+        "location": "New York, NY",
+        "posted_at": "2026-10-30",
+        "description": null,
+        "seniority": null,
+        "employment_type": null,
+        "job_function": null,
+        "industries": null
+      },
+      {
+        "job_id": "4468033424",
+        "title": "Senior Product Designer, AI",
+        "link": "https://www.linkedin.com/jobs/view/4468033424/",
+        "company": "MaintainX",
+        "location": "New York, NY",
+        "posted_at": "2026-11-22",
+        "description": null,
+        "seniority": null,
+        "employment_type": null,
+        "job_function": null,
+        "industries": null
+      },
+      {
+        "job_id": "4452634516",
+        "title": "Senior Product Designer (UI/UX)",
+        "link": "https://www.linkedin.com/jobs/view/4452634516/",
+        "company": "Uniti",
+        "location": "New York, NY",
+        "posted_at": "2026-08-11",
+        "description": null,
+        "seniority": null,
+        "employment_type": null,
+        "job_function": null,
+        "industries": null
+      },
+      {
+        "job_id": "4483194340",
+        "title": "Sr. Product Designer",
+        "link": "https://www.linkedin.com/jobs/view/4483194340/",
+        "company": "Ande",
+        "location": "New York, NY",
+        "posted_at": "2026-10-24",
+        "description": null,
+        "seniority": null,
+        "employment_type": null,
+        "job_function": null,
+        "industries": null
+      },
+      {
+        "job_id": "4438743390",
+        "title": "Senior Product Designer",
+        "link": "https://www.linkedin.com/jobs/view/4438743390/",
+        "company": "Fora Travel",
+        "location": "New York, NY",
+        "posted_at": "2026-11-21",
+        "description": null,
+        "seniority": null,
+        "employment_type": null,
+        "job_function": null,
+        "industries": null
+      },
+      {
+        "job_id": "4491628870",
+        "title": "Senior Product Designer",
+        "link": "https://www.linkedin.com/jobs/view/4491628870/",
+        "company": "Oxbow Talent",
+        "location": "Brooklyn, NY",
+        "posted_at": "2026-11-19",
+        "description": null,
+        "seniority": null,
+        "employment_type": null,
+        "job_function": null,
+        "industries": null
+      },
+      {
+        "job_id": "4488084135",
+        "title": "Senior Product Designer",
+        "link": "https://www.linkedin.com/jobs/view/4488084135/",
+        "company": "Sotheby's",
+        "location": "New York, United States",
+        "posted_at": "2026-11-05",
+        "description": null,
+        "seniority": null,
+        "employment_type": null,
+        "job_function": null,
+        "industries": null
+      },
+      {
+        "job_id": "4437562307",
+        "title": "Senior Product Designer (Prediction Markets)",
+        "link": "https://www.linkedin.com/jobs/view/4437562307/",
+        "company": "Gemini",
+        "location": "New York, NY",
+        "posted_at": "2026-11-20",
+        "description": null,
+        "seniority": null,
+        "employment_type": null,
+        "job_function": null,
+        "industries": null
+      }
+    ],
+    "pagination": {
+      "has_more": true,
+      "next_page": 2,
+      "next_page_token": null
+    },
+    "billed": true
+  }
+}

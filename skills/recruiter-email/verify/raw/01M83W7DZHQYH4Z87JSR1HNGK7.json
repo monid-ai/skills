@@ -1,0 +1,197 @@
+{
+  "runId": "01M83W7DZHQYH4Z87JSR1HNGK7",
+  "caller": "USER#user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "owner": "user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "provider": "apollo",
+  "providerName": "Apollo",
+  "endpoint": "/mixed_companies/search",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "q_organization_name": "MaintainX",
+      "per_page": 3,
+      "page": 1
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": {
+      "value": 0.026,
+      "currency": "USD"
+    }
+  },
+  "cost": {
+    "value": 0.026,
+    "currency": "USD"
+  },
+  "resultCount": 3,
+  "billedUnits": 3,
+  "createdAt": "2026-11-23T09:36:37.360Z",
+  "startedAt": "2026-11-23T09:36:37.555Z",
+  "completedAt": "2026-11-23T09:36:38.498Z",
+  "hints": {
+    "retrieve the response later": "monid runs get -r 01M83W7DZHQYH4Z87JSR1HNGK7",
+    "enrich a company from the results": "monid run -p apollo -e /organizations/enrich -i '<BODY>' --query '<QUERY_PARAMS>' --path '<PATH_PARAMS>'  # pass the returned organization primary_domain to reveal the full record"
+  },
+  "output": {
+    "breadcrumbs": [
+      {
+        "label": "Company Name",
+        "signal_field_name": "q_organization_name",
+        "value": "MaintainX",
+        "display_name": "MaintainX"
+      }
+    ],
+    "partial_results_only": false,
+    "has_join": false,
+    "disable_eu_prospecting": false,
+    "partial_results_limit": 10000,
+    "pagination": {
+      "page": 1,
+      "per_page": 3,
+      "total_entries": 4,
+      "total_pages": 2
+    },
+    "accounts": [],
+    "organizations": [
+      {
+        "id": "5d2ce2000e86f90bfaec9301",
+        "name": "MaintainX",
+        "website_url": "http://www.getmaintainx.com",
+        "angellist_url": null,
+        "linkedin_url": "http://www.linkedin.com/company/getmaintainx",
+        "twitter_url": "https://twitter.com/maintainx",
+        "facebook_url": "https://www.facebook.com/getMaintainX",
+        "languages": [],
+        "alexa_ranking": 301185,
+        "phone": "+1 510-495-0974",
+        "linkedin_uid": "18762446",
+        "founded_year": 2018,
+        "publicly_traded_symbol": null,
+        "publicly_traded_exchange": null,
+        "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/69ac38b6406d860001c0b0e1/picture",
+        "crunchbase_url": null,
+        "primary_domain": "getmaintainx.com",
+        "sic_codes": [
+          "7372"
+        ],
+        "naics_codes": [
+          "513210"
+        ],
+        "primary_phone": {
+          "number": "+1 510-495-0974",
+          "sanitized_number": "+15104950974"
+        },
+        "sanitized_phone": "+15104950974",
+        "owned_by_organization_id": "62b0a223c6e72300ca47b474",
+        "owned_by_organization": {
+          "id": "62b0a223c6e72300ca47b474",
+          "name": "Autodesk",
+          "website_url": "http://www.autodesk.com"
+        },
+        "num_languages": 0,
+        "owned_by_chain": [
+          "62b0a223c6e72300ca47b474"
+        ],
+        "num_retail_locations": 0,
+        "organization_revenue_printed": "115.5M",
+        "organization_revenue": 115500000,
+        "intent_strength": null,
+        "show_intent": true,
+        "has_intent_signal_account": false,
+        "intent_signal_account": null,
+        "organization_headcount_six_month_growth": -0.2052980132450331,
+        "organization_headcount_twelve_month_growth": -0.06735751295336788,
+        "organization_headcount_twenty_four_month_growth": 0.2926391382405745
+      },
+      {
+        "id": "691d48e58ac48c000135c0a6",
+        "name": "MaintainX Solutions LTD",
+        "website_url": null,
+        "angellist_url": null,
+        "linkedin_url": "http://www.linkedin.com/company/maintainx-solutions-ltd",
+        "twitter_url": null,
+        "facebook_url": null,
+        "languages": [],
+        "alexa_ranking": null,
+        "phone": null,
+        "linkedin_uid": "109778494",
+        "founded_year": null,
+        "publicly_traded_symbol": null,
+        "publicly_traded_exchange": null,
+        "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/691d48ebb8130f0001785469/picture",
+        "crunchbase_url": null,
+        "primary_domain": null,
+        "sic_codes": [
+          "8711",
+          "7336"
+        ],
+        "naics_codes": [
+          "541330",
+          "541490"
+        ],
+        "owned_by_organization_id": null,
+        "num_languages": 0,
+        "num_retail_locations": 0,
+        "organization_revenue_printed": null,
+        "organization_revenue": 0,
+        "intent_strength": null,
+        "show_intent": true,
+        "has_intent_signal_account": false,
+        "intent_signal_account": null,
+        "organization_headcount_six_month_growth": null,
+        "organization_headcount_twelve_month_growth": null,
+        "organization_headcount_twenty_four_month_growth": null
+      },
+      {
+        "id": "670a510a590976000153ef59",
+        "name": "maintain[XR]",
+        "website_url": "http://www.maintainxr.com",
+        "angellist_url": null,
+        "linkedin_url": "http://www.linkedin.com/company/maintain-xr",
+        "twitter_url": null,
+        "facebook_url": null,
+        "languages": [],
+        "alexa_ranking": null,
+        "phone": null,
+        "linkedin_uid": "103169548",
+        "founded_year": null,
+        "publicly_traded_symbol": null,
+        "publicly_traded_exchange": null,
+        "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/670a510ca33b6800012ce403/picture",
+        "crunchbase_url": null,
+        "primary_domain": "maintainxr.com",
+        "sic_codes": [
+          "7375",
+          "7372",
+          "7371"
+        ],
+        "naics_codes": [
+          "54151"
+        ],
+        "owned_by_organization_id": null,
+        "num_languages": 0,
+        "num_retail_locations": 0,
+        "organization_revenue_printed": null,
+        "organization_revenue": 0,
+        "intent_strength": null,
+        "show_intent": true,
+        "has_intent_signal_account": false,
+        "intent_signal_account": null,
+        "organization_headcount_six_month_growth": null,
+        "organization_headcount_twelve_month_growth": null,
+        "organization_headcount_twenty_four_month_growth": null
+      }
+    ],
+    "model_ids": [
+      "5d2ce2000e86f90bfaec9301",
+      "691d48e58ac48c000135c0a6",
+      "670a510a590976000153ef59"
+    ],
+    "num_fetch_result": null,
+    "derived_params": null
+  }
+}

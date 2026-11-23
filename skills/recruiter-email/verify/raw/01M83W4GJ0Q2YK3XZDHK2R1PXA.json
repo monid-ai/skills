@@ -1,0 +1,75 @@
+{
+  "runId": "01M83W4GJ0Q2YK3XZDHK2R1PXA",
+  "caller": "USER#user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "owner": "user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "provider": "hunterio",
+  "providerName": "Hunter",
+  "endpoint": "/email-finder",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "domain": "getmaintainx.com",
+      "first_name": "Joshua",
+      "last_name": "Chauvin"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_RESULT",
+    "amount": {
+      "value": 0.0245,
+      "currency": "USD"
+    },
+    "notes": [
+      "Charged only when an address is found."
+    ]
+  },
+  "cost": {
+    "value": 0.0245,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "billedUnits": 1,
+  "createdAt": "2026-11-23T09:35:01.465Z",
+  "startedAt": "2026-11-23T09:35:01.643Z",
+  "completedAt": "2026-11-23T09:35:03.085Z",
+  "hints": {
+    "retrieve the response later": "monid runs get -r 01M83W4GJ0Q2YK3XZDHK2R1PXA",
+    "list every address on the company's domain": "monid run -p hunterio -e /domain-search -i '<BODY>' --query '<QUERY_PARAMS>' --path '<PATH_PARAMS>'  # pass the domain to enumerate all published addresses"
+  },
+  "output": {
+    "data": {
+      "first_name": "Joshua",
+      "last_name": "Chauvin",
+      "email": "j***@getmaintainx.com",
+      "score": 85,
+      "domain": "getmaintainx.com",
+      "accept_all": true,
+      "position": null,
+      "twitter": null,
+      "linkedin_url": null,
+      "phone_number": null,
+      "company": "MaintainX",
+      "source_type": "generated",
+      "provenance": "inferred",
+      "sources": [],
+      "verification": {
+        "date": "2026-11-23",
+        "status": "valid"
+      }
+    },
+    "meta": {
+      "params": {
+        "first_name": "Joshua",
+        "last_name": "Chauvin",
+        "full_name": null,
+        "domain": "getmaintainx.com",
+        "company": null,
+        "linkedin_handle": null,
+        "max_duration": null
+      }
+    }
+  }
+}

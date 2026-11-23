@@ -1,0 +1,67 @@
+{
+  "runId": "01M83XMGYDZ227195WTXADAYAY",
+  "provider": "hunterio",
+  "endpoint": "/email-finder",
+  "status": "COMPLETED",
+  "output": {
+    "data": {
+      "first_name": "Katherine",
+      "last_name": "Carras",
+      "email": "k***@cohere.com",
+      "score": 80,
+      "domain": "cohere.com",
+      "accept_all": true,
+      "position": null,
+      "twitter": null,
+      "linkedin_url": null,
+      "phone_number": null,
+      "company": "Cohere",
+      "source_type": "generated",
+      "provenance": "inferred",
+      "sources": [],
+      "verification": {
+        "date": "2026-11-23",
+        "status": "accept_all"
+      }
+    },
+    "meta": {
+      "params": {
+        "first_name": "Katherine",
+        "last_name": "Carras",
+        "full_name": null,
+        "domain": "cohere.com",
+        "company": null,
+        "linkedin_handle": null,
+        "max_duration": null
+      }
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_RESULT",
+    "amount": {
+      "value": 0.0245,
+      "currency": "USD"
+    },
+    "notes": [
+      "Charged only when an address is found."
+    ]
+  },
+  "billing": {
+    "reportedCost": {
+      "currency": "USD",
+      "value": 24500,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 1,
+  "billedUnits": 1,
+  "createdAt": "2026-11-23T10:01:14.743Z",
+  "completedAt": "2026-11-23T10:01:16.581Z",
+  "hints": {
+    "retrieve the response later": "monid runs get -r 01M83XMGYDZ227195WTXADAYAY",
+    "list every address on the company's domain": "monid run -p hunterio -e /domain-search -i '<BODY>' --query '<QUERY_PARAMS>' --path '<PATH_PARAMS>'  # pass the domain to enumerate all published addresses"
+  }
+}

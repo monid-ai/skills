@@ -1,0 +1,1582 @@
+{
+  "runId": "01M83XM4GQ5203HRMEGN62RECB",
+  "caller": "API_KEY#OgYHeuwF",
+  "owner": "user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "provider": "apollo",
+  "providerName": "Apollo",
+  "endpoint": "/people/match",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "id": "6513c94b95d2fc00019a9010"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "TIERED",
+    "amount": {
+      "value": 0.026,
+      "currency": "USD"
+    },
+    "default": {
+      "type": "PER_CALL",
+      "amount": {
+        "value": 0.026,
+        "currency": "USD"
+      }
+    },
+    "tiers": [
+      {
+        "label": "Personal emails",
+        "when": {
+          "reveal_personal_emails": "true"
+        },
+        "price": {
+          "type": "PER_CALL",
+          "amount": {
+            "value": 0.026,
+            "currency": "USD"
+          }
+        }
+      },
+      {
+        "label": "Mobile phone",
+        "when": {
+          "reveal_phone_number": "true"
+        },
+        "selector": {
+          "label": "Mobile phone",
+          "key": "phone_units",
+          "in": "output"
+        },
+        "price": {
+          "type": "PER_CALL",
+          "amount": {
+            "value": 0.208,
+            "currency": "USD"
+          }
+        }
+      }
+    ],
+    "notes": [
+      "+1 credit with personal emails; +8 credits when a mobile phone is actually returned (the flag alone never charges it); a no-match consumes nothing. Apollo does bill the base credit when it can attach the name to a known company, even with no email or title."
+    ]
+  },
+  "cost": {
+    "value": 0.026,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "billedUnits": 1,
+  "createdAt": "2026-11-23T10:01:02.232Z",
+  "startedAt": "2026-11-23T10:01:02.474Z",
+  "completedAt": "2026-11-23T10:01:03.872Z",
+  "hints": {
+    "retrieve the response later": "monid runs get -r 01M83XM4GQ5203HRMEGN62RECB"
+  },
+  "output": {
+    "person": {
+      "id": "6513c94b95d2fc00019a9010",
+      "first_name": "Allie",
+      "last_name": "Carney",
+      "name": "Allie Carney",
+      "linkedin_url": "http://www.linkedin.com/in/alliecarney",
+      "title": "Senior Talent Partner",
+      "photo_url": "masked",
+      "twitter_url": null,
+      "github_url": null,
+      "facebook_url": null,
+      "extrapolated_email_confidence": null,
+      "headline": "Senior Talent Partner at Cohere",
+      "organization_id": "604a2bcbf6e9e50001fbd89d",
+      "match_confidence": "high",
+      "employment_history": [
+        {
+          "_id": "6afd80c0ee9a7700011efca0",
+          "created_at": null,
+          "current": true,
+          "degree": null,
+          "description": null,
+          "emails": null,
+          "end_date": null,
+          "grade_level": null,
+          "kind": null,
+          "major": null,
+          "org_matched_by_name": false,
+          "organization_id": "604a2bcbf6e9e50001fbd89d",
+          "organization_name": "Cohere",
+          "raw_address": null,
+          "start_date": "2023-10-01",
+          "title": "Senior Talent Partner",
+          "updated_at": null,
+          "id": "6afd80c0ee9a7700011efca0",
+          "key": "6afd80c0ee9a7700011efca0"
+        },
+        {
+          "_id": "6afd80c0ee9a7700011efca1",
+          "created_at": null,
+          "current": false,
+          "degree": null,
+          "description": null,
+          "emails": null,
+          "end_date": "2023-05-01",
+          "grade_level": null,
+          "kind": null,
+          "major": null,
+          "org_matched_by_name": false,
+          "organization_id": "559226da736964191e149b00",
+          "organization_name": "Meta",
+          "raw_address": null,
+          "start_date": "2023-01-01",
+          "title": "Executive Recruiter - SWE Leadership",
+          "updated_at": null,
+          "id": "6afd80c0ee9a7700011efca1",
+          "key": "6afd80c0ee9a7700011efca1"
+        },
+        {
+          "_id": "6afd80c0ee9a7700011efca2",
+          "created_at": null,
+          "current": false,
+          "degree": null,
+          "description": null,
+          "emails": null,
+          "end_date": "2023-01-01",
+          "grade_level": null,
+          "kind": null,
+          "major": null,
+          "org_matched_by_name": false,
+          "organization_id": "559226da736964191e149b00",
+          "organization_name": "Meta",
+          "raw_address": null,
+          "start_date": "2021-07-01",
+          "title": "Technical Recruiter - Machine Learning Engineering Leadership",
+          "updated_at": null,
+          "id": "6afd80c0ee9a7700011efca2",
+          "key": "6afd80c0ee9a7700011efca2"
+        },
+        {
+          "_id": "6afd80c0ee9a7700011efca3",
+          "created_at": null,
+          "current": false,
+          "degree": null,
+          "description": null,
+          "emails": null,
+          "end_date": "2021-07-01",
+          "grade_level": null,
+          "kind": null,
+          "major": null,
+          "org_matched_by_name": false,
+          "organization_id": "559226da736964191e149b00",
+          "organization_name": "Meta",
+          "raw_address": null,
+          "start_date": "2020-03-01",
+          "title": "Technical Sourcer - Engineering Leadership",
+          "updated_at": null,
+          "id": "6afd80c0ee9a7700011efca3",
+          "key": "6afd80c0ee9a7700011efca3"
+        },
+        {
+          "_id": "6afd80c0ee9a7700011efca4",
+          "created_at": null,
+          "current": false,
+          "degree": null,
+          "description": null,
+          "emails": null,
+          "end_date": "2019-12-01",
+          "grade_level": null,
+          "kind": null,
+          "major": null,
+          "org_matched_by_name": false,
+          "organization_id": "5d3236a7f651250ed04d6037",
+          "organization_name": "Grab",
+          "raw_address": null,
+          "start_date": "2017-12-01",
+          "title": "Senior Talent Acquisition Business Partner-- Seattle/Bellevue Engineering",
+          "updated_at": null,
+          "id": "6afd80c0ee9a7700011efca4",
+          "key": "6afd80c0ee9a7700011efca4"
+        },
+        {
+          "_id": "6afd80c0ee9a7700011efca5",
+          "created_at": null,
+          "current": false,
+          "degree": null,
+          "description": null,
+          "emails": null,
+          "end_date": "2017-12-01",
+          "grade_level": null,
+          "kind": null,
+          "major": null,
+          "org_matched_by_name": false,
+          "organization_id": "64ad58e9a01f6400db26ca90",
+          "organization_name": "Harvey Nash Group",
+          "raw_address": null,
+          "start_date": "2016-06-01",
+          "title": "Technical Recruiter",
+          "updated_at": null,
+          "id": "6afd80c0ee9a7700011efca5",
+          "key": "6afd80c0ee9a7700011efca5"
+        },
+        {
+          "_id": "6afd80c0ee9a7700011efca6",
+          "created_at": null,
+          "current": false,
+          "degree": null,
+          "description": null,
+          "emails": null,
+          "end_date": "2016-05-01",
+          "grade_level": null,
+          "kind": null,
+          "major": null,
+          "org_matched_by_name": false,
+          "organization_id": "57c4929aa6da98160dc2457b",
+          "organization_name": "Apex Systems",
+          "raw_address": null,
+          "start_date": "2015-06-01",
+          "title": "Technical Recruiter",
+          "updated_at": null,
+          "id": "6afd80c0ee9a7700011efca6",
+          "key": "6afd80c0ee9a7700011efca6"
+        }
+      ],
+      "street_address": null,
+      "city": "Portland",
+      "state": "Oregon",
+      "country": "United States",
+      "postal_code": null,
+      "formatted_address": "Portland, OR, USA",
+      "time_zone": "America/Los_Angeles",
+      "email": "a***@cohere.com",
+      "email_status": "verified",
+      "directory_url": null,
+      "organization": {
+        "id": "604a2bcbf6e9e50001fbd89d",
+        "name": "Cohere",
+        "website_url": "http://www.cohere.com",
+        "angellist_url": null,
+        "linkedin_url": "http://www.linkedin.com/company/cohere-ai",
+        "twitter_url": "https://twitter.com/cohere",
+        "facebook_url": null,
+        "languages": [],
+        "alexa_ranking": null,
+        "phone": null,
+        "linkedin_uid": "24024765",
+        "founded_year": 2019,
+        "publicly_traded_symbol": null,
+        "publicly_traded_exchange": null,
+        "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/6a5f0d044834da00014b3018/picture",
+        "crunchbase_url": null,
+        "primary_domain": "cohere.com",
+        "sic_codes": [
+          "7375",
+          "7372",
+          "7371"
+        ],
+        "naics_codes": [
+          "513210",
+          "541512"
+        ],
+        "industry": "information technology & services",
+        "estimated_num_employees": 700,
+        "keywords": [
+          "natural language processing",
+          "machine learning",
+          "artificial intelligence",
+          "opensource models",
+          "large language models",
+          "software development",
+          "on-premises ai",
+          "semantic search",
+          "ai model training",
+          "ai-driven insights",
+          "transformer models",
+          "ai for multilingual communication",
+          "ai model inference",
+          "ai security",
+          "e-commerce",
+          "ai research",
+          "ai deployment",
+          "public sector",
+          "multimodal search",
+          "api integration",
+          "generative ai",
+          "ai for public sector",
+          "data sovereignty",
+          "workflow automation",
+          "semantic search models",
+          "industry-specific ai",
+          "energy and utilities",
+          "ai for healthcare",
+          "ai model optimization",
+          "ai model training on proprietary data",
+          "multimodal ai",
+          "open-source models",
+          "transformer architecture",
+          "ml research collaboration",
+          "enterprise security",
+          "ai customization",
+          "services",
+          "ai for enterprise automation",
+          "ai scalability",
+          "ai for government",
+          "on-premises deployment",
+          "ai compliance",
+          "financial services",
+          "relevance ranking",
+          "manufacturing",
+          "semantic understanding",
+          "ai for regulated industries",
+          "air-gapped ai",
+          "innovation",
+          "secure ai infrastructure",
+          "enterprise nlp",
+          "healthcare and life sciences",
+          "secure ai solutions",
+          "ai for compliance",
+          "secure data handling",
+          "ai model performance",
+          "model training",
+          "multilingual ai models",
+          "private cloud",
+          "healthcare",
+          "ai for finance",
+          "ai model evaluation",
+          "data privacy controls",
+          "data privacy",
+          "ai for document analysis",
+          "ai security standards",
+          "ai integration",
+          "ai for manufacturing",
+          "model deployment",
+          "ai for high-security environments",
+          "multilingual nlp models",
+          "open-source datasets",
+          "automation",
+          "custom ai solutions",
+          "air-gapped deployment",
+          "ai for energy",
+          "ai model deployment",
+          "computer systems design and related services",
+          "ai automation",
+          "multilingual models",
+          "information technology and services",
+          "ai model fine-tuning",
+          "industry compliance",
+          "ai privacy",
+          "ml research",
+          "cloud ai",
+          "data protection",
+          "cloud deployment",
+          "enterprise data protection",
+          "ai productivity tools",
+          "ai solutions for business",
+          "private deployment",
+          "semantic boost",
+          "ai for enterprise security",
+          "ai api",
+          "customization",
+          "customer engagement",
+          "b2b",
+          "api access",
+          "private cloud deployment",
+          "multilingual nlp",
+          "enterprise ai",
+          "relevance ranking models",
+          "ai model customization",
+          "ml research lab",
+          "ai for regulated data",
+          "high-performance models",
+          "customizable ai",
+          "predictive analytics",
+          "scalable language models",
+          "semantic retrieval",
+          "contextual information extraction",
+          "fine-tuning",
+          "private data control",
+          "enterprise ai solutions",
+          "insider threats detection",
+          "real-time insights",
+          "text representation models",
+          "ai for financial services",
+          "healthcare ai applications",
+          "customer experience optimization",
+          "automated document analysis",
+          "low-code ai integration",
+          "rerank models",
+          "semantic boost in search",
+          "ai training frameworks",
+          "compliance and risk management",
+          "api access for developers",
+          "high-performance ai",
+          "model customization",
+          "ai assistants",
+          "collaborative development",
+          "automated workflows",
+          "performance optimization",
+          "technical support for ai",
+          "ai for life sciences",
+          "intelligent data retrieval",
+          "conversational ai",
+          "improved customer engagement",
+          "multilingual support",
+          "knowledge discovery",
+          "business intelligence tools",
+          "nlp scalability",
+          "ai in public sector",
+          "secure enterprise solutions",
+          "ai-driven decision making",
+          "finance",
+          "legal",
+          "non-profit",
+          "energy & utilities",
+          "information technology & services",
+          "consumer internet",
+          "consumers",
+          "internet",
+          "mechanical or industrial engineering",
+          "health care",
+          "health, wellness & fitness",
+          "hospital & health care",
+          "enterprise software",
+          "enterprises",
+          "computer software",
+          "nonprofit organization management"
+        ],
+        "organization_revenue_printed": "240M",
+        "organization_revenue": 240000000,
+        "industries": [
+          "information technology & services",
+          "computer software"
+        ],
+        "secondary_industries": [
+          "computer software"
+        ],
+        "snippets_loaded": true,
+        "industry_tag_id": "5567cd4773696439b10b0000",
+        "industry_tag_hash": {
+          "information technology & services": "5567cd4773696439b10b0000",
+          "computer software": "5567cd4e7369643b70010000"
+        },
+        "retail_location_count": 0,
+        "raw_address": "171 John St, 2nd Floor, Toronto, Ontario M5T 1X3, CA",
+        "street_address": "171 John St",
+        "city": "Toronto",
+        "state": "Ontario",
+        "postal_code": "M5T 1X3",
+        "country": "Canada",
+        "owned_by_organization_id": null,
+        "short_description": "Cohere is a Canadian multinational artificial intelligence company founded in 2019, specializing in foundational large language models (LLMs) and enterprise AI solutions for regulated industries. Headquartered in Toronto, Ontario, with offices in major cities worldwide, Cohere focuses on deploying AI in finance, healthcare, manufacturing, energy, and the public sector, prioritizing security and data privacy.\n\nThe company offers an all-in-one platform that provides developers and enterprises access to advanced natural language processing tools through API, private cloud, or on-premises infrastructure. Its product suite includes generative models for content generation, retrieval models for advanced search, and AI-powered workplace systems to enhance enterprise workflows. Cohere's models are designed for secure, customizable deployments, allowing organizations to fine-tune them on internal data.\n\nCohere targets business customers and enterprise clients, emphasizing data sovereignty and appealing to non-US markets. The company is backed by notable investors, including Nvidia and Oracle, and offers flexible deployment options to meet the needs of organizations with strict regulatory requirements.",
+        "total_funding": 3040000000,
+        "total_funding_printed": "3B",
+        "latest_funding_round_date": "2026-04-01T00:00:00.000+00:00",
+        "latest_funding_stage": "Series E",
+        "latest_funding_detected_at": "2026-11-07T01:29:29.410Z",
+        "funding_events": [
+          {
+            "id": "69ec212bd00d4a00011b4db2",
+            "date": "2026-04-01T00:00:00.000+00:00",
+            "news_url": "https://www.cnbc.com/2026/04/24/cohere-aleph-alpha-germany-ai-europe-expansion.html",
+            "detected_at": "2026-04-25T02:04:27.233Z",
+            "type": "Series E",
+            "investors": "Schwarz Group",
+            "amount": "600M",
+            "currency": "$"
+          },
+          {
+            "id": "68c263f9682f1c0001ec13fc",
+            "date": "2025-08-01T00:00:00.000+00:00",
+            "news_url": "https://www.barchart.com/story/news/34153785/ai-firm-cohere-raises-us500-million-giving-business-us6-8-billion-valuation",
+            "detected_at": "2025-09-11T05:54:01.515Z",
+            "type": "Venture (Round not Specified)",
+            "investors": "AMD Ventures, Nvidia, Inovia Capital, Salesforce Ventures, PSP Investments, Healthcare of Ontario Pension Plan, Radical Ventures",
+            "amount": "500M",
+            "currency": "$"
+          },
+          {
+            "id": "6aee7ef87329d10001875ef7",
+            "date": "2025-08-01T00:00:00.000+00:00",
+            "news_url": null,
+            "detected_at": "2026-11-07T01:29:28.912Z",
+            "type": "Other",
+            "investors": "Radical Ventures, Inovia Capital, NVIDIA, PSP Investments, Salesforce Ventures, Healthcare of Ontario Pension Plan",
+            "amount": "500M",
+            "currency": "$"
+          },
+          {
+            "id": "6965fc18eb0fd80001ef202b",
+            "date": "2025-03-01T00:00:00.000+00:00",
+            "news_url": "https://medium.com/@heshall/ayham-aloulabi-why-canadas-investment-in-cohere-is-a-step-forward-but-not-enough-e65a7281a34a",
+            "detected_at": "2026-01-13T08:02:32.343Z",
+            "type": "Other",
+            "investors": "Government of Canada",
+            "currency": "$"
+          },
+          {
+            "id": "6ac6f0e0c1ddba000174c56a",
+            "date": "2024-07-01T00:00:00.000+00:00",
+            "news_url": "https://www.maginative.com/article/ai-startup-cohere-raises-500-million-at-5-5-billion-valuation/#:~:text=Toronto%2Dbased%20AI%20company%20Cohere,standout%20in%20Canada's%20tech%20scene.",
+            "detected_at": "2026-10-08T01:24:48.482Z",
+            "type": "Series D",
+            "investors": "Salesforce Ventures, Oracle, Nvidia, SentinelOne, Export Development Canada, AMD Ventures, PSP Investments, Cisco, Fujitsu",
+            "amount": "500M",
+            "currency": "$"
+          },
+          {
+            "id": "6aee7ef97329d10001875efb",
+            "date": "2024-06-01T00:00:00.000+00:00",
+            "news_url": null,
+            "detected_at": "2026-11-07T01:29:29.079Z",
+            "type": "Series D",
+            "investors": "NVIDIA, CISCO, Salesforce, PSP Investments, Index Ventures, Radical Ventures, Inovia Capital, Fujitsu, Export Development Canada",
+            "amount": "500M",
+            "currency": "$"
+          },
+          {
+            "id": "64566b4b38c59700010df13a",
+            "date": "2023-03-01T00:00:00.000+00:00",
+            "news_url": "https://betakit.com/cohere-announces-270-million-series-c-from-inovia-nvidia-oracle-salesforce/",
+            "detected_at": "2023-05-06T14:59:23.550Z",
+            "type": "Series C",
+            "investors": "Salesforce Ventures, Nvidia, Mirae Asset Venture Investment, Oracle, SentinelOne, DTCP, Schroders Capital, Index Ventures, Thomvest Ventures, Inovia Capital",
+            "amount": "270M",
+            "currency": "$"
+          },
+          {
+            "id": "6aee7ef97329d10001875f02",
+            "date": "2023-03-01T00:00:00.000+00:00",
+            "news_url": null,
+            "detected_at": "2026-11-07T01:29:29.410Z",
+            "type": "Venture (Round not Specified)",
+            "investors": "Salesforce Ventures"
+          },
+          {
+            "id": "624f17453fa96500017a17ab",
+            "date": "2022-02-01T00:00:00.000+00:00",
+            "news_url": "https://betakit.com/cohere-closes-125-million-usd-series-b-round-led-by-tiger-global/",
+            "detected_at": "2022-04-07T16:54:29.789Z",
+            "type": "Series B",
+            "investors": "Radical Ventures, Tiger Global, Index Ventures, Section 32",
+            "amount": "125M",
+            "currency": "$"
+          },
+          {
+            "id": "6138760107fbc70001aaa897",
+            "date": "2021-09-01T00:00:00.000+00:00",
+            "news_url": "https://www.globenewswire.com/news-release/2021/09/07/2292856/0/en/Cohere-Raises-40-Million-in-Series-A-Financing-to-Make-Natural-Language-Processing-Safe-and-Accessible-to-Any-Business.html",
+            "detected_at": "2021-09-08T08:36:17.257Z",
+            "type": "Series A",
+            "investors": "Fei Fei Lee, Radical Ventures, Raquel Urtasun, Index Ventures, Geoffrey Hinton, Pieter Abbeel, Section 32",
+            "amount": "40M",
+            "currency": "$"
+          },
+          {
+            "id": "6754624f2b5596000164dacf",
+            "date": "2021-05-01T00:00:00.000+00:00",
+            "news_url": null,
+            "detected_at": "2024-12-07T14:57:19.163Z",
+            "type": "Other",
+            "investors": "",
+            "currency": "$"
+          },
+          {
+            "id": "6965fc17eb0fd80001ef2012",
+            "date": "2020-01-01T00:00:00.000+00:00",
+            "news_url": null,
+            "detected_at": "2026-01-13T08:02:31.954Z",
+            "type": "Venture (Round not Specified)",
+            "investors": "Radical Ventures, Artisanal Ventures, Section 32",
+            "amount": "5M",
+            "currency": "$"
+          }
+        ],
+        "suborganizations": [
+          {
+            "id": "5e5708c04b3b840001a4d26e",
+            "name": "Aleph Alpha",
+            "website_url": "http://www.aleph-alpha.com",
+            "industries": [
+              "information technology & services",
+              "computer software"
+            ],
+            "estimated_num_employees": 320,
+            "country": "Germany"
+          }
+        ],
+        "num_suborganizations": 1,
+        "annual_revenue_printed": "240M",
+        "annual_revenue": 240000000,
+        "technology_names": [
+          ".NET",
+          "6sense",
+          "AI",
+          "ASP.NET",
+          "AWS Bedrock",
+          "AWS Marketplace",
+          "Ace",
+          "Adobe",
+          "Adobe Creative Suite",
+          "Adobe Experience Cloud",
+          "Adobe Marketo Engage",
+          "Airflow",
+          "Amazon AWS",
+          "Amazon OpenSearch Service",
+          "Amazon S3",
+          "Amazon SES",
+          "Amazon SageMaker",
+          "Amazon Simple Email Service",
+          "Amazon Virtual Private Cloud",
+          "Android",
+          "Ant Design React",
+          "Apex",
+          "Apple Business Manager",
+          "Apple School Manager",
+          "Apple iOS",
+          "Apple macOS",
+          "Argocd",
+          "Astro",
+          "BambooHR",
+          "C",
+          "CSS",
+          "Cisco Collaboration",
+          "Cisco WebEx Teams",
+          "Cisco Webex Control Hub",
+          "CloudFlare",
+          "CloudFlare CDN",
+          "Cloudflare Bot Management",
+          "Cloudflare DNS",
+          "Cloudflare Rocket Loader",
+          "Cloudflare WAF",
+          "Cohere AI",
+          "CookieYes",
+          "Cursor",
+          "Discord",
+          "Docker",
+          "Electron",
+          "Emotion",
+          "Figma",
+          "GitHub",
+          "GitHub Actions",
+          "Gmail",
+          "Go",
+          "Google Analytics",
+          "Google Analytics 4",
+          "Google Cloud",
+          "Google Cloud BigQuery",
+          "Google Cloud Looker",
+          "Google Cloud Run",
+          "Google Cloud Vertex AI",
+          "Google Meet",
+          "Google Search Console",
+          "Google Sheets",
+          "Google Tag Manager",
+          "Google Workspace",
+          "HELM",
+          "HSTS",
+          "HTML",
+          "HTTP/3",
+          "Hugging Face",
+          "IIS",
+          "Instagram",
+          "Ironclad",
+          "JAX",
+          "JSON",
+          "JWT",
+          "JavaScript",
+          "Jupyter",
+          "Kubernetes",
+          "LeanData",
+          "Linear",
+          "LinkedIn Ads",
+          "LinkedIn Sales Navigator",
+          "Linkedin Insight Tag",
+          "Linux",
+          "Lucide",
+          "Markdown",
+          "Microsoft 365",
+          "Microsoft 365 Apps & Services",
+          "Microsoft Azure",
+          "Microsoft Email Providers",
+          "Microsoft Excel",
+          "Microsoft Exchange",
+          "Microsoft Exchange Online",
+          "Microsoft OneDrive",
+          "Microsoft Sharepoint",
+          "Microsoft Sql Server",
+          "Microsoft Windows",
+          "Mobile Friendly",
+          "NLP",
+          "NVIDIA",
+          "NVIDIA CUDA",
+          "NetSuite",
+          "Next.js",
+          "Node.js",
+          "Notion",
+          "OAuth 2.0",
+          "Okta",
+          "Open Graph",
+          "Oracle Cloud Infrastructure",
+          "Oracle Database",
+          "Outlook",
+          "Outreach.io",
+          "PHP",
+          "PWA",
+          "PostgreSQL",
+          "Priority Hints",
+          "Proofpoint",
+          "PyTorch",
+          "Python",
+          "Radix UI",
+          "React",
+          "Reddit",
+          "Rippling",
+          "Ruby",
+          "Ruby On Rails",
+          "SCIM",
+          "SLURM Workload Manager",
+          "SOQL",
+          "SQL",
+          "Salesforce",
+          "Salesforce CPQ",
+          "Salesforce Platform",
+          "Salesforce Sales Cloud",
+          "Sanity",
+          "Shopify",
+          "Shopify Custom",
+          "Shopify Developer Platform",
+          "Slack",
+          "Storybook",
+          "Tailwind",
+          "TensorFlow",
+          "Terraform",
+          "TikTok",
+          "TypeScript",
+          "Vercel",
+          "Viewport Meta",
+          "Webex",
+          "Windows Server",
+          "X (Twitter)",
+          "XML",
+          "Yii Framework",
+          "YouTube",
+          "ZoomInfo",
+          "dbt",
+          "styled-components",
+          "webpack"
+        ],
+        "current_technologies": [
+          {
+            "uid": "net",
+            "name": ".NET",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "6sense",
+            "name": "6sense",
+            "category": "Lead Generation Software"
+          },
+          {
+            "uid": "ai",
+            "name": "AI",
+            "category": "AI and Machine Learning Platforms"
+          },
+          {
+            "uid": "asp_net",
+            "name": "ASP.NET",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "aws_bedrock",
+            "name": "AWS Bedrock",
+            "category": "AI and Machine Learning Platforms"
+          },
+          {
+            "uid": "aws_marketplace",
+            "name": "AWS Marketplace",
+            "category": "Cloud Services"
+          },
+          {
+            "uid": "ace",
+            "name": "Ace",
+            "category": "CSS and JavaScript Libraries"
+          },
+          {
+            "uid": "adobe",
+            "name": "Adobe",
+            "category": "Content Management Platform"
+          },
+          {
+            "uid": "adobe_creative_suite",
+            "name": "Adobe Creative Suite",
+            "category": "Design and Publishing Software"
+          },
+          {
+            "uid": "adobe_experience_cloud",
+            "name": "Adobe Experience Cloud",
+            "category": "Marketing Automation"
+          },
+          {
+            "uid": "adobe_marketo_engage",
+            "name": "Adobe Marketo Engage",
+            "category": "Marketing Automation"
+          },
+          {
+            "uid": "airflow",
+            "name": "Airflow",
+            "category": "Data Engineering and Streaming"
+          },
+          {
+            "uid": "amazon_aws",
+            "name": "Amazon AWS",
+            "category": "Cloud Services"
+          },
+          {
+            "uid": "amazon_opensearch_service",
+            "name": "Amazon OpenSearch Service",
+            "category": "Search Appliances"
+          },
+          {
+            "uid": "amazon_s3",
+            "name": "Amazon S3",
+            "category": "Enterprise Storage"
+          },
+          {
+            "uid": "amazon_ses",
+            "name": "Amazon SES",
+            "category": "Email Delivery"
+          },
+          {
+            "uid": "amazon_sagemaker",
+            "name": "Amazon SageMaker",
+            "category": "AI and Machine Learning Platforms"
+          },
+          {
+            "uid": "amazon_simple_email_service_amazon_ses",
+            "name": "Amazon Simple Email Service",
+            "category": "Email Delivery"
+          },
+          {
+            "uid": "amazon_virtual_private_cloud_vpc",
+            "name": "Amazon Virtual Private Cloud",
+            "category": "Cloud Services"
+          },
+          {
+            "uid": "android",
+            "name": "Android",
+            "category": "Operating Systems"
+          },
+          {
+            "uid": "ant_design_react",
+            "name": "Ant Design React",
+            "category": "CSS and JavaScript Libraries"
+          },
+          {
+            "uid": "apex",
+            "name": "Apex",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "apple_business_manager",
+            "name": "Apple Business Manager",
+            "category": "Enterprise Mobility Management"
+          },
+          {
+            "uid": "apple_school_manager",
+            "name": "Apple School Manager",
+            "category": "Enterprise Mobility Management"
+          },
+          {
+            "uid": "apple_ios",
+            "name": "Apple iOS",
+            "category": "Operating Systems"
+          },
+          {
+            "uid": "apple_macos",
+            "name": "Apple macOS",
+            "category": "Operating Systems"
+          },
+          {
+            "uid": "argocd",
+            "name": "Argocd",
+            "category": "Deployment Tools"
+          },
+          {
+            "uid": "astro",
+            "name": "Astro",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "bamboohr",
+            "name": "BambooHR",
+            "category": "HR Solutions"
+          },
+          {
+            "uid": "c",
+            "name": "C",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "css",
+            "name": "CSS",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "cisco_collaboration",
+            "name": "Cisco Collaboration",
+            "category": "Communication and Collaboration"
+          },
+          {
+            "uid": "cisco_webex_teams",
+            "name": "Cisco WebEx Teams",
+            "category": "Communication and Collaboration"
+          },
+          {
+            "uid": "cisco_webex_control_hub",
+            "name": "Cisco Webex Control Hub",
+            "category": "Communication and Collaboration"
+          },
+          {
+            "uid": "cloudflare",
+            "name": "CloudFlare",
+            "category": "Content Delivery Networks"
+          },
+          {
+            "uid": "cloudflare_cdn",
+            "name": "CloudFlare CDN",
+            "category": "Content Delivery Networks"
+          },
+          {
+            "uid": "cloudflare_bot_management",
+            "name": "Cloudflare Bot Management",
+            "category": "Security"
+          },
+          {
+            "uid": "cloudflare_dns",
+            "name": "Cloudflare DNS",
+            "category": "Domain Name Services"
+          },
+          {
+            "uid": "cloudflare_rocket_loader",
+            "name": "Cloudflare Rocket Loader",
+            "category": "Web Accelerators"
+          },
+          {
+            "uid": "cloudflare_waf",
+            "name": "Cloudflare WAF",
+            "category": "Security"
+          },
+          {
+            "uid": "cohere_ai",
+            "name": "Cohere AI",
+            "category": "AI and Machine Learning Platforms"
+          },
+          {
+            "uid": "cookie_yes",
+            "name": "CookieYes",
+            "category": "Consent and Privacy Management"
+          },
+          {
+            "uid": "cursor",
+            "name": "Cursor",
+            "category": "Developer Tools"
+          },
+          {
+            "uid": "discord",
+            "name": "Discord",
+            "category": "Online Communities and Forums"
+          },
+          {
+            "uid": "docker",
+            "name": "Docker",
+            "category": "Virtualization and Containers"
+          },
+          {
+            "uid": "electron",
+            "name": "Electron",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "emotion",
+            "name": "Emotion",
+            "category": "CSS and JavaScript Libraries"
+          },
+          {
+            "uid": "figma",
+            "name": "Figma",
+            "category": "Design and Publishing Software"
+          },
+          {
+            "uid": "github",
+            "name": "GitHub",
+            "category": "Developer Tools"
+          },
+          {
+            "uid": "github_actions",
+            "name": "GitHub Actions",
+            "category": "Deployment Tools"
+          },
+          {
+            "uid": "gmail",
+            "name": "Gmail",
+            "category": "Email Providers"
+          },
+          {
+            "uid": "go",
+            "name": "Go",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "google_analytics",
+            "name": "Google Analytics",
+            "category": "Analytics and Tracking"
+          },
+          {
+            "uid": "google_analytics_4_ga4",
+            "name": "Google Analytics 4",
+            "category": "Analytics and Tracking"
+          },
+          {
+            "uid": "google_cloud",
+            "name": "Google Cloud",
+            "category": "Cloud Services"
+          },
+          {
+            "uid": "google_cloud_bigquery",
+            "name": "Google Cloud BigQuery",
+            "category": "Database"
+          },
+          {
+            "uid": "google_cloud_looker",
+            "name": "Google Cloud Looker",
+            "category": "Business Intelligence"
+          },
+          {
+            "uid": "google_cloud_run",
+            "name": "Google Cloud Run",
+            "category": "Cloud Services"
+          },
+          {
+            "uid": "google_cloud_vertex_ai",
+            "name": "Google Cloud Vertex AI",
+            "category": "AI and Machine Learning Platforms"
+          },
+          {
+            "uid": "google_meet",
+            "name": "Google Meet",
+            "category": "Communication and Collaboration"
+          },
+          {
+            "uid": "google_search_console",
+            "name": "Google Search Console",
+            "category": "Search Marketing"
+          },
+          {
+            "uid": "google_sheets",
+            "name": "Google Sheets",
+            "category": "Communication and Collaboration"
+          },
+          {
+            "uid": "google_tag_manager",
+            "name": "Google Tag Manager",
+            "category": "Tag Management"
+          },
+          {
+            "uid": "google workspace",
+            "name": "Google Workspace",
+            "category": "Communication and Collaboration"
+          },
+          {
+            "uid": "helm",
+            "name": "HELM",
+            "category": "Deployment Tools"
+          },
+          {
+            "uid": "hsts",
+            "name": "HSTS",
+            "category": "Security"
+          },
+          {
+            "uid": "html",
+            "name": "HTML",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "http/3",
+            "name": "HTTP/3",
+            "category": "Network Protocols and Standards"
+          },
+          {
+            "uid": "hugging_face",
+            "name": "Hugging Face",
+            "category": "AI and Machine Learning Platforms"
+          },
+          {
+            "uid": "iis",
+            "name": "IIS",
+            "category": "Web and Application Servers"
+          },
+          {
+            "uid": "instagram",
+            "name": "Instagram",
+            "category": "Social Media Marketing"
+          },
+          {
+            "uid": "ironclad",
+            "name": "Ironclad",
+            "category": "Content Management Platform"
+          },
+          {
+            "uid": "jax",
+            "name": "JAX",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "json",
+            "name": "JSON",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "jwt",
+            "name": "JWT",
+            "category": "Network Protocols and Standards"
+          },
+          {
+            "uid": "javascript",
+            "name": "JavaScript",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "jupyter",
+            "name": "Jupyter",
+            "category": "Developer Tools"
+          },
+          {
+            "uid": "kubernetes",
+            "name": "Kubernetes",
+            "category": "Virtualization and Containers"
+          },
+          {
+            "uid": "leandata",
+            "name": "LeanData",
+            "category": "Lead Generation Software"
+          },
+          {
+            "uid": "linear",
+            "name": "Linear",
+            "category": "Real Estate Software"
+          },
+          {
+            "uid": "linkedin_ads",
+            "name": "LinkedIn Ads",
+            "category": "Advertising Networks"
+          },
+          {
+            "uid": "linkedin_sales_navigator",
+            "name": "LinkedIn Sales Navigator",
+            "category": "Lead Generation Software"
+          },
+          {
+            "uid": "linkedin_insight_tag",
+            "name": "Linkedin Insight Tag",
+            "category": "Analytics and Tracking"
+          },
+          {
+            "uid": "linux",
+            "name": "Linux",
+            "category": "Operating Systems"
+          },
+          {
+            "uid": "lucide",
+            "name": "Lucide",
+            "category": "Fonts"
+          },
+          {
+            "uid": "markdown",
+            "name": "Markdown",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "microsoft_365",
+            "name": "Microsoft 365",
+            "category": "Communication and Collaboration"
+          },
+          {
+            "uid": "microsoft_365_apps_services",
+            "name": "Microsoft 365 Apps & Services",
+            "category": "Communication and Collaboration"
+          },
+          {
+            "uid": "microsoft_azure",
+            "name": "Microsoft Azure",
+            "category": "Cloud Services"
+          },
+          {
+            "uid": "microsoft_email_providers",
+            "name": "Microsoft Email Providers",
+            "category": "Email Providers"
+          },
+          {
+            "uid": "microsoft_excel",
+            "name": "Microsoft Excel",
+            "category": "Business Intelligence"
+          },
+          {
+            "uid": "microsoft_exchange",
+            "name": "Microsoft Exchange",
+            "category": "Email Providers"
+          },
+          {
+            "uid": "microsoft_exchange_online",
+            "name": "Microsoft Exchange Online",
+            "category": "Email Providers"
+          },
+          {
+            "uid": "microsoft_onedrive",
+            "name": "Microsoft OneDrive",
+            "category": "Content Management Platform"
+          },
+          {
+            "uid": "microsoft_sharepoint",
+            "name": "Microsoft Sharepoint",
+            "category": "Content Management Platform"
+          },
+          {
+            "uid": "microsoft sql server",
+            "name": "Microsoft Sql Server",
+            "category": "Database"
+          },
+          {
+            "uid": "microsoft_windows",
+            "name": "Microsoft Windows",
+            "category": "Operating Systems"
+          },
+          {
+            "uid": "mobile_friendly",
+            "name": "Mobile Friendly",
+            "category": "Other"
+          },
+          {
+            "uid": "nlp",
+            "name": "NLP",
+            "category": "AI and Machine Learning Platforms"
+          },
+          {
+            "uid": "nvidia",
+            "name": "NVIDIA",
+            "category": "Electronics and Embedded Hardware"
+          },
+          {
+            "uid": "nvidia_cuda",
+            "name": "NVIDIA CUDA",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "netsuite",
+            "name": "NetSuite",
+            "category": "ERP"
+          },
+          {
+            "uid": "nextjs",
+            "name": "Next.js",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "node.js",
+            "name": "Node.js",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "notion",
+            "name": "Notion",
+            "category": "Communication and Collaboration"
+          },
+          {
+            "uid": "oauth2",
+            "name": "OAuth 2.0",
+            "category": "Network Protocols and Standards"
+          },
+          {
+            "uid": "okta",
+            "name": "Okta",
+            "category": "Security"
+          },
+          {
+            "uid": "open_graph",
+            "name": "Open Graph",
+            "category": "Social Sharing"
+          },
+          {
+            "uid": "oracle_cloud_infrastructure",
+            "name": "Oracle Cloud Infrastructure",
+            "category": "Cloud Services"
+          },
+          {
+            "uid": "oracle_database",
+            "name": "Oracle Database",
+            "category": "Database"
+          },
+          {
+            "uid": "outlook",
+            "name": "Outlook",
+            "category": "Email Providers"
+          },
+          {
+            "uid": "outreach.io",
+            "name": "Outreach.io",
+            "category": "Marketing Automation"
+          },
+          {
+            "uid": "php",
+            "name": "PHP",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "pwa",
+            "name": "PWA",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "postgresql",
+            "name": "PostgreSQL",
+            "category": "Database"
+          },
+          {
+            "uid": "priority_hints",
+            "name": "Priority Hints",
+            "category": "Web Accelerators"
+          },
+          {
+            "uid": "proofpoint",
+            "name": "Proofpoint",
+            "category": "Security"
+          },
+          {
+            "uid": "pytorch",
+            "name": "PyTorch",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "python",
+            "name": "Python",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "radix_ui",
+            "name": "Radix UI",
+            "category": "CSS and JavaScript Libraries"
+          },
+          {
+            "uid": "react",
+            "name": "React",
+            "category": "CSS and JavaScript Libraries"
+          },
+          {
+            "uid": "reddit",
+            "name": "Reddit",
+            "category": "Online Communities and Forums"
+          },
+          {
+            "uid": "rippling",
+            "name": "Rippling",
+            "category": "Human Capital Management"
+          },
+          {
+            "uid": "ruby",
+            "name": "Ruby",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "ruby_on_rails",
+            "name": "Ruby On Rails",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "scim",
+            "name": "SCIM",
+            "category": "Network Protocols and Standards"
+          },
+          {
+            "uid": "slurm_workload_manager",
+            "name": "SLURM Workload Manager",
+            "category": "Operating Systems"
+          },
+          {
+            "uid": "soql",
+            "name": "SOQL",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "sql",
+            "name": "SQL",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "salesforce",
+            "name": "Salesforce",
+            "category": "Customer Relationship Management"
+          },
+          {
+            "uid": "salesforce_cpq",
+            "name": "Salesforce CPQ",
+            "category": "Customer Relationship Management"
+          },
+          {
+            "uid": "salesforce_platform",
+            "name": "Salesforce Platform",
+            "category": "Cloud Services"
+          },
+          {
+            "uid": "salesforce_sales_cloud",
+            "name": "Salesforce Sales Cloud",
+            "category": "Customer Relationship Management"
+          },
+          {
+            "uid": "sanity",
+            "name": "Sanity",
+            "category": "CMS"
+          },
+          {
+            "uid": "shopify",
+            "name": "Shopify",
+            "category": "E-commerce Platforms"
+          },
+          {
+            "uid": "shopify_custom",
+            "name": "Shopify Custom",
+            "category": "E-commerce Platforms"
+          },
+          {
+            "uid": "shopify_developer_platform",
+            "name": "Shopify Developer Platform",
+            "category": "E-commerce Platforms"
+          },
+          {
+            "uid": "slack",
+            "name": "Slack",
+            "category": "Communication and Collaboration"
+          },
+          {
+            "uid": "storybook",
+            "name": "Storybook",
+            "category": "Developer Tools"
+          },
+          {
+            "uid": "tailwind",
+            "name": "Tailwind",
+            "category": "CSS and JavaScript Libraries"
+          },
+          {
+            "uid": "tensorflow",
+            "name": "TensorFlow",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "terraform",
+            "name": "Terraform",
+            "category": "Deployment Tools"
+          },
+          {
+            "uid": "tiktok",
+            "name": "TikTok",
+            "category": "Online Video Platforms"
+          },
+          {
+            "uid": "typescript",
+            "name": "TypeScript",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "vercel",
+            "name": "Vercel",
+            "category": "Hosting"
+          },
+          {
+            "uid": "viewport_meta",
+            "name": "Viewport Meta",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "webex",
+            "name": "Webex",
+            "category": "Communication and Collaboration"
+          },
+          {
+            "uid": "windows_server",
+            "name": "Windows Server",
+            "category": "Operating Systems"
+          },
+          {
+            "uid": "x_twitter",
+            "name": "X (Twitter)",
+            "category": "Social Media Marketing"
+          },
+          {
+            "uid": "xml",
+            "name": "XML",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "yii_framework",
+            "name": "Yii Framework",
+            "category": "Frameworks and Programming Languages"
+          },
+          {
+            "uid": "youtube",
+            "name": "YouTube",
+            "category": "Online Video Platforms"
+          },
+          {
+            "uid": "zoominfo",
+            "name": "ZoomInfo",
+            "category": "Lead Generation Software"
+          },
+          {
+            "uid": "dbt",
+            "name": "dbt",
+            "category": "Data Engineering and Streaming"
+          },
+          {
+            "uid": "styled-components",
+            "name": "styled-components",
+            "category": "CSS and JavaScript Libraries"
+          },
+          {
+            "uid": "webpack",
+            "name": "webpack",
+            "category": "Developer Tools"
+          }
+        ],
+        "org_chart_root_people_ids": [
+          "6598e96a8b969e00014be250"
+        ],
+        "org_chart_sector": "OrgChart::SectorHierarchy::Rules::IT",
+        "org_chart_removed": false,
+        "org_chart_show_department_filter": true,
+        "is_placeholder_organization": null,
+        "organization_headcount_six_month_growth": 0.189718482252142,
+        "organization_headcount_twelve_month_growth": 0.3690140845070423,
+        "organization_headcount_twenty_four_month_growth": 0.4794520547945205
+      },
+      "departments": [
+        "master_human_resources"
+      ],
+      "subdepartments": [
+        "recruiting_talent_acquisition",
+        "talent_management"
+      ],
+      "seniority": "partner",
+      "functions": [
+        "human_resources"
+      ],
+      "intent_strength": null,
+      "show_intent": false,
+      "email_domain_catchall": true,
+      "email_domain_catchall_verdict": "allow",
+      "result": "Matched",
+      "revealed_for_current_team": true
+    },
+    "request_id": "6163595738660449881",
+    "request_id_str": "6163595738660449881"
+  }
+}

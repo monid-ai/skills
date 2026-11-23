@@ -1,0 +1,103 @@
+{
+  "runId": "01M83W1ZMF7YEXR68FA6Z5QMNY",
+  "caller": "USER#user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "owner": "user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "provider": "apollo",
+  "providerName": "Apollo",
+  "endpoint": "/mixed_people/api_search",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "q_organization_domains_list[]": [
+        "getmaintainx.com"
+      ],
+      "person_titles[]": [
+        "head of design",
+        "design manager",
+        "director of product design",
+        "vp of design",
+        "product design lead"
+      ],
+      "include_similar_titles": true,
+      "per_page": 10,
+      "page": 1
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": {
+      "value": 0,
+      "currency": "USD"
+    },
+    "notes": [
+      "Free — searching consumes no Apollo credits."
+    ]
+  },
+  "cost": {
+    "value": 0,
+    "currency": "USD"
+  },
+  "resultCount": 2,
+  "billedUnits": 2,
+  "createdAt": "2026-11-23T09:33:38.573Z",
+  "startedAt": "2026-11-23T09:33:38.735Z",
+  "completedAt": "2026-11-23T09:33:39.719Z",
+  "hints": {
+    "retrieve the response later": "monid runs get -r 01M83W1ZMF7YEXR68FA6Z5QMNY",
+    "enrich a person from the results": "monid run -p apollo -e /people/match -i '<BODY>' --query '<QUERY_PARAMS>' --path '<PATH_PARAMS>'  # pass the returned person id (or name + domain) to reveal contact data"
+  },
+  "output": {
+    "total_entries": 2,
+    "people": [
+      {
+        "id": "60212355b8d31c0001811b2d",
+        "first_name": "Joshua",
+        "last_name_obfuscated": "Ch***n",
+        "title": "Head of Design",
+        "last_refreshed_at": "2026-10-25T16:05:52.000+00:00",
+        "has_email": false,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "MaintainX",
+          "has_industry": true,
+          "has_phone": true,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "6184d029a0cbe4000126393f",
+        "first_name": "Valentina",
+        "last_name_obfuscated": "Fe***z",
+        "title": "Design Operations Manager",
+        "last_refreshed_at": "2026-11-13T06:06:51.000+00:00",
+        "has_email": false,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "MaintainX",
+          "has_industry": true,
+          "has_phone": true,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      }
+    ]
+  }
+}

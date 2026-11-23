@@ -1,0 +1,194 @@
+{
+  "runId": "01M83W1XCCABY0120RFPMF8JVK",
+  "caller": "USER#user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "owner": "user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "provider": "apollo",
+  "providerName": "Apollo",
+  "endpoint": "/mixed_people/api_search",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "q_organization_domains_list[]": [
+        "getmaintainx.com"
+      ],
+      "person_titles[]": [
+        "recruiter",
+        "technical recruiter",
+        "talent acquisition",
+        "talent partner"
+      ],
+      "include_similar_titles": true,
+      "per_page": 10,
+      "page": 1
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": {
+      "value": 0,
+      "currency": "USD"
+    },
+    "notes": [
+      "Free — searching consumes no Apollo credits."
+    ]
+  },
+  "cost": {
+    "value": 0,
+    "currency": "USD"
+  },
+  "resultCount": 6,
+  "billedUnits": 6,
+  "createdAt": "2026-11-23T09:33:36.278Z",
+  "startedAt": "2026-11-23T09:33:36.428Z",
+  "completedAt": "2026-11-23T09:33:37.305Z",
+  "hints": {
+    "retrieve the response later": "monid runs get -r 01M83W1XCCABY0120RFPMF8JVK",
+    "enrich a person from the results": "monid run -p apollo -e /people/match -i '<BODY>' --query '<QUERY_PARAMS>' --path '<PATH_PARAMS>'  # pass the returned person id (or name + domain) to reveal contact data"
+  },
+  "output": {
+    "total_entries": 6,
+    "people": [
+      {
+        "id": "6ad1f45c0ba77b0001ecab52",
+        "first_name": "Sara",
+        "last_name_obfuscated": "Pa***k",
+        "title": "Talent Acquisition Partner",
+        "last_refreshed_at": "2026-11-07T11:50:30.347+00:00",
+        "has_email": true,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "MaintainX",
+          "has_industry": true,
+          "has_phone": true,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "5eef421e7be9e20001b66c18",
+        "first_name": "Tori",
+        "last_name_obfuscated": "Ma***a",
+        "title": "Associate Talent Acquisition Partner",
+        "last_refreshed_at": "2026-11-14T11:37:54.552+00:00",
+        "has_email": true,
+        "has_city": false,
+        "has_state": false,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "MaintainX",
+          "has_industry": true,
+          "has_phone": true,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "5d6b655f80f93eadc8ba2b1f",
+        "first_name": "Sara",
+        "last_name_obfuscated": "Kh***n",
+        "title": "Senior Talent Acquisition Partner",
+        "last_refreshed_at": "2026-11-05T06:02:57.000+00:00",
+        "has_email": true,
+        "has_city": false,
+        "has_state": false,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "MaintainX",
+          "has_industry": true,
+          "has_phone": true,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "60cb3036b9d49e00018cdf09",
+        "first_name": "Victoria",
+        "last_name_obfuscated": "Am***a",
+        "title": "Talent Acquisition Professional",
+        "last_refreshed_at": "2026-11-19T03:36:25.639+00:00",
+        "has_email": true,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "MaintainX",
+          "has_industry": true,
+          "has_phone": true,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "66f73902233e22000148664b",
+        "first_name": "Rana",
+        "last_name_obfuscated": "Fa***y",
+        "title": "Senior Talent Acquisition Specialist",
+        "last_refreshed_at": "2026-11-19T12:35:49.876+00:00",
+        "has_email": true,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "MaintainX",
+          "has_industry": true,
+          "has_phone": true,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "60e9c8d6ad481a0001baeb62",
+        "first_name": "Savannah",
+        "last_name_obfuscated": "Bo***h",
+        "title": "Sr. Talent Partner - GTM",
+        "last_refreshed_at": "2026-11-12T04:16:14.000+00:00",
+        "has_email": true,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "MaintainX",
+          "has_industry": true,
+          "has_phone": true,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      }
+    ]
+  }
+}

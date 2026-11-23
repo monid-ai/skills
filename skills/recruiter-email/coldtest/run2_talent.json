@@ -1,0 +1,269 @@
+{
+  "runId": "01M83XJJ1F1N595Y62K7TX8WFB",
+  "provider": "apollo",
+  "endpoint": "/mixed_people/api_search",
+  "status": "COMPLETED",
+  "output": {
+    "total_entries": 14,
+    "people": [
+      {
+        "id": "57db1b5aa6da984c2080d5f9",
+        "first_name": "Komal",
+        "last_name_obfuscated": "Ch***n",
+        "title": "Talent Acquisition Partner",
+        "last_refreshed_at": "2026-11-12T09:58:19.000+00:00",
+        "has_email": false,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "Cohere",
+          "has_industry": true,
+          "has_phone": false,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "642d82c376408e000146c499",
+        "first_name": "Lauren",
+        "last_name_obfuscated": "Du***l",
+        "title": "Senior Talent Acquisition Partner",
+        "last_refreshed_at": "2026-11-12T00:05:19.000+00:00",
+        "has_email": true,
+        "has_city": false,
+        "has_state": false,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "Cohere",
+          "has_industry": true,
+          "has_phone": false,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "5a338168a6da98c9963f44a9",
+        "first_name": "Taylor",
+        "last_name_obfuscated": "Ev***s",
+        "title": "Staff Talent Acquisition Partner",
+        "last_refreshed_at": "2026-11-10T07:50:12.000+00:00",
+        "has_email": true,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "Cohere",
+          "has_industry": true,
+          "has_phone": false,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "5ffa04cd16c14d0001495785",
+        "first_name": "Michael",
+        "last_name_obfuscated": "Pa***o",
+        "title": "Talent Acquisition",
+        "last_refreshed_at": "2026-11-12T11:01:03.000+00:00",
+        "has_email": false,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "Cohere",
+          "has_industry": true,
+          "has_phone": false,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "5e74fd4f8393af000189c02e",
+        "first_name": "Emma",
+        "last_name_obfuscated": "Ke***y",
+        "title": "Talent Partner",
+        "last_refreshed_at": "2026-11-12T04:18:43.000+00:00",
+        "has_email": true,
+        "has_city": false,
+        "has_state": false,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "Cohere",
+          "has_industry": true,
+          "has_phone": false,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "5fcd196a9dd0180001874559",
+        "first_name": "Sian",
+        "last_name_obfuscated": "Na***e",
+        "title": "Talent Partner",
+        "last_refreshed_at": "2026-11-12T06:06:49.000+00:00",
+        "has_email": true,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "Cohere",
+          "has_industry": true,
+          "has_phone": false,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "5d63a7aa80f93e2b6dd18b04",
+        "first_name": "Yana",
+        "last_name_obfuscated": "Zi***o",
+        "title": "Talent Partner",
+        "last_refreshed_at": "2026-11-12T01:32:33.000+00:00",
+        "has_email": false,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "Cohere",
+          "has_industry": true,
+          "has_phone": false,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "566e93b3a6da9802c5007bd1",
+        "first_name": "Moshe",
+        "last_name_obfuscated": "Kh***v",
+        "title": "Staff Talent Acquisition Partner (Legal & Finance)",
+        "last_refreshed_at": "2026-11-12T10:22:22.000+00:00",
+        "has_email": true,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "Cohere",
+          "has_industry": true,
+          "has_phone": false,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "6aa6d7c6d939d00001f19d70",
+        "first_name": "Jerry",
+        "last_name_obfuscated": "Fr***r",
+        "title": "Talent Acquisition Coordinator",
+        "last_refreshed_at": "2026-11-12T09:35:07.000+00:00",
+        "has_email": false,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Maybe: please request direct dial via people/bulk_match",
+        "organization": {
+          "name": "Cohere",
+          "has_industry": true,
+          "has_phone": false,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      },
+      {
+        "id": "6513c94b95d2fc00019a9010",
+        "first_name": "Allie",
+        "last_name_obfuscated": "Ca***y",
+        "title": "Senior Talent Partner",
+        "last_refreshed_at": "2026-11-15T01:42:16.075+00:00",
+        "has_email": true,
+        "has_city": true,
+        "has_state": true,
+        "has_country": true,
+        "has_direct_phone": "Yes",
+        "organization": {
+          "name": "Cohere",
+          "has_industry": true,
+          "has_phone": false,
+          "has_city": true,
+          "has_state": true,
+          "has_country": true,
+          "has_zip_code": true,
+          "has_revenue": true,
+          "has_employee_count": true
+        }
+      }
+    ]
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_CALL",
+    "amount": {
+      "value": 0,
+      "currency": "USD"
+    },
+    "notes": [
+      "Free — searching consumes no Apollo credits."
+    ]
+  },
+  "billing": {
+    "reportedCost": {
+      "currency": "USD",
+      "value": 0,
+      "unit": "MICRO_DOLLAR"
+    }
+  },
+  "resultCount": 10,
+  "billedUnits": 10,
+  "createdAt": "2026-11-23T10:00:10.274Z",
+  "completedAt": "2026-11-23T10:00:11.355Z",
+  "hints": {
+    "retrieve the response later": "monid runs get -r 01M83XJJ1F1N595Y62K7TX8WFB",
+    "enrich a person from the results": "monid run -p apollo -e /people/match -i '<BODY>' --query '<QUERY_PARAMS>' --path '<PATH_PARAMS>'  # pass the returned person id (or name + domain) to reveal contact data"
+  }
+}

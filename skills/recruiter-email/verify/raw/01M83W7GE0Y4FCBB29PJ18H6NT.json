@@ -1,0 +1,67 @@
+{
+  "runId": "01M83W7GE0Y4FCBB29PJ18H6NT",
+  "caller": "USER#user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "owner": "user_3EpjI9M61q0GSZrCQtkUS4wSJpO",
+  "provider": "hunterio",
+  "providerName": "Hunter",
+  "endpoint": "/email-verifier",
+  "status": "COMPLETED",
+  "input": {
+    "queryParams": {
+      "email": "j***@getmaintainx.com"
+    }
+  },
+  "providerResponse": {
+    "httpStatus": 200
+  },
+  "price": {
+    "type": "PER_RESULT",
+    "amount": {
+      "value": 0.01225,
+      "currency": "USD"
+    },
+    "notes": [
+      "Charged only on a definitive verdict — unknown results and disposable/webmail addresses are free."
+    ]
+  },
+  "cost": {
+    "value": 0.01225,
+    "currency": "USD"
+  },
+  "resultCount": 1,
+  "billedUnits": 1,
+  "createdAt": "2026-11-23T09:36:39.616Z",
+  "startedAt": "2026-11-23T09:36:39.770Z",
+  "completedAt": "2026-11-23T09:36:41.828Z",
+  "hints": {
+    "retrieve the response later": "monid runs get -r 01M83W7GE0Y4FCBB29PJ18H6NT"
+  },
+  "output": {
+    "data": {
+      "status": "valid",
+      "score": 89,
+      "email": "j***@getmaintainx.com",
+      "regexp": true,
+      "gibberish": false,
+      "disposable": false,
+      "webmail": false,
+      "mx_records": true,
+      "smtp_server": true,
+      "smtp_check": true,
+      "accept_all": false,
+      "block": false,
+      "verification": {
+        "date": "2026-11-23",
+        "status": "valid"
+      },
+      "sources": [],
+      "result": "deliverable",
+      "_deprecation_notice": "Using result is deprecated, use status instead"
+    },
+    "meta": {
+      "params": {
+        "email": "j***@getmaintainx.com"
+      }
+    }
+  }
+}

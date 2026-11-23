@@ -154,7 +154,7 @@ All observed on 2026-11-22.
 
 - `report.md`: one section per competitor with five parts (site changes, social this week, hiring, news and funding, what customers are saying), then "What this means for you" with three lines, each ending in an evidence link, then the bill.
 - `$DEST/snapshots/<competitor>/<date>-<page>.md` (page is `pricing` or `homepage`; extra versions get `-v2`, `-v3`), plus `<date>-<page>.diff` when something changed.
-- `$DEST/changes.csv`, one row per page per run: `date, competitor, page, url, engine, status, fetches, versions_stored, lines_added, lines_removed, summary, snapshot_files, compared_to, run_ids`. Status is `baseline`, `no change`, `known variant`, `new variant` or `changed`. `compared_to` always holds the snapshot file this run matched, so the next run can tell `no change` from `known variant`.
+- `$DEST/changes.csv`, one row per page per run: `date, competitor, page, url, engine, status, fetches, versions_stored, lines_added, lines_removed, summary, snapshot_files, compared_to, run_ids`. Status is `baseline`, `no change`, `known variant`, `new variant` or `changed`. `compared_to` always holds the snapshot of the text this run's report described: the stored snapshot the first fetch matched, or the new file when the first fetch was saved as `new variant` or `changed` (not the snapshot a retry happened to match). The next run compares with that file, so it never reports `no change` against text the previous report did not describe.
 - Chat reply: the site status per page, the top finding per section, the three closing lines, file paths, and the bill.
 
 ## Report the bill

@@ -98,7 +98,7 @@ Run `monid inspect -p litescrape -e /google/maps` and `monid inspect -p litescra
 2. **Build the list.** Two more pages, $0.00015 each: the same query with `"start":20`, then `"start":40`. (`output.pagination.next.queryParams` holds the ready-made parameters.)
    - Keep per row: `title`, `address`, `phone`, `rating`, `reviews`, `website`, `type`, `place_id`, `data_id`, `business_status`.
    - Dedupe by `place_id`. Pages overlap: the verify run fetched 60 rows and 55 were unique.
-   - Drop rows whose `business_status` says the business is closed (temporarily or permanently) and rows in a different metro area. A row with no `business_status` is unknown, not closed: keep it and say so in `notes`. Keep adjacent suburbs and service-area listings with no street address (mobile businesses often list only a suburb), and say so in `notes`.
+   - Drop rows whose `business_status` says the business is closed (temporarily or permanently) and rows in a different metro area. A row with no `business_status` is unknown, not closed: keep it and say so in `notes`. Rows in an adjacent suburb, and service-area listings that give only a suburb (mobile businesses often do), are not in the city as the user wrote it: keep them out of the main list, show them as a separate short list, and ask the user whether to include them. Do not widen the location on your own.
    - Stop paging when a page adds fewer than 10 new rows.
    - Go on to `start` 60 and 80 only if the user asked for more than 25 leads.
 
@@ -108,7 +108,7 @@ Run `monid inspect -p litescrape -e /google/maps` and `monid inspect -p litescra
    - `broken_link`: the URL is visibly malformed (for example a doubled domain). For a website offer this is a lead; say so in `notes`.
    - `own_site`: anything else.
 
-4. **Pick the leads.** No call. An explicit filter in the request comes before everything below: "with no website" means only `website_kind` `none` (list `third_party_page` rows separately and let the user decide), "with bad reviews" means only rating and complaint reasons. Never fill unused slots with rows that fail the user's filter. Then match the reasons to the offer:
+4. **Pick the leads.** No call. An explicit filter in the request comes before everything below: "with no website" means only `website_kind` `none` (list `third_party_page` rows separately and let the user decide), "with bad reviews" means only rating and complaint reasons. Never fill unused slots with rows that fail the user's filter. Apply the filter again after step 5: a lead whose reviews show it does have a website leaves a "no website" list (show it separately), and for "bad reviews" an unrated listing does not qualify, since there is no review evidence. Then match the reasons to the offer:
    - Offer is a website or booking: `none` and `third_party_page` are the reasons that matter. A shop that already has its `own_site` is a weak lead even with a low rating: keep it at the bottom only while the list is under the user's maximum, otherwise drop it, and say in `notes` that it is a weak lead for this offer.
    - Offer is review or reputation help: rating and complaints are the reasons that matter, whatever the website.
    - Offer covers both: all reasons count.

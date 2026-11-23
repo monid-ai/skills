@@ -80,7 +80,7 @@ Verify balance with `monid balance` if you suspect it's empty.
 
 1. Brand and domain. No default, this is required (for example "Shortcut, shortcut.com").
 2. Competitors, up to three, with their domains if known. Default: propose three and show them.
-3. Questions buyers ask. Default: draft five and show them before spending. Country defaults to US. If the user names another country, send it to every engine that takes one (`country` for ChatGPT and Gemini, `gl` for both Google endpoints) and say in the report which country was used. Only US was run in the verified runs.
+3. Questions buyers ask. Default: draft five and show them before spending. Country defaults to US. If the user names another country, turn it into its two-letter code and send it to every engine that takes one (`country` for ChatGPT and Gemini, `gl` for both Google endpoints) and say in the report which country was used. Only US was run in the verified runs.
 
 Draft questions the way a buyer types them: category questions ("best X for Y"), an alternative-to question, a use-case question. Do not put the brand name in a question. If a question names a competitor, that competitor will appear in every answer to it, so say that in the report.
 
@@ -96,10 +96,10 @@ As of 2026-11-22 one question across all five engines was billed $0.0080. Three 
 
    | Engine | Endpoint | Input | Billed per answer | Keep |
    |---|---|---|---|---|
-   | ChatGPT | cloro `/chatgpt/ask` | body `prompt`, `country` (the requested country, default "US") | $0.0028 | `output.result.text`, `result.sources[].url` |
+   | ChatGPT | cloro `/chatgpt/ask` | body `prompt`, `country` (two-letter code of the requested country, default "US") | $0.0028 | `output.result.text`, `result.sources[].url` |
    | Perplexity | anyapi `/perplexity.search` | body `prompt` (default route) | $0.0025 | `output.data.answerMarkdown`, `data.citations[].url` |
    | Gemini | cloro `/gemini/ask` | body `prompt`, `country` | $0.0024 | `output.result.text`, `result.sources[].url` |
-   | Google AI Mode | litescrape `/google/ai-mode` | query `q`, `gl` (the same country, lower case, default "us"), `hl` ("en") | $0.00015 | `output.text_blocks`, `output.references[].link` |
+   | Google AI Mode | litescrape `/google/ai-mode` | query `q`, `gl` (the same two-letter code in lower case, "ca" for Canada, default "us"), `hl` ("en") | $0.00015 | `output.text_blocks`, `output.references[].link` |
    | Google AI Overview | litescrape `/google/ai-overview` | query `q`, `gl`, `hl` | $0.00015 | `output.ai_overview.text_blocks`, `ai_overview.references[].link` |
 
    The litescrape endpoints are GET: pass the parameters with `--query '<json>'`. A text block holds text in `snippet`, in `list[]` items (`title`, `snippet`, nested `list`) and in `table[].cells`. Flatten all three.

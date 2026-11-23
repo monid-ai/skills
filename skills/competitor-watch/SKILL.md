@@ -106,7 +106,8 @@ Run `monid inspect -p <provider> -e <endpoint>` on each endpoint before its firs
    ```
 
    - No stored snapshot: status `baseline`. Save each distinct version among the 3 fetches as `$DEST/snapshots/<competitor>/<date>-<page>.md`, then `<date>-<page>-v2.md` and so on (whenever a filename already exists, use the next `-vN`). Summarize current pricing (plan, price, unit) in the report and state which billing period the page shows; `curl` returns only the default toggle, so monthly or yearly prices may be missing. More than one version means the site is testing variants; say what differs.
-   - The fetch equals any stored snapshot: status `no change`. Write no file.
+   - The fetch equals the snapshot this page matched on the previous run (the last `compared_to` for this page in `changes.csv`): status `no change`. Write no file.
+   - The fetch equals a different stored snapshot: status `known variant`. Write no file, name the snapshot it matched and the one from the previous run, and describe the difference between the two in one line. This is either a site that serves several versions or a page that went back to an earlier version, so report it; do not call it `no change`.
    - The fetch equals none: fetch the same URL 2 more times. If one of the 3 equals a stored snapshot, status `new variant`. If none does, status `changed`. Either way save the new text as a new snapshot, write a line diff against the closest stored snapshot to `<date>-<page>.diff`, read it, and describe what moved in one line (prices, plan names, limits, headline, calls to action).
    - Snapshot files keep the page as fetched. Only the comparison uses normalized text. Append one row per page to `$DEST/changes.csv`.
 3. Find the public accounts. `anyapi /google.search`, $0.0005, body `{"query": "<name> <domain> official (site:linkedin.com/company OR site:youtube.com OR site:instagram.com OR site:tiktok.com)"}`. From `data.results[].link` keep the LinkedIn company slug, the YouTube channel id or handle, and the Instagram and TikTok handles. A `youtube.com/c/<name>` or `/user/<name>` link is not a handle: try `@<name>` once and accept it only if the channel title or description in step 4 points at the competitor's domain. If a channel is missing from the results, run one more search for it alone (`"<name>" site:tiktok.com`, $0.0005) before skipping. In the report write "no account found by search", not "no account". Do not guess handles.
@@ -153,7 +154,7 @@ All observed on 2026-11-22.
 
 - `report.md`: one section per competitor with five parts (site changes, social this week, hiring, news and funding, what customers are saying), then "What this means for you" with three lines, each ending in an evidence link, then the bill.
 - `$DEST/snapshots/<competitor>/<date>-<page>.md` (page is `pricing` or `homepage`; extra versions get `-v2`, `-v3`), plus `<date>-<page>.diff` when something changed.
-- `$DEST/changes.csv`, one row per page per run: `date, competitor, page, url, engine, status, fetches, versions_stored, lines_added, lines_removed, summary, snapshot_files, compared_to, run_ids`. Status is `baseline`, `no change`, `new variant` or `changed`.
+- `$DEST/changes.csv`, one row per page per run: `date, competitor, page, url, engine, status, fetches, versions_stored, lines_added, lines_removed, summary, snapshot_files, compared_to, run_ids`. Status is `baseline`, `no change`, `known variant`, `new variant` or `changed`. `compared_to` always holds the snapshot file this run matched, so the next run can tell `no change` from `known variant`.
 - Chat reply: the site status per page, the top finding per section, the three closing lines, file paths, and the bill.
 
 ## Report the bill

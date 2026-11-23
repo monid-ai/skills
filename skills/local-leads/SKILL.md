@@ -98,7 +98,7 @@ Run `monid inspect -p litescrape -e /google/maps` and `monid inspect -p litescra
 2. **Build the list.** Two more pages, $0.00015 each: the same query with `"start":20`, then `"start":40`. (`output.pagination.next.queryParams` holds the ready-made parameters.)
    - Keep per row: `title`, `address`, `phone`, `rating`, `reviews`, `website`, `type`, `place_id`, `data_id`, `business_status`.
    - Dedupe by `place_id`. Pages overlap: the verify run fetched 60 rows and 55 were unique.
-   - Drop rows where `business_status` is not `OPERATIONAL` and rows in a different metro area. Keep adjacent suburbs and service-area listings with no street address (mobile businesses often list only a suburb), and say so in `notes`.
+   - Drop rows whose `business_status` says the business is closed (temporarily or permanently) and rows in a different metro area. A row with no `business_status` is unknown, not closed: keep it and say so in `notes`. Keep adjacent suburbs and service-area listings with no street address (mobile businesses often list only a suburb), and say so in `notes`.
    - Stop paging when a page adds fewer than 10 new rows.
    - Go on to `start` 60 and 80 only if the user asked for more than 25 leads.
 
@@ -108,7 +108,7 @@ Run `monid inspect -p litescrape -e /google/maps` and `monid inspect -p litescra
    - `broken_link`: the URL is visibly malformed (for example a doubled domain). For a website offer this is a lead; say so in `notes`.
    - `own_site`: anything else.
 
-4. **Pick the leads.** No call. Match the reasons to the offer first:
+4. **Pick the leads.** No call. An explicit filter in the request comes before everything below: "with no website" means only `website_kind` `none` (list `third_party_page` rows separately and let the user decide), "with bad reviews" means only rating and complaint reasons. Never fill unused slots with rows that fail the user's filter. Then match the reasons to the offer:
    - Offer is a website or booking: `none` and `third_party_page` are the reasons that matter. A shop that already has its `own_site` is a weak lead even with a low rating: keep it at the bottom only while the list is under the user's maximum, otherwise drop it, and say in `notes` that it is a weak lead for this offer.
    - Offer is review or reputation help: rating and complaints are the reasons that matter, whatever the website.
    - Offer covers both: all reasons count.
@@ -145,7 +145,7 @@ Run `monid inspect -p litescrape -e /google/maps` and `monid inspect -p litescra
 
 ## If a step fails
 
-- Maps search fails or returns no `local_results`: `litescrape /google/local` ($0.00015 per call) with `--query '{"q":"<trade> in <city>, <state>","location":"<city>, <state>"}'`. Verified: 20 rows with `title`, `address`, `rating`, `reviews`; website and phone sit under `links.website` and `links.phone` (as `tel:+1 ...`). Its `place_id` is a numeric CID and rows have no `data_id`, so step 5 was not tested from these rows. If that also fails, `monid discover -q "google maps business search"`, then inspect.
+- Maps search fails or returns no `local_results`: `litescrape /google/local` ($0.00015 per call) with `--query '{"q":"<trade> in <city>, <state>","location":"<city>, <state>"}'`. Verified: 20 rows with `title`, `address`, `rating`, `reviews`; website and phone sit under `links.website` and `links.phone` (as `tel:+1 ...`). Copy those two into `website` and `phone` before step 3, or every fallback row is classed as having no website and no phone. Its `place_id` is a numeric CID and rows have no `data_id`, so the review call in step 5 cannot be made from these rows: skip step 5 for them, write "complaints not checked" in `notes`, and never present that as "no complaints". If that also fails, `monid discover -q "google maps business search"`, then inspect.
 - Reviews fail: `monid discover -q "google maps reviews for one place"`, then inspect.
 - User insists on phones for leads that have none: `monid discover -q "local business phone number lookup"`, inspect, and state the price first. Never guess parameters.
 - On `RATE_LIMITED`, wait the stated seconds. Check `monid runs list -l 50` before re-running a paid call.

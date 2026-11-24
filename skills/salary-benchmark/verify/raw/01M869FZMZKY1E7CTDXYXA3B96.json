@@ -1,0 +1,524 @@
+{
+ "runId": "01M869FZMZKY1E7CTDXYXA3B96",
+ "provider": "levels.fyi",
+ "endpoint": "/get_salary_data",
+ "status": "COMPLETED",
+ "providerResponse": {
+  "httpStatus": 200
+ },
+ "cost": {
+  "value": 0.01,
+  "currency": "USD"
+ },
+ "createdAt": "2026-11-24T08:06:57.749Z",
+ "input": {
+  "queryParams": {
+   "company_slug": "google",
+   "job_family_slug": "software-engineer",
+   "location": "san-francisco-bay-area"
+  }
+ },
+ "output_trimmed": {
+  "company": {
+   "slug": "google",
+   "name": "Google",
+   "hq_city": "Mountain View",
+   "hq_state_code": "CA",
+   "emp_count": 188000
+  },
+  "job_family": "Software Engineer",
+  "averages": [
+   {
+    "primaryLevelName": "L3",
+    "secondaryLevelName": "SWE II",
+    "titles": [
+     "L3",
+     "SWE II"
+    ],
+    "count": 43,
+    "count_last_12_months": 717,
+    "total": 205548,
+    "base": 151163,
+    "stock": 40341,
+    "bonus": 14044,
+    "yoeMedian": 1,
+    "samples": [
+     {
+      "totalCompensation": 140000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 160000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 180400,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 191620,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 180000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 207000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 202000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 198000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 195000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 215400,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 200000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 243970,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 213000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 222800,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 248900,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 228000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 276300,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 240456,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "L4",
+    "secondaryLevelName": "SWE III",
+    "titles": [
+     "L4",
+     "SWE III"
+    ],
+    "count": 44,
+    "count_last_12_months": 697,
+    "total": 328461,
+    "base": 197388,
+    "stock": 99527,
+    "bonus": 31545,
+    "yoeMedian": 4,
+    "samples": [
+     {
+      "totalCompensation": 245000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 252500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 267000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 280000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 295000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 342520,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 300000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 301000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 310000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 315000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 317000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 321000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 393300,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 335750,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 355000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 450000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 516700.00000000006,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "L5",
+    "secondaryLevelName": "Senior SWE",
+    "titles": [
+     "L5",
+     "Senior SWE"
+    ],
+    "count": 57,
+    "count_last_12_months": 618,
+    "total": 430438,
+    "base": 228525,
+    "stock": 170909,
+    "bonus": 31004,
+    "yoeMedian": 8,
+    "samples": [
+     {
+      "totalCompensation": 308000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 330000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 355000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 360000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 380000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 389000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 397000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 416800,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 420000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 424000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 428000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 434013,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 450000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 455000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 464260,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 573200,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 490000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 495000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 510000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 513000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 536000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "L6",
+    "secondaryLevelName": "Staff SWE",
+    "titles": [
+     "L6",
+     "Staff SWE"
+    ],
+    "count": 10,
+    "count_last_12_months": 200,
+    "total": 548800,
+    "base": 253900,
+    "stock": 250800,
+    "bonus": 44100,
+    "yoeMedian": 14,
+    "samples": [
+     {
+      "totalCompensation": 430000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 470000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 492000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 558000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 559000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 580000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 617000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "L7",
+    "secondaryLevelName": "Senior Staff SWE",
+    "titles": [
+     "L7",
+     "Senior Staff SWE"
+    ],
+    "count": 9,
+    "count_last_12_months": 51,
+    "total": 975389,
+    "base": 338000,
+    "stock": 556667,
+    "bonus": 80722,
+    "yoeMedian": 14,
+    "samples": [
+     {
+      "totalCompensation": 918500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 740000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 836000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 851000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 875000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 900000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1360000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "L8",
+    "secondaryLevelName": "Principal Engineer",
+    "titles": [
+     "L8",
+     "Principal Engineer"
+    ],
+    "count": 11,
+    "count_last_12_months": 11,
+    "total": 1457045,
+    "base": 389364,
+    "stock": 951045,
+    "bonus": 116636,
+    "yoeMedian": 20,
+    "samples": [
+     {
+      "totalCompensation": 1474000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1280000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1305000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1359500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1490000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1510000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1540000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1980000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "L9",
+    "secondaryLevelName": "Distinguished Engineer",
+    "titles": [
+     "L9",
+     "Distinguished Engineer"
+    ],
+    "count": 8,
+    "count_last_12_months": 0,
+    "total": 2363019,
+    "base": 395625,
+    "stock": 1828580,
+    "bonus": 138814,
+    "yoeMedian": 21,
+    "samples": [
+     {
+      "totalCompensation": 1390000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1570000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 2005000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 3030000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 3520000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 3750000,
+      "isRedacted": true
+     }
+    ]
+   }
+  ],
+  "percentiles": {
+   "base_salary": {
+    "p10": 148000,
+    "p25": 166000,
+    "p50": 200000,
+    "p75": 232000,
+    "p90": 247000
+   },
+   "tc": {
+    "p10": 180000,
+    "p25": 220900,
+    "p50": 329910,
+    "p75": 416800,
+    "p90": 490000
+   },
+   "bonus": {
+    "p10": 0,
+    "p25": 0,
+    "p50": 30000,
+    "p75": 40000,
+    "p90": 60000
+   },
+   "stock_grant": {
+    "p10": 38000,
+    "p25": 47500,
+    "p50": 94950,
+    "p75": 180000,
+    "p90": 239400
+   },
+   "count": 164,
+   "average": null,
+   "locationName": "United States"
+  },
+  "median_tc": 329910,
+  "location_meta": null,
+  "note": "company description, culture, related companies and technology lists dropped"
+ }
+}

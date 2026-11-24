@@ -30,6 +30,7 @@ or read.
 | [`local-leads`](skills/local-leads/) | Builds a list of local businesses worth contacting in one trade and one city, each with a reason to contact them and a short outreach draft. | `npx skills add monid-ai/skills -s local-leads` |
 | [`outlier-creators`](skills/outlier-creators/) | Finds small and mid-size creators in a niche whose recent videos far outperform their own usual numbers. | `npx skills add monid-ai/skills -s outlier-creators` |
 | [`recruiter-email`](skills/recruiter-email/) | Turns one job posting into the recruiter and the hiring manager behind it, each with a work email and its verification status, plus a first line to send. | `npx skills add monid-ai/skills -s recruiter-email` |
+| [`salary-benchmark`](skills/salary-benchmark/) | Turns a role, a city and an offer into a pay benchmark: the market median and range, where the offer sits, the best paying cities and states, and the level-by-level pay ladder at the companies the user names. | `npx skills add monid-ai/skills -s salary-benchmark` |
 | [`topic-pulse`](skills/topic-pulse/) | Reports what people are saying right now about a topic, brand or product across Reddit, TikTok, Instagram, YouTube, Hacker News and news. | `npx skills add monid-ai/skills -s topic-pulse` |
 
 <!-- SKILL_INDEX_END -->

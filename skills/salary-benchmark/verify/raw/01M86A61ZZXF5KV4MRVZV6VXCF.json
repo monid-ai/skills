@@ -1,0 +1,2287 @@
+{
+ "runId": "01M86A61ZZXF5KV4MRVZV6VXCF",
+ "provider": "indeed",
+ "endpoint": "/get_salary_info",
+ "status": "COMPLETED",
+ "providerResponse": {
+  "httpStatus": 200
+ },
+ "cost": {
+  "value": 0.02,
+  "currency": "USD"
+ },
+ "createdAt": "2026-11-24T08:19:01.024Z",
+ "input": {
+  "queryParams": {
+   "job_title": "Software Engineer"
+  }
+ },
+ "output_trimmed": {
+  "location": "United States",
+  "localYearly": {
+   "estimatedMedian": 136706.99041158537,
+   "estimatedMax": 233484.8367637311,
+   "estimatedMin": 80042.89052100145,
+   "mean": 149167.19322490698,
+   "std": 65122.73324591356,
+   "numDataPoints": 38026,
+   "salaryType": "YEARLY",
+   "lastUpdateTimestamp": 1794818466000,
+   "inferred": false
+  },
+  "nationalYearly": {
+   "estimatedMedian": 136706.99041158537,
+   "estimatedMax": 233484.8367637311,
+   "estimatedMin": 80042.89052100145,
+   "mean": 149167.19322490698,
+   "std": 65122.73324591356,
+   "numDataPoints": 38026,
+   "salaryType": "YEARLY",
+   "lastUpdateTimestamp": 1794818466000,
+   "inferred": false
+  },
+  "salaryMap": {
+   "salaryInfoMap": {
+    "MN": {
+     "stateEnumString": "MN",
+     "yearlyAvgSalary": 100577,
+     "numSamples": 412,
+     "percentChangeFromBase": -8.567195
+    },
+    "NC": {
+     "stateEnumString": "NC",
+     "yearlyAvgSalary": 98226,
+     "numSamples": 1406,
+     "percentChangeFromBase": -10.704448
+    },
+    "ID": {
+     "stateEnumString": "ID",
+     "yearlyAvgSalary": 75668,
+     "numSamples": 85,
+     "percentChangeFromBase": -31.211535
+    },
+    "CA": {
+     "stateEnumString": "CA",
+     "yearlyAvgSalary": 134644,
+     "numSamples": 6266,
+     "percentChangeFromBase": 22.402523
+    },
+    "DE": {
+     "stateEnumString": "DE",
+     "yearlyAvgSalary": 90897,
+     "numSamples": 75,
+     "percentChangeFromBase": -17.367115
+    },
+    "RI": {
+     "stateEnumString": "RI",
+     "yearlyAvgSalary": 81937,
+     "numSamples": 103,
+     "percentChangeFromBase": -25.512495
+    },
+    "CT": {
+     "stateEnumString": "CT",
+     "yearlyAvgSalary": 96614,
+     "numSamples": 371,
+     "percentChangeFromBase": -12.169889
+    },
+    "TX": {
+     "stateEnumString": "TX",
+     "yearlyAvgSalary": 105239,
+     "numSamples": 2464,
+     "percentChangeFromBase": -4.3290515
+    },
+    "WI": {
+     "stateEnumString": "WI",
+     "yearlyAvgSalary": 87326,
+     "numSamples": 492,
+     "percentChangeFromBase": -20.61345
+    },
+    "MS": {
+     "stateEnumString": "MS",
+     "yearlyAvgSalary": 79750,
+     "numSamples": 68,
+     "percentChangeFromBase": -27.50066
+    },
+    "OH": {
+     "stateEnumString": "OH",
+     "yearlyAvgSalary": 86118,
+     "numSamples": 839,
+     "percentChangeFromBase": -21.71162
+    },
+    "IL": {
+     "stateEnumString": "IL",
+     "yearlyAvgSalary": 105623,
+     "numSamples": 1062,
+     "percentChangeFromBase": -3.9799638
+    },
+    "PR": {
+     "stateEnumString": "PR",
+     "yearlyAvgSalary": 60816,
+     "numSamples": 32,
+     "percentChangeFromBase": -44.71323
+    },
+    "MI": {
+     "stateEnumString": "MI",
+     "yearlyAvgSalary": 96213,
+     "numSamples": 1096,
+     "percentChangeFromBase": -12.534431
+    },
+    "NE": {
+     "stateEnumString": "NE",
+     "yearlyAvgSalary": 83626,
+     "numSamples": 116,
+     "percentChangeFromBase": -23.977055
+    },
+    "AL": {
+     "stateEnumString": "AL",
+     "yearlyAvgSalary": 89384,
+     "numSamples": 358,
+     "percentChangeFromBase": -18.742558
+    },
+    "NH": {
+     "stateEnumString": "NH",
+     "yearlyAvgSalary": 102839,
+     "numSamples": 100,
+     "percentChangeFromBase": -6.51085
+    },
+    "ME": {
+     "stateEnumString": "ME",
+     "yearlyAvgSalary": 70295,
+     "numSamples": 26,
+     "percentChangeFromBase": -36.096035
+    },
+    "CO": {
+     "stateEnumString": "CO",
+     "yearlyAvgSalary": 111743,
+     "numSamples": 1134,
+     "percentChangeFromBase": 1.583622
+    },
+    "WV": {
+     "stateEnumString": "WV",
+     "yearlyAvgSalary": 73199,
+     "numSamples": 39,
+     "percentChangeFromBase": -33.45606
+    },
+    "FL": {
+     "stateEnumString": "FL",
+     "yearlyAvgSalary": 91922,
+     "numSamples": 1275,
+     "percentChangeFromBase": -16.435305
+    },
+    "GA": {
+     "stateEnumString": "GA",
+     "yearlyAvgSalary": 113393,
+     "numSamples": 802,
+     "percentChangeFromBase": 3.0836084
+    },
+    "TN": {
+     "stateEnumString": "TN",
+     "yearlyAvgSalary": 89211,
+     "numSamples": 408,
+     "percentChangeFromBase": -18.899828
+    },
+    "MD": {
+     "stateEnumString": "MD",
+     "yearlyAvgSalary": 116844,
+     "numSamples": 1557,
+     "percentChangeFromBase": 6.2208524
+    },
+    "SC": {
+     "stateEnumString": "SC",
+     "yearlyAvgSalary": 97210,
+     "numSamples": 245,
+     "percentChangeFromBase": -11.628077
+    },
+    "VA": {
+     "stateEnumString": "VA",
+     "yearlyAvgSalary": 112573,
+     "numSamples": 2927,
+     "percentChangeFromBase": 2.3381605
+    },
+    "IA": {
+     "stateEnumString": "IA",
+     "yearlyAvgSalary": 100827,
+     "numSamples": 582,
+     "percentChangeFromBase": -8.339924
+    },
+    "NV": {
+     "stateEnumString": "NV",
+     "yearlyAvgSalary": 80998,
+     "numSamples": 206,
+     "percentChangeFromBase": -26.366123
+    },
+    "UT": {
+     "stateEnumString": "UT",
+     "yearlyAvgSalary": 93051,
+     "numSamples": 576,
+     "percentChangeFromBase": -15.408951
+    },
+    "NJ": {
+     "stateEnumString": "NJ",
+     "yearlyAvgSalary": 106906,
+     "numSamples": 598,
+     "percentChangeFromBase": -2.8136108
+    },
+    "WA": {
+     "stateEnumString": "WA",
+     "yearlyAvgSalary": 114226,
+     "numSamples": 1290,
+     "percentChangeFromBase": 3.8408742
+    },
+    "OR": {
+     "stateEnumString": "OR",
+     "yearlyAvgSalary": 108973,
+     "numSamples": 397,
+     "percentChangeFromBase": -0.93453693
+    },
+    "LA": {
+     "stateEnumString": "LA",
+     "yearlyAvgSalary": 112497,
+     "numSamples": 173,
+     "percentChangeFromBase": 2.2690704
+    },
+    "OK": {
+     "stateEnumString": "OK",
+     "yearlyAvgSalary": 95077,
+     "numSamples": 141,
+     "percentChangeFromBase": -13.567149
+    },
+    "MO": {
+     "stateEnumString": "MO",
+     "yearlyAvgSalary": 101169,
+     "numSamples": 597,
+     "percentChangeFromBase": -8.029017
+    },
+    "NM": {
+     "stateEnumString": "NM",
+     "yearlyAvgSalary": 90178,
+     "numSamples": 126,
+     "percentChangeFromBase": -18.020744
+    },
+    "KY": {
+     "stateEnumString": "KY",
+     "yearlyAvgSalary": 75625,
+     "numSamples": 169,
+     "percentChangeFromBase": -31.250626
+    },
+    "MA": {
+     "stateEnumString": "MA",
+     "yearlyAvgSalary": 115649,
+     "numSamples": 1448,
+     "percentChangeFromBase": 5.1344986
+    },
+    "SD": {
+     "stateEnumString": "SD",
+     "yearlyAvgSalary": 67267,
+     "numSamples": 34,
+     "percentChangeFromBase": -38.84874
+    },
+    "DC": {
+     "stateEnumString": "DC",
+     "yearlyAvgSalary": 119656,
+     "numSamples": 320,
+     "percentChangeFromBase": 8.777193
+    },
+    "MT": {
+     "stateEnumString": "MT",
+     "yearlyAvgSalary": 66395,
+     "numSamples": 20,
+     "percentChangeFromBase": -39.641457
+    },
+    "ND": {
+     "stateEnumString": "ND",
+     "yearlyAvgSalary": 90794,
+     "numSamples": 65,
+     "percentChangeFromBase": -17.46075
+    },
+    "AR": {
+     "stateEnumString": "AR",
+     "yearlyAvgSalary": 99859,
+     "numSamples": 211,
+     "percentChangeFromBase": -9.219916
+    },
+    "PA": {
+     "stateEnumString": "PA",
+     "yearlyAvgSalary": 98273,
+     "numSamples": 1518,
+     "percentChangeFromBase": -10.661721
+    },
+    "AZ": {
+     "stateEnumString": "AZ",
+     "yearlyAvgSalary": 98776,
+     "numSamples": 477,
+     "percentChangeFromBase": -10.2044525
+    },
+    "VT": {
+     "stateEnumString": "VT",
+     "yearlyAvgSalary": 85996,
+     "numSamples": 23,
+     "percentChangeFromBase": -21.822529
+    },
+    "IN": {
+     "stateEnumString": "IN",
+     "yearlyAvgSalary": 86973,
+     "numSamples": 406,
+     "percentChangeFromBase": -20.934355
+    },
+    "HI": {
+     "stateEnumString": "HI",
+     "yearlyAvgSalary": 90401,
+     "numSamples": 16,
+     "percentChangeFromBase": -17.81802
+    },
+    "KS": {
+     "stateEnumString": "KS",
+     "yearlyAvgSalary": 95906,
+     "numSamples": 264,
+     "percentChangeFromBase": -12.8135195
+    },
+    "NY": {
+     "stateEnumString": "NY",
+     "yearlyAvgSalary": 123480,
+     "numSamples": 2584,
+     "percentChangeFromBase": 12.253525
+    },
+    "WY": {
+     "stateEnumString": "WY",
+     "yearlyAvgSalary": 88432,
+     "numSamples": 8,
+     "percentChangeFromBase": -19.608004
+    }
+   },
+   "numRegionsWithData": 51,
+   "nationalSalaryAvg": 110001
+  },
+  "topPaidCities": {
+   "cities": [
+    {
+     "location": {
+      "displayName": "San Jose, CA",
+      "locationUrlSegment": "San-Jose--CA"
+     },
+     "salary": {
+      "currency": "USD",
+      "salaries": {
+       "HOURLY": {
+        "estimatedMedian": 81.34881488246238,
+        "estimatedMax": 142.78215299879815,
+        "estimatedMin": 46.34773705112037,
+        "mean": 89.57689338337235,
+        "std": 41.29501931235852,
+        "numDataPoints": 0,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794808795000,
+        "inferred": false
+       },
+       "DAILY": {
+        "estimatedMedian": 841.9453980349602,
+        "estimatedMax": 1477.7692436276445,
+        "estimatedMin": 479.69062580575894,
+        "mean": 927.1045099227111,
+        "std": 427.39591869949385,
+        "numDataPoints": 0,
+        "salaryType": "DAILY",
+        "lastUpdateTimestamp": 1794808795000,
+        "inferred": false
+       },
+       "WEEKLY": {
+        "estimatedMedian": 3466.280634347663,
+        "estimatedMax": 6083.9609352059215,
+        "estimatedMin": 1974.881424127187,
+        "mean": 3816.879831235844,
+        "std": 1759.5846472288317,
+        "numDataPoints": 0,
+        "salaryType": "WEEKLY",
+        "lastUpdateTimestamp": 1794808795000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 13413.291433828093,
+        "estimatedMax": 23542.796935511302,
+        "estimatedMin": 7642.099092203665,
+        "mean": 14769.987472148796,
+        "std": 6808.97600785623,
+        "numDataPoints": 0,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1794808795000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 189448.84449833859,
+        "estimatedMax": 332517.61491166934,
+        "estimatedMin": 107936.73198723565,
+        "mean": 208610.77041811091,
+        "std": 96169.73158817936,
+        "numDataPoints": 1154,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794808795000,
+        "inferred": false
+       }
+      },
+      "displaySalaryPeriod": "YEARLY",
+      "mostCommonSalaryPeriod": "YEARLY",
+      "salaryMultipliers": {
+       "multipliers": {
+        "WEEKLY": 42.61009382073915,
+        "MONTHLY": 164.88613206238367,
+        "DAILY": 10.349817624896604,
+        "YEARLY": 2328.845783089349,
+        "HOURLY": 1
+       },
+       "mostCommonSalaryType": "YEARLY",
+       "salaries": {
+        "HOURLY": {
+         "estimatedMedian": 81.34881488246238,
+         "estimatedMax": 142.78215299879815,
+         "estimatedMin": 46.34773705112037,
+         "mean": 89.57689338337235,
+         "std": 41.29501931235852,
+         "numDataPoints": 0,
+         "salaryType": "HOURLY",
+         "lastUpdateTimestamp": 1794808795000,
+         "inferred": false
+        },
+        "DAILY": {
+         "estimatedMedian": 841.9453980349602,
+         "estimatedMax": 1477.7692436276445,
+         "estimatedMin": 479.69062580575894,
+         "mean": 927.1045099227111,
+         "std": 427.39591869949385,
+         "numDataPoints": 0,
+         "salaryType": "DAILY",
+         "lastUpdateTimestamp": 1794808795000,
+         "inferred": false
+        },
+        "WEEKLY": {
+         "estimatedMedian": 3466.280634347663,
+         "estimatedMax": 6083.9609352059215,
+         "estimatedMin": 1974.881424127187,
+         "mean": 3816.879831235844,
+         "std": 1759.5846472288317,
+         "numDataPoints": 0,
+         "salaryType": "WEEKLY",
+         "lastUpdateTimestamp": 1794808795000,
+         "inferred": false
+        },
+        "MONTHLY": {
+         "estimatedMedian": 13413.291433828093,
+         "estimatedMax": 23542.796935511302,
+         "estimatedMin": 7642.099092203665,
+         "mean": 14769.987472148796,
+         "std": 6808.97600785623,
+         "numDataPoints": 0,
+         "salaryType": "MONTHLY",
+         "lastUpdateTimestamp": 1794808795000,
+         "inferred": false
+        },
+        "YEARLY": {
+         "estimatedMedian": 189448.84449833859,
+         "estimatedMax": 332517.61491166934,
+         "estimatedMin": 107936.73198723565,
+         "mean": 208610.77041811091,
+         "std": 96169.73158817936,
+         "numDataPoints": 1154,
+         "salaryType": "YEARLY",
+         "lastUpdateTimestamp": 1794808795000,
+         "inferred": false
+        }
+       },
+       "empty": false
+      },
+      "aggregatedSalaries": {
+       "HOURLY": {
+        "estimatedMedian": 66.02175237051375,
+        "estimatedMax": 91.2645053419467,
+        "estimatedMin": 47.7608657352797,
+        "mean": 68.16280484083222,
+        "std": 17.499487490526025,
+        "numDataPoints": 205,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794074476000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 189448.84449833859,
+        "estimatedMax": 332517.61491166934,
+        "estimatedMin": 107936.73198723565,
+        "mean": 208610.77041811091,
+        "std": 96169.73158817936,
+        "numDataPoints": 1154,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794808795000,
+        "inferred": false
+       }
+      },
+      "mostCommonSalary": {
+       "estimatedMedian": 189448.84449833859,
+       "estimatedMax": 332517.61491166934,
+       "estimatedMin": 107936.73198723565,
+       "mean": 208610.77041811091,
+       "std": 96169.73158817936,
+       "numDataPoints": 1154,
+       "salaryType": "YEARLY",
+       "lastUpdateTimestamp": 1794808795000,
+       "inferred": false
+      }
+     }
+    },
+    {
+     "location": {
+      "displayName": "San Francisco, CA",
+      "locationUrlSegment": "San-Francisco--CA"
+     },
+     "salary": {
+      "currency": "USD",
+      "salaries": {
+       "HOURLY": {
+        "estimatedMedian": 79.69418461789387,
+        "estimatedMax": 124.62745236914176,
+        "estimatedMin": 50.96118825488823,
+        "mean": 84.6954546176807,
+        "std": 30.472693515958245,
+        "numDataPoints": 0,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794798539000,
+        "inferred": false
+       },
+       "DAILY": {
+        "estimatedMedian": 824.8202765600417,
+        "estimatedMax": 1289.8714030761055,
+        "estimatedMin": 527.4390043861159,
+        "mean": 876.582508950702,
+        "std": 315.38682042953707,
+        "numDataPoints": 0,
+        "salaryType": "DAILY",
+        "lastUpdateTimestamp": 1794798539000,
+        "inferred": false
+       },
+       "WEEKLY": {
+        "estimatedMedian": 3395.7766835357647,
+        "estimatedMax": 5310.38743808883,
+        "estimatedMin": 2171.4610127571377,
+        "mean": 3608.8812674495293,
+        "std": 1298.4443296856105,
+        "numDataPoints": 0,
+        "salaryType": "WEEKLY",
+        "lastUpdateTimestamp": 1794798539000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 13140.465849510034,
+        "estimatedMax": 20549.33856993674,
+        "estimatedMin": 8402.793216651497,
+        "mean": 13965.105915174521,
+        "std": 5024.524567368833,
+        "numDataPoints": 0,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1794798539000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 185595.4657841262,
+        "estimatedMax": 290238.1169070445,
+        "estimatedMin": 118680.74836861891,
+        "mean": 197242.65233322102,
+        "std": 70966.2037940135,
+        "numDataPoints": 2226,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794798539000,
+        "inferred": false
+       }
+      },
+      "displaySalaryPeriod": "YEARLY",
+      "mostCommonSalaryPeriod": "YEARLY",
+      "salaryMultipliers": {
+       "multipliers": {
+        "WEEKLY": 42.61009382073915,
+        "MONTHLY": 164.88613206238367,
+        "DAILY": 10.349817624896604,
+        "YEARLY": 2328.845783089349,
+        "HOURLY": 1
+       },
+       "mostCommonSalaryType": "YEARLY",
+       "salaries": {
+        "HOURLY": {
+         "estimatedMedian": 79.69418461789387,
+         "estimatedMax": 124.62745236914176,
+         "estimatedMin": 50.96118825488823,
+         "mean": 84.6954546176807,
+         "std": 30.472693515958245,
+         "numDataPoints": 0,
+         "salaryType": "HOURLY",
+         "lastUpdateTimestamp": 1794798539000,
+         "inferred": false
+        },
+        "DAILY": {
+         "estimatedMedian": 824.8202765600417,
+         "estimatedMax": 1289.8714030761055,
+         "estimatedMin": 527.4390043861159,
+         "mean": 876.582508950702,
+         "std": 315.38682042953707,
+         "numDataPoints": 0,
+         "salaryType": "DAILY",
+         "lastUpdateTimestamp": 1794798539000,
+         "inferred": false
+        },
+        "WEEKLY": {
+         "estimatedMedian": 3395.7766835357647,
+         "estimatedMax": 5310.38743808883,
+         "estimatedMin": 2171.4610127571377,
+         "mean": 3608.8812674495293,
+         "std": 1298.4443296856105,
+         "numDataPoints": 0,
+         "salaryType": "WEEKLY",
+         "lastUpdateTimestamp": 1794798539000,
+         "inferred": false
+        },
+        "MONTHLY": {
+         "estimatedMedian": 13140.465849510034,
+         "estimatedMax": 20549.33856993674,
+         "estimatedMin": 8402.793216651497,
+         "mean": 13965.105915174521,
+         "std": 5024.524567368833,
+         "numDataPoints": 0,
+         "salaryType": "MONTHLY",
+         "lastUpdateTimestamp": 1794798539000,
+         "inferred": false
+        },
+        "YEARLY": {
+         "estimatedMedian": 185595.4657841262,
+         "estimatedMax": 290238.1169070445,
+         "estimatedMin": 118680.74836861891,
+         "mean": 197242.65233322102,
+         "std": 70966.2037940135,
+         "numDataPoints": 2226,
+         "salaryType": "YEARLY",
+         "lastUpdateTimestamp": 1794798539000,
+         "inferred": false
+        }
+       },
+       "empty": false
+      },
+      "aggregatedSalaries": {
+       "HOURLY": {
+        "estimatedMedian": 74.72688521300047,
+        "estimatedMax": 130.2552663732564,
+        "estimatedMin": 42.87049214296358,
+        "mean": 82.09163303567905,
+        "std": 37.33357920896528,
+        "numDataPoints": 297,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794431306000,
+        "inferred": false
+       },
+       "DAILY": {
+        "estimatedMedian": 203.68482020074094,
+        "estimatedMax": 380.0074155630721,
+        "estimatedMin": 109.17551679597715,
+        "mean": 229.28571428571428,
+        "std": 118.51547733248576,
+        "numDataPoints": 7,
+        "salaryType": "DAILY",
+        "lastUpdateTimestamp": 1790188388000,
+        "inferred": false
+       },
+       "WEEKLY": {
+        "estimatedMedian": 1925,
+        "estimatedMax": 1925,
+        "estimatedMin": 1925,
+        "mean": 1925,
+        "std": 0,
+        "numDataPoints": 4,
+        "salaryType": "WEEKLY",
+        "lastUpdateTimestamp": 1790392092000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 14268.850957724999,
+        "estimatedMax": 36506.27521675496,
+        "estimatedMin": 5577.1263007496555,
+        "mean": 18666.666666666668,
+        "std": 15744.487571492726,
+        "numDataPoints": 3,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1788582847000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 185595.4657841262,
+        "estimatedMax": 290238.1169070445,
+        "estimatedMin": 118680.74836861891,
+        "mean": 197242.65233322102,
+        "std": 70966.2037940135,
+        "numDataPoints": 2226,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794798539000,
+        "inferred": false
+       }
+      },
+      "mostCommonSalary": {
+       "estimatedMedian": 185595.4657841262,
+       "estimatedMax": 290238.1169070445,
+       "estimatedMin": 118680.74836861891,
+       "mean": 197242.65233322102,
+       "std": 70966.2037940135,
+       "numDataPoints": 2226,
+       "salaryType": "YEARLY",
+       "lastUpdateTimestamp": 1794798539000,
+       "inferred": false
+      }
+     }
+    },
+    {
+     "location": {
+      "displayName": "New York, NY",
+      "locationUrlSegment": "New-York--NY"
+     },
+     "salary": {
+      "currency": "USD",
+      "salaries": {
+       "HOURLY": {
+        "estimatedMedian": 75.85497410172862,
+        "estimatedMax": 128.38117056177228,
+        "estimatedMin": 44.81947836116138,
+        "mean": 82.52584967316598,
+        "std": 35.36296399207713,
+        "numDataPoints": 0,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794817800000,
+        "inferred": false
+       },
+       "DAILY": {
+        "estimatedMedian": 785.0851478941462,
+        "estimatedMax": 1328.7217017850878,
+        "estimatedMin": 463.87342708102,
+        "mean": 854.1274934569009,
+        "std": 366.0002279937838,
+        "numDataPoints": 0,
+        "salaryType": "DAILY",
+        "lastUpdateTimestamp": 1794817800000,
+        "inferred": false
+       },
+       "WEEKLY": {
+        "estimatedMedian": 3232.187563244395,
+        "estimatedMax": 5470.3337224534325,
+        "estimatedMin": 1909.7621779656747,
+        "mean": 3516.4341972098177,
+        "std": 1506.8192134818266,
+        "numDataPoints": 0,
+        "salaryType": "WEEKLY",
+        "lastUpdateTimestamp": 1794817800000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 12507.433277326318,
+        "estimatedMax": 21168.274643571785,
+        "estimatedMin": 7390.110428025602,
+        "mean": 13607.368147770068,
+        "std": 5830.8623509149475,
+        "numDataPoints": 0,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1794817800000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 176654.53656316246,
+        "estimatedMax": 298979.94769085787,
+        "estimatedMin": 104377.65318165501,
+        "mean": 192189.9770072181,
+        "std": 82354.88957048931,
+        "numDataPoints": 1827,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794817800000,
+        "inferred": false
+       }
+      },
+      "displaySalaryPeriod": "YEARLY",
+      "mostCommonSalaryPeriod": "YEARLY",
+      "salaryMultipliers": {
+       "multipliers": {
+        "WEEKLY": 42.61009382073915,
+        "MONTHLY": 164.88613206238367,
+        "DAILY": 10.349817624896604,
+        "YEARLY": 2328.845783089349,
+        "HOURLY": 1
+       },
+       "mostCommonSalaryType": "YEARLY",
+       "salaries": {
+        "HOURLY": {
+         "estimatedMedian": 75.85497410172862,
+         "estimatedMax": 128.38117056177228,
+         "estimatedMin": 44.81947836116138,
+         "mean": 82.52584967316598,
+         "std": 35.36296399207713,
+         "numDataPoints": 0,
+         "salaryType": "HOURLY",
+         "lastUpdateTimestamp": 1794817800000,
+         "inferred": false
+        },
+        "DAILY": {
+         "estimatedMedian": 785.0851478941462,
+         "estimatedMax": 1328.7217017850878,
+         "estimatedMin": 463.87342708102,
+         "mean": 854.1274934569009,
+         "std": 366.0002279937838,
+         "numDataPoints": 0,
+         "salaryType": "DAILY",
+         "lastUpdateTimestamp": 1794817800000,
+         "inferred": false
+        },
+        "WEEKLY": {
+         "estimatedMedian": 3232.187563244395,
+         "estimatedMax": 5470.3337224534325,
+         "estimatedMin": 1909.7621779656747,
+         "mean": 3516.4341972098177,
+         "std": 1506.8192134818266,
+         "numDataPoints": 0,
+         "salaryType": "WEEKLY",
+         "lastUpdateTimestamp": 1794817800000,
+         "inferred": false
+        },
+        "MONTHLY": {
+         "estimatedMedian": 12507.433277326318,
+         "estimatedMax": 21168.274643571785,
+         "estimatedMin": 7390.110428025602,
+         "mean": 13607.368147770068,
+         "std": 5830.8623509149475,
+         "numDataPoints": 0,
+         "salaryType": "MONTHLY",
+         "lastUpdateTimestamp": 1794817800000,
+         "inferred": false
+        },
+        "YEARLY": {
+         "estimatedMedian": 176654.53656316246,
+         "estimatedMax": 298979.94769085787,
+         "estimatedMin": 104377.65318165501,
+         "mean": 192189.9770072181,
+         "std": 82354.88957048931,
+         "numDataPoints": 1827,
+         "salaryType": "YEARLY",
+         "lastUpdateTimestamp": 1794817800000,
+         "inferred": false
+        }
+       },
+       "empty": false
+      },
+      "aggregatedSalaries": {
+       "HOURLY": {
+        "estimatedMedian": 69.00838039047537,
+        "estimatedMax": 117.22932487436852,
+        "estimatedMin": 40.622570924266206,
+        "mean": 75.16708544630501,
+        "std": 32.4575893260867,
+        "numDataPoints": 199,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794805958000,
+        "inferred": false
+       },
+       "DAILY": {
+        "estimatedMedian": 238.2499333442723,
+        "estimatedMax": 622.5228887740384,
+        "estimatedMin": 91.18223885790229,
+        "mean": 315.5,
+        "std": 273.88790286051943,
+        "numDataPoints": 6,
+        "salaryType": "DAILY",
+        "lastUpdateTimestamp": 1790093793000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 6398.69665156587,
+        "estimatedMax": 11536.26021740797,
+        "estimatedMin": 3549.0980670648914,
+        "mean": 7112.5,
+        "std": 3451.969546505299,
+        "numDataPoints": 4,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1786662832000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 176654.53656316246,
+        "estimatedMax": 298979.94769085787,
+        "estimatedMin": 104377.65318165501,
+        "mean": 192189.9770072181,
+        "std": 82354.88957048931,
+        "numDataPoints": 1827,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794817800000,
+        "inferred": false
+       }
+      },
+      "mostCommonSalary": {
+       "estimatedMedian": 176654.53656316246,
+       "estimatedMax": 298979.94769085787,
+       "estimatedMin": 104377.65318165501,
+       "mean": 192189.9770072181,
+       "std": 82354.88957048931,
+       "numDataPoints": 1827,
+       "salaryType": "YEARLY",
+       "lastUpdateTimestamp": 1794817800000,
+       "inferred": false
+      }
+     }
+    },
+    {
+     "location": {
+      "displayName": "Seattle, WA",
+      "locationUrlSegment": "Seattle--WA"
+     },
+     "salary": {
+      "currency": "USD",
+      "salaries": {
+       "HOURLY": {
+        "estimatedMedian": 69.82738886761018,
+        "estimatedMax": 106.74362062335504,
+        "estimatedMin": 45.6782729271751,
+        "mean": 73.76328211567866,
+        "std": 25.113034774822626,
+        "numDataPoints": 0,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794808797000,
+        "inferred": false
+       },
+       "DAILY": {
+        "estimatedMedian": 722.7007400025008,
+        "estimatedMax": 1104.7770060728767,
+        "estimatedMin": 472.76179421651426,
+        "mean": 763.4365173110715,
+        "std": 259.9153299271005,
+        "numDataPoints": 0,
+        "salaryType": "DAILY",
+        "lastUpdateTimestamp": 1794808797000,
+        "inferred": false
+       },
+       "WEEKLY": {
+        "estimatedMedian": 2975.3515909061066,
+        "estimatedMax": 4548.355689526545,
+        "estimatedMin": 1946.3554949962602,
+        "mean": 3143.060371474718,
+        "std": 1070.0687678786771,
+        "numDataPoints": 0,
+        "salaryType": "WEEKLY",
+        "lastUpdateTimestamp": 1794808797000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 11513.56806239619,
+        "estimatedMax": 17600.5427269195,
+        "estimatedMin": 7531.713742251798,
+        "mean": 12162.542276280656,
+        "std": 4140.791168368637,
+        "numDataPoints": 0,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1794808797000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 162617.2201084741,
+        "estimatedMax": 248589.43076038966,
+        "estimatedMin": 106377.6532852561,
+        "mean": 171783.30850192826,
+        "std": 58484.38513592185,
+        "numDataPoints": 2042,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794808797000,
+        "inferred": false
+       }
+      },
+      "displaySalaryPeriod": "YEARLY",
+      "mostCommonSalaryPeriod": "YEARLY",
+      "salaryMultipliers": {
+       "multipliers": {
+        "WEEKLY": 42.61009382073915,
+        "MONTHLY": 164.88613206238367,
+        "DAILY": 10.349817624896604,
+        "YEARLY": 2328.845783089349,
+        "HOURLY": 1
+       },
+       "mostCommonSalaryType": "YEARLY",
+       "salaries": {
+        "HOURLY": {
+         "estimatedMedian": 69.82738886761018,
+         "estimatedMax": 106.74362062335504,
+         "estimatedMin": 45.6782729271751,
+         "mean": 73.76328211567866,
+         "std": 25.113034774822626,
+         "numDataPoints": 0,
+         "salaryType": "HOURLY",
+         "lastUpdateTimestamp": 1794808797000,
+         "inferred": false
+        },
+        "DAILY": {
+         "estimatedMedian": 722.7007400025008,
+         "estimatedMax": 1104.7770060728767,
+         "estimatedMin": 472.76179421651426,
+         "mean": 763.4365173110715,
+         "std": 259.9153299271005,
+         "numDataPoints": 0,
+         "salaryType": "DAILY",
+         "lastUpdateTimestamp": 1794808797000,
+         "inferred": false
+        },
+        "WEEKLY": {
+         "estimatedMedian": 2975.3515909061066,
+         "estimatedMax": 4548.355689526545,
+         "estimatedMin": 1946.3554949962602,
+         "mean": 3143.060371474718,
+         "std": 1070.0687678786771,
+         "numDataPoints": 0,
+         "salaryType": "WEEKLY",
+         "lastUpdateTimestamp": 1794808797000,
+         "inferred": false
+        },
+        "MONTHLY": {
+         "estimatedMedian": 11513.56806239619,
+         "estimatedMax": 17600.5427269195,
+         "estimatedMin": 7531.713742251798,
+         "mean": 12162.542276280656,
+         "std": 4140.791168368637,
+         "numDataPoints": 0,
+         "salaryType": "MONTHLY",
+         "lastUpdateTimestamp": 1794808797000,
+         "inferred": false
+        },
+        "YEARLY": {
+         "estimatedMedian": 162617.2201084741,
+         "estimatedMax": 248589.43076038966,
+         "estimatedMin": 106377.6532852561,
+         "mean": 171783.30850192826,
+         "std": 58484.38513592185,
+         "numDataPoints": 2042,
+         "salaryType": "YEARLY",
+         "lastUpdateTimestamp": 1794808797000,
+         "inferred": false
+        }
+       },
+       "empty": false
+      },
+      "aggregatedSalaries": {
+       "HOURLY": {
+        "estimatedMedian": 64.84134213919131,
+        "estimatedMax": 101.1018204736743,
+        "estimatedMin": 41.585795692560254,
+        "mean": 68.85541667938233,
+        "std": 24.600235862447825,
+        "numDataPoints": 120,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794323047000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 8934.155164376385,
+        "estimatedMax": 11521.845048616706,
+        "estimatedMin": 6927.634260342288,
+        "mean": 9111.878378378378,
+        "std": 1826.4903537208208,
+        "numDataPoints": 37,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1794655712000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 162617.2201084741,
+        "estimatedMax": 248589.43076038966,
+        "estimatedMin": 106377.6532852561,
+        "mean": 171783.30850192826,
+        "std": 58484.38513592185,
+        "numDataPoints": 2042,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794808797000,
+        "inferred": false
+       }
+      },
+      "mostCommonSalary": {
+       "estimatedMedian": 162617.2201084741,
+       "estimatedMax": 248589.43076038966,
+       "estimatedMin": 106377.6532852561,
+       "mean": 171783.30850192826,
+       "std": 58484.38513592185,
+       "numDataPoints": 2042,
+       "salaryType": "YEARLY",
+       "lastUpdateTimestamp": 1794808797000,
+       "inferred": false
+      }
+     }
+    },
+    {
+     "location": {
+      "displayName": "Los Angeles, CA",
+      "locationUrlSegment": "Los-Angeles--CA"
+     },
+     "salary": {
+      "currency": "USD",
+      "salaries": {
+       "HOURLY": {
+        "estimatedMedian": 66.69521191747756,
+        "estimatedMax": 105.31828024466596,
+        "estimatedMin": 42.23626973763277,
+        "mean": 71.07061237889657,
+        "std": 26.162247653414756,
+        "numDataPoints": 0,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794770856000,
+        "inferred": false
+       },
+       "DAILY": {
+        "estimatedMedian": 690.2832797997233,
+        "estimatedMax": 1090.0249931000435,
+        "estimatedMin": 437.13768894043864,
+        "mean": 735.5678766112984,
+        "std": 270.7744918702218,
+        "numDataPoints": 0,
+        "salaryType": "DAILY",
+        "lastUpdateTimestamp": 1794770856000,
+        "inferred": false
+       },
+       "WEEKLY": {
+        "estimatedMedian": 2841.889237197799,
+        "estimatedMax": 4487.621802264115,
+        "estimatedMin": 1799.691416158578,
+        "mean": 3028.3254613621684,
+        "std": 1114.7758270734155,
+        "numDataPoints": 0,
+        "salaryType": "WEEKLY",
+        "lastUpdateTimestamp": 1794770856000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 10997.115520153871,
+        "estimatedMax": 17365.523865005125,
+        "estimatedMin": 6964.175149781775,
+        "mean": 11718.558378461219,
+        "std": 4313.791821629733,
+        "numDataPoints": 0,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1794770856000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 155322.8630262681,
+        "estimatedMax": 245270.0328300126,
+        "estimatedMin": 98361.75867191036,
+        "mean": 165512.49594017095,
+        "std": 60927.84012379417,
+        "numDataPoints": 585,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794770856000,
+        "inferred": false
+       }
+      },
+      "displaySalaryPeriod": "YEARLY",
+      "mostCommonSalaryPeriod": "YEARLY",
+      "salaryMultipliers": {
+       "multipliers": {
+        "WEEKLY": 42.61009382073915,
+        "MONTHLY": 164.88613206238367,
+        "DAILY": 10.349817624896604,
+        "YEARLY": 2328.845783089349,
+        "HOURLY": 1
+       },
+       "mostCommonSalaryType": "YEARLY",
+       "salaries": {
+        "HOURLY": {
+         "estimatedMedian": 66.69521191747756,
+         "estimatedMax": 105.31828024466596,
+         "estimatedMin": 42.23626973763277,
+         "mean": 71.07061237889657,
+         "std": 26.162247653414756,
+         "numDataPoints": 0,
+         "salaryType": "HOURLY",
+         "lastUpdateTimestamp": 1794770856000,
+         "inferred": false
+        },
+        "DAILY": {
+         "estimatedMedian": 690.2832797997233,
+         "estimatedMax": 1090.0249931000435,
+         "estimatedMin": 437.13768894043864,
+         "mean": 735.5678766112984,
+         "std": 270.7744918702218,
+         "numDataPoints": 0,
+         "salaryType": "DAILY",
+         "lastUpdateTimestamp": 1794770856000,
+         "inferred": false
+        },
+        "WEEKLY": {
+         "estimatedMedian": 2841.889237197799,
+         "estimatedMax": 4487.621802264115,
+         "estimatedMin": 1799.691416158578,
+         "mean": 3028.3254613621684,
+         "std": 1114.7758270734155,
+         "numDataPoints": 0,
+         "salaryType": "WEEKLY",
+         "lastUpdateTimestamp": 1794770856000,
+         "inferred": false
+        },
+        "MONTHLY": {
+         "estimatedMedian": 10997.115520153871,
+         "estimatedMax": 17365.523865005125,
+         "estimatedMin": 6964.175149781775,
+         "mean": 11718.558378461219,
+         "std": 4313.791821629733,
+         "numDataPoints": 0,
+         "salaryType": "MONTHLY",
+         "lastUpdateTimestamp": 1794770856000,
+         "inferred": false
+        },
+        "YEARLY": {
+         "estimatedMedian": 155322.8630262681,
+         "estimatedMax": 245270.0328300126,
+         "estimatedMin": 98361.75867191036,
+         "mean": 165512.49594017095,
+         "std": 60927.84012379417,
+         "numDataPoints": 585,
+         "salaryType": "YEARLY",
+         "lastUpdateTimestamp": 1794770856000,
+         "inferred": false
+        }
+       },
+       "empty": false
+      },
+      "aggregatedSalaries": {
+       "HOURLY": {
+        "estimatedMedian": 54.950005274921836,
+        "estimatedMax": 107.51571327448336,
+        "estimatedMin": 28.084295660153977,
+        "mean": 63.02812480926514,
+        "std": 35.40972384320814,
+        "numDataPoints": 72,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794616619000,
+        "inferred": false
+       },
+       "WEEKLY": {
+        "estimatedMedian": 1134.9073256066577,
+        "estimatedMax": 2462.9907810708523,
+        "estimatedMin": 522.9474050877567,
+        "mean": 1362.5,
+        "std": 905.1070378690025,
+        "numDataPoints": 2,
+        "salaryType": "WEEKLY",
+        "lastUpdateTimestamp": 1794281738000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 11906.315310143204,
+        "estimatedMax": 18874.72990572828,
+        "estimatedMin": 7510.589289096465,
+        "mean": 12701.23876953125,
+        "std": 4718.08305558055,
+        "numDataPoints": 4,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1784328212000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 155322.8630262681,
+        "estimatedMax": 245270.0328300126,
+        "estimatedMin": 98361.75867191036,
+        "mean": 165512.49594017095,
+        "std": 60927.84012379417,
+        "numDataPoints": 585,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794770856000,
+        "inferred": false
+       }
+      },
+      "mostCommonSalary": {
+       "estimatedMedian": 155322.8630262681,
+       "estimatedMax": 245270.0328300126,
+       "estimatedMin": 98361.75867191036,
+       "mean": 165512.49594017095,
+       "std": 60927.84012379417,
+       "numDataPoints": 585,
+       "salaryType": "YEARLY",
+       "lastUpdateTimestamp": 1794770856000,
+       "inferred": false
+      }
+     }
+    },
+    {
+     "location": {
+      "displayName": "Redmond, WA",
+      "locationUrlSegment": "Redmond--WA"
+     },
+     "salary": {
+      "currency": "USD",
+      "salaries": {
+       "HOURLY": {
+        "estimatedMedian": 59.77004121834084,
+        "estimatedMax": 82.7843130283024,
+        "estimatedMin": 43.15380168729316,
+        "mean": 61.73222983366044,
+        "std": 15.947440214464201,
+        "numDataPoints": 0,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794481121000,
+        "inferred": false
+       },
+       "DAILY": {
+        "estimatedMedian": 618.6090260423805,
+        "estimatedMax": 856.8025420452818,
+        "estimatedMin": 446.63397728443954,
+        "mean": 638.9173203565867,
+        "std": 165.05309780364647,
+        "numDataPoints": 0,
+        "salaryType": "DAILY",
+        "lastUpdateTimestamp": 1794481121000,
+        "inferred": false
+       },
+       "WEEKLY": {
+        "estimatedMedian": 2546.80706398295,
+        "estimatedMax": 3527.447345021404,
+        "estimatedMin": 1838.7875386171331,
+        "mean": 2630.416104975704,
+        "std": 679.5219237389481,
+        "numDataPoints": 0,
+        "salaryType": "WEEKLY",
+        "lastUpdateTimestamp": 1794481121000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 9855.250909701463,
+        "estimatedMax": 13649.98517067838,
+        "estimatedMin": 7115.463444004935,
+        "mean": 10178.788600858355,
+        "std": 2629.5117332591126,
+        "numDataPoints": 0,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1794481121000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 139195.20844640964,
+        "estimatedMax": 192791.8983019107,
+        "estimatedMin": 100498.54908372671,
+        "mean": 143764.84312882263,
+        "std": 37139.12889452446,
+        "numDataPoints": 327,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794481121000,
+        "inferred": false
+       }
+      },
+      "displaySalaryPeriod": "YEARLY",
+      "mostCommonSalaryPeriod": "YEARLY",
+      "salaryMultipliers": {
+       "multipliers": {
+        "WEEKLY": 42.61009382073915,
+        "MONTHLY": 164.88613206238367,
+        "DAILY": 10.349817624896604,
+        "YEARLY": 2328.845783089349,
+        "HOURLY": 1
+       },
+       "mostCommonSalaryType": "YEARLY",
+       "salaries": {
+        "HOURLY": {
+         "estimatedMedian": 59.77004121834084,
+         "estimatedMax": 82.7843130283024,
+         "estimatedMin": 43.15380168729316,
+         "mean": 61.73222983366044,
+         "std": 15.947440214464201,
+         "numDataPoints": 0,
+         "salaryType": "HOURLY",
+         "lastUpdateTimestamp": 1794481121000,
+         "inferred": false
+        },
+        "DAILY": {
+         "estimatedMedian": 618.6090260423805,
+         "estimatedMax": 856.8025420452818,
+         "estimatedMin": 446.63397728443954,
+         "mean": 638.9173203565867,
+         "std": 165.05309780364647,
+         "numDataPoints": 0,
+         "salaryType": "DAILY",
+         "lastUpdateTimestamp": 1794481121000,
+         "inferred": false
+        },
+        "WEEKLY": {
+         "estimatedMedian": 2546.80706398295,
+         "estimatedMax": 3527.447345021404,
+         "estimatedMin": 1838.7875386171331,
+         "mean": 2630.416104975704,
+         "std": 679.5219237389481,
+         "numDataPoints": 0,
+         "salaryType": "WEEKLY",
+         "lastUpdateTimestamp": 1794481121000,
+         "inferred": false
+        },
+        "MONTHLY": {
+         "estimatedMedian": 9855.250909701463,
+         "estimatedMax": 13649.98517067838,
+         "estimatedMin": 7115.463444004935,
+         "mean": 10178.788600858355,
+         "std": 2629.5117332591126,
+         "numDataPoints": 0,
+         "salaryType": "MONTHLY",
+         "lastUpdateTimestamp": 1794481121000,
+         "inferred": false
+        },
+        "YEARLY": {
+         "estimatedMedian": 139195.20844640964,
+         "estimatedMax": 192791.8983019107,
+         "estimatedMin": 100498.54908372671,
+         "mean": 143764.84312882263,
+         "std": 37139.12889452446,
+         "numDataPoints": 327,
+         "salaryType": "YEARLY",
+         "lastUpdateTimestamp": 1794481121000,
+         "inferred": false
+        }
+       },
+       "empty": false
+      },
+      "aggregatedSalaries": {
+       "HOURLY": {
+        "estimatedMedian": 68.89995905332258,
+        "estimatedMax": 96.47278466788171,
+        "estimatedMin": 49.20770530151212,
+        "mean": 71.31803867633526,
+        "std": 19.05976784844107,
+        "numDataPoints": 130,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1793989706000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 8294.26716730156,
+        "estimatedMax": 9723.48253399079,
+        "estimatedMin": 7075.126386260002,
+        "mean": 8358.333333333334,
+        "std": 1040.8713764064266,
+        "numDataPoints": 18,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1794357516000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 139195.20844640964,
+        "estimatedMax": 192791.8983019107,
+        "estimatedMin": 100498.54908372671,
+        "mean": 143764.84312882263,
+        "std": 37139.12889452446,
+        "numDataPoints": 327,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794481121000,
+        "inferred": false
+       }
+      },
+      "mostCommonSalary": {
+       "estimatedMedian": 139195.20844640964,
+       "estimatedMax": 192791.8983019107,
+       "estimatedMin": 100498.54908372671,
+       "mean": 143764.84312882263,
+       "std": 37139.12889452446,
+       "numDataPoints": 327,
+       "salaryType": "YEARLY",
+       "lastUpdateTimestamp": 1794481121000,
+       "inferred": false
+      }
+     }
+    },
+    {
+     "location": {
+      "displayName": "Austin, TX",
+      "locationUrlSegment": "Austin--TX"
+     },
+     "salary": {
+      "currency": "USD",
+      "salaries": {
+       "HOURLY": {
+        "estimatedMedian": 54.90943933220299,
+        "estimatedMax": 91.13764435975621,
+        "estimatedMin": 33.082339893220336,
+        "mean": 59.37323675471135,
+        "std": 24.422277144216306,
+        "numDataPoints": 0,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794522830000,
+        "inferred": false
+       },
+       "DAILY": {
+        "estimatedMedian": 568.3026829736253,
+        "estimatedMax": 943.2579978861634,
+        "estimatedMin": 342.39618449967185,
+        "mean": 614.5021722110704,
+        "std": 252.76611442731942,
+        "numDataPoints": 0,
+        "salaryType": "DAILY",
+        "lastUpdateTimestamp": 1794522830000,
+        "inferred": false
+       },
+       "WEEKLY": {
+        "estimatedMedian": 2339.696361589354,
+        "estimatedMax": 3883.3835767703704,
+        "estimatedMin": 1409.6416066597,
+        "mean": 2529.8991885592086,
+        "std": 1040.6355204311503,
+        "numDataPoints": 0,
+        "salaryType": "WEEKLY",
+        "lastUpdateTimestamp": 1794522830000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 9053.805065201066,
+        "estimatedMax": 15027.333663757317,
+        "estimatedMin": 5454.819064566192,
+        "mean": 9789.823356508507,
+        "std": 4026.894814465384,
+        "numDataPoints": 0,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1794522830000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 127875.61624060138,
+        "estimatedMax": 212245.51874791505,
+        "estimatedMin": 77043.66775505472,
+        "mean": 138271.11204457507,
+        "std": 56875.71714074753,
+        "numDataPoints": 856,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794522830000,
+        "inferred": false
+       }
+      },
+      "displaySalaryPeriod": "YEARLY",
+      "mostCommonSalaryPeriod": "YEARLY",
+      "salaryMultipliers": {
+       "multipliers": {
+        "WEEKLY": 42.61009382073915,
+        "MONTHLY": 164.88613206238367,
+        "DAILY": 10.349817624896604,
+        "YEARLY": 2328.845783089349,
+        "HOURLY": 1
+       },
+       "mostCommonSalaryType": "YEARLY",
+       "salaries": {
+        "HOURLY": {
+         "estimatedMedian": 54.90943933220299,
+         "estimatedMax": 91.13764435975621,
+         "estimatedMin": 33.082339893220336,
+         "mean": 59.37323675471135,
+         "std": 24.422277144216306,
+         "numDataPoints": 0,
+         "salaryType": "HOURLY",
+         "lastUpdateTimestamp": 1794522830000,
+         "inferred": false
+        },
+        "DAILY": {
+         "estimatedMedian": 568.3026829736253,
+         "estimatedMax": 943.2579978861634,
+         "estimatedMin": 342.39618449967185,
+         "mean": 614.5021722110704,
+         "std": 252.76611442731942,
+         "numDataPoints": 0,
+         "salaryType": "DAILY",
+         "lastUpdateTimestamp": 1794522830000,
+         "inferred": false
+        },
+        "WEEKLY": {
+         "estimatedMedian": 2339.696361589354,
+         "estimatedMax": 3883.3835767703704,
+         "estimatedMin": 1409.6416066597,
+         "mean": 2529.8991885592086,
+         "std": 1040.6355204311503,
+         "numDataPoints": 0,
+         "salaryType": "WEEKLY",
+         "lastUpdateTimestamp": 1794522830000,
+         "inferred": false
+        },
+        "MONTHLY": {
+         "estimatedMedian": 9053.805065201066,
+         "estimatedMax": 15027.333663757317,
+         "estimatedMin": 5454.819064566192,
+         "mean": 9789.823356508507,
+         "std": 4026.894814465384,
+         "numDataPoints": 0,
+         "salaryType": "MONTHLY",
+         "lastUpdateTimestamp": 1794522830000,
+         "inferred": false
+        },
+        "YEARLY": {
+         "estimatedMedian": 127875.61624060138,
+         "estimatedMax": 212245.51874791505,
+         "estimatedMin": 77043.66775505472,
+         "mean": 138271.11204457507,
+         "std": 56875.71714074753,
+         "numDataPoints": 856,
+         "salaryType": "YEARLY",
+         "lastUpdateTimestamp": 1794522830000,
+         "inferred": false
+        }
+       },
+       "empty": false
+      },
+      "aggregatedSalaries": {
+       "HOURLY": {
+        "estimatedMedian": 64.06631198909473,
+        "estimatedMax": 94.71631888463686,
+        "estimatedMin": 43.334584580451605,
+        "mean": 67.11809252709457,
+        "std": 20.96175471974382,
+        "numDataPoints": 194,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794706165000,
+        "inferred": false
+       },
+       "DAILY": {
+        "estimatedMedian": 129.94609116837776,
+        "estimatedMax": 173.7906837049951,
+        "estimatedMin": 97.1627837002073,
+        "mean": 133.33333333333334,
+        "std": 30.641293851417025,
+        "numDataPoints": 3,
+        "salaryType": "DAILY",
+        "lastUpdateTimestamp": 1778832703000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 127875.61624060138,
+        "estimatedMax": 212245.51874791505,
+        "estimatedMin": 77043.66775505472,
+        "mean": 138271.11204457507,
+        "std": 56875.71714074753,
+        "numDataPoints": 856,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794522830000,
+        "inferred": false
+       }
+      },
+      "mostCommonSalary": {
+       "estimatedMedian": 127875.61624060138,
+       "estimatedMax": 212245.51874791505,
+       "estimatedMin": 77043.66775505472,
+       "mean": 138271.11204457507,
+       "std": 56875.71714074753,
+       "numDataPoints": 856,
+       "salaryType": "YEARLY",
+       "lastUpdateTimestamp": 1794522830000,
+       "inferred": false
+      }
+     }
+    },
+    {
+     "location": {
+      "displayName": "Atlanta, GA",
+      "locationUrlSegment": "Atlanta--GA"
+     },
+     "salary": {
+      "currency": "USD",
+      "salaries": {
+       "HOURLY": {
+        "estimatedMedian": 50.34666091936512,
+        "estimatedMax": 78.17929993295978,
+        "estimatedMin": 32.42272913550198,
+        "mean": 53.40427559979885,
+        "std": 18.89264421567025,
+        "numDataPoints": 0,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794762567000,
+        "inferred": false
+       },
+       "DAILY": {
+        "estimatedMedian": 521.0787585379381,
+        "estimatedMax": 809.141496348225,
+        "estimatedMin": 335.56933345386705,
+        "mean": 552.7245128476338,
+        "std": 195.5354220842448,
+        "numDataPoints": 0,
+        "salaryType": "DAILY",
+        "lastUpdateTimestamp": 1794762567000,
+        "inferred": false
+       },
+       "WEEKLY": {
+        "estimatedMedian": 2145.275945335089,
+        "estimatedMax": 3331.2273049831224,
+        "estimatedMin": 1381.5355303881522,
+        "mean": 2275.5611937360395,
+        "std": 805.0173425515542,
+        "numDataPoints": 0,
+        "salaryType": "WEEKLY",
+        "lastUpdateTimestamp": 1794762567000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 8301.466181250487,
+        "estimatedMax": 12890.682373290709,
+        "estimatedMin": 5346.058398059275,
+        "mean": 8805.624439244368,
+        "std": 3115.1350291526337,
+        "numDataPoints": 0,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1794762567000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 117249.60897469279,
+        "estimatedMax": 182067.53297375081,
+        "estimatedMin": 75507.53602346196,
+        "mean": 124370.32202953297,
+        "std": 43998.05481307104,
+        "numDataPoints": 455,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794762567000,
+        "inferred": false
+       }
+      },
+      "displaySalaryPeriod": "YEARLY",
+      "mostCommonSalaryPeriod": "YEARLY",
+      "salaryMultipliers": {
+       "multipliers": {
+        "WEEKLY": 42.61009382073915,
+        "MONTHLY": 164.88613206238367,
+        "DAILY": 10.349817624896604,
+        "YEARLY": 2328.845783089349,
+        "HOURLY": 1
+       },
+       "mostCommonSalaryType": "YEARLY",
+       "salaries": {
+        "HOURLY": {
+         "estimatedMedian": 50.34666091936512,
+         "estimatedMax": 78.17929993295978,
+         "estimatedMin": 32.42272913550198,
+         "mean": 53.40427559979885,
+         "std": 18.89264421567025,
+         "numDataPoints": 0,
+         "salaryType": "HOURLY",
+         "lastUpdateTimestamp": 1794762567000,
+         "inferred": false
+        },
+        "DAILY": {
+         "estimatedMedian": 521.0787585379381,
+         "estimatedMax": 809.141496348225,
+         "estimatedMin": 335.56933345386705,
+         "mean": 552.7245128476338,
+         "std": 195.5354220842448,
+         "numDataPoints": 0,
+         "salaryType": "DAILY",
+         "lastUpdateTimestamp": 1794762567000,
+         "inferred": false
+        },
+        "WEEKLY": {
+         "estimatedMedian": 2145.275945335089,
+         "estimatedMax": 3331.2273049831224,
+         "estimatedMin": 1381.5355303881522,
+         "mean": 2275.5611937360395,
+         "std": 805.0173425515542,
+         "numDataPoints": 0,
+         "salaryType": "WEEKLY",
+         "lastUpdateTimestamp": 1794762567000,
+         "inferred": false
+        },
+        "MONTHLY": {
+         "estimatedMedian": 8301.466181250487,
+         "estimatedMax": 12890.682373290709,
+         "estimatedMin": 5346.058398059275,
+         "mean": 8805.624439244368,
+         "std": 3115.1350291526337,
+         "numDataPoints": 0,
+         "salaryType": "MONTHLY",
+         "lastUpdateTimestamp": 1794762567000,
+         "inferred": false
+        },
+        "YEARLY": {
+         "estimatedMedian": 117249.60897469279,
+         "estimatedMax": 182067.53297375081,
+         "estimatedMin": 75507.53602346196,
+         "mean": 124370.32202953297,
+         "std": 43998.05481307104,
+         "numDataPoints": 455,
+         "salaryType": "YEARLY",
+         "lastUpdateTimestamp": 1794762567000,
+         "inferred": false
+        }
+       },
+       "empty": false
+      },
+      "aggregatedSalaries": {
+       "HOURLY": {
+        "estimatedMedian": 48.22493590573664,
+        "estimatedMax": 88.06936656004378,
+        "estimatedMin": 26.406962306214975,
+        "mean": 53.8550745266587,
+        "std": 26.77224982264641,
+        "numDataPoints": 67,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794235185000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 6000,
+        "estimatedMax": 6000,
+        "estimatedMin": 6000,
+        "mean": 6000,
+        "std": 0,
+        "numDataPoints": 2,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1772303693000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 117249.60897469279,
+        "estimatedMax": 182067.53297375081,
+        "estimatedMin": 75507.53602346196,
+        "mean": 124370.32202953297,
+        "std": 43998.05481307104,
+        "numDataPoints": 455,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794762567000,
+        "inferred": false
+       }
+      },
+      "mostCommonSalary": {
+       "estimatedMedian": 117249.60897469279,
+       "estimatedMax": 182067.53297375081,
+       "estimatedMin": 75507.53602346196,
+       "mean": 124370.32202953297,
+       "std": 43998.05481307104,
+       "numDataPoints": 455,
+       "salaryType": "YEARLY",
+       "lastUpdateTimestamp": 1794762567000,
+       "inferred": false
+      }
+     }
+    },
+    {
+     "location": {
+      "displayName": "Dallas, TX",
+      "locationUrlSegment": "Dallas--TX"
+     },
+     "salary": {
+      "currency": "USD",
+      "salaries": {
+       "HOURLY": {
+        "estimatedMedian": 49.643959629944725,
+        "estimatedMax": 74.48112221543384,
+        "estimatedMin": 33.0892265641622,
+        "mean": 52.1945013298875,
+        "std": 16.944566663895632,
+        "numDataPoints": 0,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794748131000,
+        "inferred": false
+       },
+       "DAILY": {
+        "estimatedMedian": 513.8059283476574,
+        "estimatedMax": 770.8660314273751,
+        "estimatedMin": 342.46746028796287,
+        "mean": 540.2035697867589,
+        "std": 175.37317470422246,
+        "numDataPoints": 0,
+        "salaryType": "DAILY",
+        "lastUpdateTimestamp": 1794748131000,
+        "inferred": false
+       },
+       "WEEKLY": {
+        "estimatedMedian": 2115.3337774649317,
+        "estimatedMax": 3173.6476054735754,
+        "estimatedMin": 1409.9350483546457,
+        "mean": 2224.012598593201,
+        "std": 722.0095753003619,
+        "numDataPoints": 0,
+        "salaryType": "WEEKLY",
+        "lastUpdateTimestamp": 1794748131000,
+        "inferred": false
+       },
+       "MONTHLY": {
+        "estimatedMedian": 8185.600483642709,
+        "estimatedMax": 12280.904153768563,
+        "estimatedMin": 5455.954581100583,
+        "mean": 8606.14943921009,
+        "std": 2793.924056682959,
+        "numDataPoints": 0,
+        "salaryType": "MONTHLY",
+        "lastUpdateTimestamp": 1794748131000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 115613.12604005465,
+        "estimatedMax": 173455.04739117553,
+        "estimatedMin": 77059.70574963721,
+        "mean": 121552.94432255992,
+        "std": 39461.2826214897,
+        "numDataPoints": 292,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794748131000,
+        "inferred": false
+       }
+      },
+      "displaySalaryPeriod": "YEARLY",
+      "mostCommonSalaryPeriod": "YEARLY",
+      "salaryMultipliers": {
+       "multipliers": {
+        "WEEKLY": 42.61009382073915,
+        "MONTHLY": 164.88613206238367,
+        "DAILY": 10.349817624896604,
+        "YEARLY": 2328.845783089349,
+        "HOURLY": 1
+       },
+       "mostCommonSalaryType": "YEARLY",
+       "salaries": {
+        "HOURLY": {
+         "estimatedMedian": 49.643959629944725,
+         "estimatedMax": 74.48112221543384,
+         "estimatedMin": 33.0892265641622,
+         "mean": 52.1945013298875,
+         "std": 16.944566663895632,
+         "numDataPoints": 0,
+         "salaryType": "HOURLY",
+         "lastUpdateTimestamp": 1794748131000,
+         "inferred": false
+        },
+        "DAILY": {
+         "estimatedMedian": 513.8059283476574,
+         "estimatedMax": 770.8660314273751,
+         "estimatedMin": 342.46746028796287,
+         "mean": 540.2035697867589,
+         "std": 175.37317470422246,
+         "numDataPoints": 0,
+         "salaryType": "DAILY",
+         "lastUpdateTimestamp": 1794748131000,
+         "inferred": false
+        },
+        "WEEKLY": {
+         "estimatedMedian": 2115.3337774649317,
+         "estimatedMax": 3173.6476054735754,
+         "estimatedMin": 1409.9350483546457,
+         "mean": 2224.012598593201,
+         "std": 722.0095753003619,
+         "numDataPoints": 0,
+         "salaryType": "WEEKLY",
+         "lastUpdateTimestamp": 1794748131000,
+         "inferred": false
+        },
+        "MONTHLY": {
+         "estimatedMedian": 8185.600483642709,
+         "estimatedMax": 12280.904153768563,
+         "estimatedMin": 5455.954581100583,
+         "mean": 8606.14943921009,
+         "std": 2793.924056682959,
+         "numDataPoints": 0,
+         "salaryType": "MONTHLY",
+         "lastUpdateTimestamp": 1794748131000,
+         "inferred": false
+        },
+        "YEARLY": {
+         "estimatedMedian": 115613.12604005465,
+         "estimatedMax": 173455.04739117553,
+         "estimatedMin": 77059.70574963721,
+         "mean": 121552.94432255992,
+         "std": 39461.2826214897,
+         "numDataPoints": 292,
+         "salaryType": "YEARLY",
+         "lastUpdateTimestamp": 1794748131000,
+         "inferred": false
+        }
+       },
+       "empty": false
+      },
+      "aggregatedSalaries": {
+       "HOURLY": {
+        "estimatedMedian": 62.0438935923617,
+        "estimatedMax": 93.58721101830068,
+        "estimatedMin": 41.13216635286927,
+        "mean": 65.31886357394131,
+        "std": 21.50128737373031,
+        "numDataPoints": 110,
+        "salaryType": "HOURLY",
+        "lastUpdateTimestamp": 1794608473000,
+        "inferred": false
+       },
+       "YEARLY": {
+        "estimatedMedian": 115613.12604005465,
+        "estimatedMax": 173455.04739117553,
+        "estimatedMin": 77059.70574963721,
+        "mean": 121552.94432255992,
+        "std": 39461.2826214897,
+        "numDataPoints": 292,
+        "salaryType": "YEARLY",
+        "lastUpdateTimestamp": 1794748131000,
+        "inferred": false
+       }
+      },
+      "mostCommonSalary": {
+       "estimatedMedian": 115613.12604005465,
+       "estimatedMax": 173455.04739117553,
+       "estimatedMin": 77059.70574963721,
+       "mean": 121552.94432255992,
+       "std": 39461.2826214897,
+       "numDataPoints": 292,
+       "salaryType": "YEARLY",
+       "lastUpdateTimestamp": 1794748131000,
+       "inferred": false
+      }
+     }
+    }
+   ]
+  },
+  "topPayingCompanies": [
+   {
+    "employerKey": "acf855757caef5da",
+    "name": "Mirage",
+    "reviewCount": 43,
+    "rating": 3.7,
+    "companyPageUrl": "/cmp/Mirage",
+    "salary": {
+     "totalCount": 73,
+     "main": {
+      "type": "YEARLY",
+      "mean": 229315.0684931507,
+      "count": 73,
+      "latestTimestamp": "1794702634000",
+      "__typename": "SalaryStats"
+     },
+     "yearly": {
+      "type": "YEARLY",
+      "mean": 229315.0684931507,
+      "count": 73,
+      "latestTimestamp": "1794702634000",
+      "__typename": "SalaryStats"
+     },
+     "monthly": null,
+     "hourly": null
+    }
+   },
+   {
+    "employerKey": "8aa898698d7a3b8e",
+    "name": "Grammarly",
+    "reviewCount": 10,
+    "rating": 4.2,
+    "companyPageUrl": "/cmp/Grammarly-5",
+    "salary": {
+     "totalCount": 32,
+     "main": {
+      "type": "YEARLY",
+      "mean": 244354.15625,
+      "count": 32,
+      "latestTimestamp": "1770220656000",
+      "__typename": "SalaryStats"
+     },
+     "yearly": {
+      "type": "YEARLY",
+      "mean": 244354.15625,
+      "count": 32,
+      "latestTimestamp": "1770220656000",
+      "__typename": "SalaryStats"
+     },
+     "monthly": null,
+     "hourly": null
+    }
+   },
+   {
+    "employerKey": "3d1d873646adba9a",
+    "name": "D. E. Shaw & Co. - Investment Firm",
+    "reviewCount": 25,
+    "rating": 4,
+    "companyPageUrl": "/cmp/D.-E.-Shaw-&-Co.---Investment-Firm",
+    "salary": {
+     "totalCount": 30,
+     "main": {
+      "type": "YEARLY",
+      "mean": 225442.3076923077,
+      "count": 26,
+      "latestTimestamp": "1791975784000",
+      "__typename": "SalaryStats"
+     },
+     "yearly": {
+      "type": "YEARLY",
+      "mean": 225442.3076923077,
+      "count": 26,
+      "latestTimestamp": "1791975784000",
+      "__typename": "SalaryStats"
+     },
+     "monthly": {
+      "type": "MONTHLY",
+      "mean": 20500,
+      "count": 4,
+      "latestTimestamp": "1714863734000",
+      "__typename": "SalaryStats"
+     },
+     "hourly": null
+    }
+   },
+   {
+    "employerKey": "ed84f92a43d6cb2e",
+    "name": "Point72",
+    "reviewCount": 15,
+    "rating": 3.4,
+    "companyPageUrl": "/cmp/Point72-7",
+    "salary": {
+     "totalCount": 25,
+     "main": {
+      "type": "YEARLY",
+      "mean": 225600,
+      "count": 25,
+      "latestTimestamp": "1791995566000",
+      "__typename": "SalaryStats"
+     },
+     "yearly": {
+      "type": "YEARLY",
+      "mean": 225600,
+      "count": 25,
+      "latestTimestamp": "1791995566000",
+      "__typename": "SalaryStats"
+     },
+     "monthly": null,
+     "hourly": null
+    }
+   },
+   {
+    "employerKey": "9fb1a29d9c6e399a",
+    "name": "ByteDance",
+    "reviewCount": 65,
+    "rating": 3.8,
+    "companyPageUrl": "/cmp/Bytedance",
+    "salary": {
+     "totalCount": 938,
+     "main": {
+      "type": "YEARLY",
+      "mean": 237058.96942060086,
+      "count": 932,
+      "latestTimestamp": "1794808797000",
+      "__typename": "SalaryStats"
+     },
+     "yearly": {
+      "type": "YEARLY",
+      "mean": 237058.96942060086,
+      "count": 932,
+      "latestTimestamp": "1794808797000",
+      "__typename": "SalaryStats"
+     },
+     "monthly": null,
+     "hourly": {
+      "type": "HOURLY",
+      "mean": 52.5,
+      "count": 6,
+      "latestTimestamp": "1791611982000",
+      "__typename": "SalaryStats"
+     }
+    }
+   },
+   {
+    "employerKey": "60159f05e64ffd79",
+    "name": "Netflix",
+    "reviewCount": 715,
+    "rating": 4,
+    "companyPageUrl": "/cmp/Netflix",
+    "salary": {
+     "totalCount": 40,
+     "main": {
+      "type": "YEARLY",
+      "mean": 244270.27027027027,
+      "count": 37,
+      "latestTimestamp": "1793947475000",
+      "__typename": "SalaryStats"
+     },
+     "yearly": {
+      "type": "YEARLY",
+      "mean": 244270.27027027027,
+      "count": 37,
+      "latestTimestamp": "1793947475000",
+      "__typename": "SalaryStats"
+     },
+     "monthly": null,
+     "hourly": {
+      "type": "HOURLY",
+      "mean": 56,
+      "count": 3,
+      "latestTimestamp": "1760456916000",
+      "__typename": "SalaryStats"
+     }
+    }
+   },
+   {
+    "employerKey": "dbefeed33ca1ed83",
+    "name": "Meta",
+    "reviewCount": 73,
+    "rating": 3.5,
+    "companyPageUrl": "/cmp/Meta",
+    "salary": {
+     "totalCount": 40,
+     "main": {
+      "type": "YEARLY",
+      "mean": 248714.23214285713,
+      "count": 28,
+      "latestTimestamp": "1788033251000",
+      "__typename": "SalaryStats"
+     },
+     "yearly": {
+      "type": "YEARLY",
+      "mean": 248714.23214285713,
+      "count": 28,
+      "latestTimestamp": "1788033251000",
+      "__typename": "SalaryStats"
+     },
+     "monthly": null,
+     "hourly": {
+      "type": "HOURLY",
+      "mean": 69.2450008392334,
+      "count": 12,
+      "latestTimestamp": "1773380812000",
+      "__typename": "SalaryStats"
+     }
+    }
+   },
+   {
+    "employerKey": "3f13786d9ca6a370",
+    "name": "MERCOR",
+    "reviewCount": 28,
+    "rating": 3.6,
+    "companyPageUrl": "/cmp/Mercor",
+    "salary": {
+     "totalCount": 286,
+     "main": {
+      "type": "HOURLY",
+      "mean": 91.11711711711712,
+      "count": 222,
+      "latestTimestamp": "1794335678000",
+      "__typename": "SalaryStats"
+     },
+     "yearly": {
+      "type": "YEARLY",
+      "mean": 312822.5806451613,
+      "count": 62,
+      "latestTimestamp": "1794645349000",
+      "__typename": "SalaryStats"
+     },
+     "monthly": null,
+     "hourly": {
+      "type": "HOURLY",
+      "mean": 91.11711711711712,
+      "count": 222,
+      "latestTimestamp": "1794335678000",
+      "__typename": "SalaryStats"
+     }
+    }
+   },
+   {
+    "employerKey": "cc6744284a1291d9",
+    "name": "Scale AI",
+    "reviewCount": 92,
+    "rating": 2.6,
+    "companyPageUrl": "/cmp/Scale-Ai",
+    "salary": {
+     "totalCount": 43,
+     "main": {
+      "type": "YEARLY",
+      "mean": 224548.2558139535,
+      "count": 43,
+      "latestTimestamp": "1794255108000",
+      "__typename": "SalaryStats"
+     },
+     "yearly": {
+      "type": "YEARLY",
+      "mean": 224548.2558139535,
+      "count": 43,
+      "latestTimestamp": "1794255108000",
+      "__typename": "SalaryStats"
+     },
+     "monthly": null,
+     "hourly": null
+    }
+   }
+  ],
+  "note": "localeData, pageMeta, jobsCarouselData, relatedTitlesResponse and erlWidgetData dropped (the full output is ~340 KB)"
+ }
+}

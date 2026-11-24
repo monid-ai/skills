@@ -1,0 +1,387 @@
+{
+ "runId": "01M869H04S0S2KFF1ATJ7ZN4YY",
+ "provider": "levels.fyi",
+ "endpoint": "/get_salary_data",
+ "status": "COMPLETED",
+ "providerResponse": {
+  "httpStatus": 200
+ },
+ "cost": {
+  "value": 0.01,
+  "currency": "USD"
+ },
+ "createdAt": "2026-11-24T08:07:30.985Z",
+ "input": {
+  "queryParams": {
+   "company_slug": "apple",
+   "job_family_slug": "software-engineer"
+  }
+ },
+ "output_trimmed": {
+  "company": {
+   "slug": "apple",
+   "name": "Apple",
+   "hq_city": "Cupertino",
+   "hq_state_code": "CA",
+   "emp_count": 166000
+  },
+  "job_family": "Software Engineer",
+  "averages": [
+   {
+    "primaryLevelName": "ICT2",
+    "secondaryLevelName": "Junior Software Engineer",
+    "titles": [
+     "ICT2",
+     "Junior Software Engineer"
+    ],
+    "count": 14,
+    "count_last_12_months": 59,
+    "total": 184598,
+    "base": 148000,
+    "stock": 29527,
+    "bonus": 7071,
+    "yoeMedian": 0,
+    "samples": [
+     {
+      "totalCompensation": 144500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 152500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 158625,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 163000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 175000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 187500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 191250,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 197500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 200500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 204000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 205000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 230000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "ICT3",
+    "secondaryLevelName": "Software Engineer",
+    "titles": [
+     "ICT3",
+     "Software Engineer"
+    ],
+    "count": 15,
+    "count_last_12_months": 270,
+    "total": 258842,
+    "base": 175300,
+    "stock": 69208,
+    "bonus": 14333,
+    "yoeMedian": 4,
+    "samples": [
+     {
+      "totalCompensation": 213250,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 230000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 230000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 235250,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 237000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 237500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 273125,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 279500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 283000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 302000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 317500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 324000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "ICT4",
+    "secondaryLevelName": "Senior Software Engineer",
+    "titles": [
+     "ICT4",
+     "Senior Software Engineer"
+    ],
+    "count": 30,
+    "count_last_12_months": 409,
+    "total": 342048,
+    "base": 209871,
+    "stock": 112501,
+    "bonus": 19677,
+    "yoeMedian": 8,
+    "samples": [
+     {
+      "totalCompensation": 250000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 263700,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 264000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 284000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 290000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 290000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 303000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 310000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 315000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 316800,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 322466,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 325000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 335000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 340000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 347500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 369900,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 396750,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 398000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 402000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 415000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 445000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 450000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 450000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "ICT5",
+    "secondaryLevelName": null,
+    "titles": [
+     "ICT5"
+    ],
+    "count": 7,
+    "count_last_12_months": 167,
+    "total": 580429,
+    "base": 283857,
+    "stock": 248286,
+    "bonus": 48286,
+    "yoeMedian": 20,
+    "samples": [
+     {
+      "totalCompensation": 470000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 485000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 611000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 855000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "ICT6",
+    "secondaryLevelName": null,
+    "titles": [
+     "ICT6"
+    ],
+    "count": 4,
+    "count_last_12_months": 7,
+    "total": 833452,
+    "base": 318452,
+    "stock": 464500,
+    "bonus": 50500,
+    "yoeMedian": 20,
+    "samples": [
+     {
+      "totalCompensation": 730000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 750000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1020000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "Distinguished Engineer",
+    "secondaryLevelName": null,
+    "titles": [
+     "Distinguished Engineer"
+    ],
+    "count": 2,
+    "count_last_12_months": 1,
+    "total": 1480000,
+    "base": 370000,
+    "stock": 1000000,
+    "bonus": 110000,
+    "yoeMedian": 16,
+    "samples": [
+     {
+      "totalCompensation": 800000,
+      "isRedacted": true
+     }
+    ]
+   }
+  ],
+  "percentiles": {
+   "base_salary": {
+    "p10": 165000,
+    "p25": 172000,
+    "p50": 195000,
+    "p75": 220000,
+    "p90": 250000
+   },
+   "tc": {
+    "p10": 213250,
+    "p25": 250000,
+    "p50": 315000,
+    "p75": 350015,
+    "p90": 450000
+   },
+   "bonus": {
+    "p10": 0,
+    "p25": 0,
+    "p50": 20000,
+    "p75": 26000,
+    "p90": 40000
+   },
+   "stock_grant": {
+    "p10": 40000,
+    "p25": 55000,
+    "p50": 100000,
+    "p75": 125000,
+    "p90": 198000
+   },
+   "count": 56,
+   "average": 323450,
+   "locationName": "United States"
+  },
+  "median_tc": 315000,
+  "location_meta": null,
+  "note": "company description, culture, related companies and technology lists dropped"
+ }
+}

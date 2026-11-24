@@ -1,0 +1,6 @@
+endpoint	run_id	provider_http_status	billed_usd
+indeed /get_salary_info Product Manager	01M86ADB6Q1A84NTH9R5VXM9YB	200	0.02
+indeed /get_salary_info Product Manager, New York, NY	01M86ADY2HTX503SHSKWVZ0HC2	200	0.02
+levels.fyi /get_salary_data google product-manager	01M86AEN6JCWY8RD8G5MJ5PCNG	200	0.01
+levels.fyi /get_salary_data meta product-manager	01M86AEZ1MWH44TH7YXMVHBQZ0	200	0.01
+levels.fyi /get_salary_data stripe product-manager	01M86AF8P3M93213G6K0E7DRZA	200	0.01

@@ -1,0 +1,1196 @@
+{
+  "us": {
+    "local_yearly": {
+      "estimatedMedian": 137322.59463160724,
+      "estimatedMin": 83132.90331712634,
+      "estimatedMax": 226835.51570935998,
+      "mean": 148267.69016828496,
+      "numDataPoints": 9179,
+      "inferred": false
+    },
+    "national_yearly": {
+      "estimatedMedian": 137322.59463160724,
+      "estimatedMin": 83132.90331712634,
+      "estimatedMax": 226835.51570935998,
+      "mean": 148267.69016828496,
+      "numDataPoints": 9179,
+      "inferred": false
+    },
+    "local_location": {
+      "locationDetails": {
+        "code": "US",
+        "population": 310232863,
+        "locationId": 1,
+        "latitude": 39.76,
+        "longitude": -98.5,
+        "name": "United States",
+        "type": "COUNTRY",
+        "subType": "matched-location-info",
+        "isPrimaryAdminDivision": false,
+        "isContainedWithinPrimaryAdminDivision": false
+      },
+      "locationUrlSegment": "",
+      "indexable": true,
+      "displayLocation": "United States"
+    },
+    "fallback": false,
+    "states_top5": [
+      [
+        "NY",
+        127657,
+        681,
+        18.157164
+      ],
+      [
+        "CT",
+        126859,
+        119,
+        17.418549
+      ],
+      [
+        "CA",
+        123152,
+        1208,
+        13.987412
+      ],
+      [
+        "NJ",
+        119274,
+        197,
+        10.398001
+      ],
+      [
+        "ND",
+        116625,
+        8,
+        7.946131
+      ]
+    ],
+    "nationalSalaryAvg": 108040,
+    "cities_raw": [
+      [
+        "San Francisco, CA",
+        187491.98853495365,
+        738,
+        false
+      ],
+      [
+        "New York, NY",
+        161465.86029403695,
+        1155,
+        false
+      ],
+      [
+        "Seattle, WA",
+        157120.08760437163,
+        209,
+        false
+      ],
+      [
+        "Los Angeles, CA",
+        156028.87649933953,
+        212,
+        false
+      ],
+      [
+        "Austin, TX",
+        142327.92371904658,
+        189,
+        false
+      ],
+      [
+        "Boston, MA",
+        137980.46874185762,
+        206,
+        false
+      ],
+      [
+        "Denver, CO",
+        132310.87381260633,
+        147,
+        false
+      ],
+      [
+        "Chicago, IL",
+        129154.6147771527,
+        301,
+        false
+      ],
+      [
+        "Atlanta, GA",
+        117193.42301055453,
+        180,
+        false
+      ]
+    ],
+    "cities": [
+      [
+        "San Francisco, CA",
+        187491.98853495365,
+        738,
+        false
+      ],
+      [
+        "New York, NY",
+        161465.86029403695,
+        1155,
+        false
+      ],
+      [
+        "Seattle, WA",
+        157120.08760437163,
+        209,
+        false
+      ],
+      [
+        "Los Angeles, CA",
+        156028.87649933953,
+        212,
+        false
+      ],
+      [
+        "Austin, TX",
+        142327.92371904658,
+        189,
+        false
+      ],
+      [
+        "Boston, MA",
+        137980.46874185762,
+        206,
+        false
+      ],
+      [
+        "Denver, CO",
+        132310.87381260633,
+        147,
+        false
+      ],
+      [
+        "Chicago, IL",
+        129154.6147771527,
+        301,
+        false
+      ],
+      [
+        "Atlanta, GA",
+        117193.42301055453,
+        180,
+        false
+      ]
+    ],
+    "companies_raw": [
+      [
+        "Whatnot",
+        273736.84210526315,
+        38,
+        "YEARLY",
+        273736.84210526315
+      ],
+      [
+        "Meta",
+        236702.7027027027,
+        37,
+        "YEARLY",
+        236702.7027027027
+      ],
+      [
+        "ByteDance",
+        231869.27272727274,
+        33,
+        "YEARLY",
+        231869.27272727274
+      ],
+      [
+        "Scale AI",
+        221548.125,
+        32,
+        "YEARLY",
+        221548.125
+      ],
+      [
+        "Crowe",
+        208800,
+        35,
+        "YEARLY",
+        208800
+      ],
+      [
+        "Snap Inc.",
+        210532.25806451612,
+        31,
+        "YEARLY",
+        210532.25806451612
+      ],
+      [
+        "Chime",
+        215466.66666666666,
+        30,
+        "YEARLY",
+        215466.66666666666
+      ],
+      [
+        "Meta",
+        205346.37209302327,
+        43,
+        "YEARLY",
+        205346.37209302327
+      ],
+      [
+        "Block",
+        211332.6923076923,
+        26,
+        "YEARLY",
+        211332.6923076923
+      ],
+      [
+        "DoorDash",
+        203156,
+        25,
+        "YEARLY",
+        203156
+      ],
+      [
+        "MERCOR",
+        220294.11764705883,
+        17,
+        "HOURLY",
+        87.20588235294117
+      ],
+      [
+        "Lam Research",
+        185611.11111111112,
+        27,
+        "YEARLY",
+        185611.11111111112
+      ]
+    ],
+    "companies": [
+      [
+        "Whatnot",
+        273736.84210526315,
+        38,
+        "YEARLY",
+        273736.84210526315
+      ],
+      [
+        "Meta",
+        236702.7027027027,
+        37,
+        "YEARLY",
+        236702.7027027027
+      ],
+      [
+        "ByteDance",
+        231869.27272727274,
+        33,
+        "YEARLY",
+        231869.27272727274
+      ],
+      [
+        "Scale AI",
+        221548.125,
+        32,
+        "YEARLY",
+        221548.125
+      ],
+      [
+        "Crowe",
+        208800,
+        35,
+        "YEARLY",
+        208800
+      ],
+      [
+        "Snap Inc.",
+        210532.25806451612,
+        31,
+        "YEARLY",
+        210532.25806451612
+      ],
+      [
+        "Chime",
+        215466.66666666666,
+        30,
+        "YEARLY",
+        215466.66666666666
+      ],
+      [
+        "Meta",
+        205346.37209302327,
+        43,
+        "YEARLY",
+        205346.37209302327
+      ],
+      [
+        "Block",
+        211332.6923076923,
+        26,
+        "YEARLY",
+        211332.6923076923
+      ],
+      [
+        "DoorDash",
+        203156,
+        25,
+        "YEARLY",
+        203156
+      ],
+      [
+        "MERCOR",
+        220294.11764705883,
+        17,
+        "HOURLY",
+        87.20588235294117
+      ],
+      [
+        "Lam Research",
+        185611.11111111112,
+        27,
+        "YEARLY",
+        185611.11111111112
+      ]
+    ]
+  },
+  "nyc": {
+    "local_yearly": {
+      "estimatedMedian": 161465.86029403695,
+      "estimatedMin": 98336.84979001178,
+      "estimatedMax": 265121.6110355971,
+      "mean": 174017.94642180737,
+      "numDataPoints": 1155,
+      "inferred": false
+    },
+    "national_yearly": {
+      "estimatedMedian": 137322.59463160724,
+      "estimatedMin": 83132.90331712634,
+      "estimatedMax": 226835.51570935998,
+      "mean": 148267.69016828496,
+      "numDataPoints": 9179,
+      "inferred": false
+    },
+    "local_location": {
+      "locationDetails": {
+        "population": 8008278,
+        "locationId": 315868,
+        "latitude": 40.71427,
+        "longitude": -74.00597,
+        "name": "New York",
+        "parent": {
+          "code": "061",
+          "population": 1487536,
+          "locationId": 6008,
+          "latitude": 40.78343,
+          "longitude": -73.96625,
+          "name": "New York County",
+          "parent": {
+            "code": "NY",
+            "population": 19274244,
+            "locationId": 2037,
+            "latitude": 43.00035,
+            "longitude": -75.4999,
+            "name": "New York State",
+            "parent": {
+              "code": "US",
+              "population": 310232863,
+              "locationId": 1,
+              "latitude": 39.76,
+              "longitude": -98.5,
+              "name": "United States",
+              "type": "COUNTRY",
+              "subType": "matched-location-info",
+              "isPrimaryAdminDivision": false,
+              "isContainedWithinPrimaryAdminDivision": false
+            },
+            "type": "ADMIN1",
+            "subType": "matched-location-info",
+            "isPrimaryAdminDivision": true,
+            "isContainedWithinPrimaryAdminDivision": false
+          },
+          "type": "ADMIN2",
+          "subType": "matched-location-info",
+          "isPrimaryAdminDivision": false,
+          "isContainedWithinPrimaryAdminDivision": true
+        },
+        "type": "CITY",
+        "subType": "matched-location-info",
+        "isPrimaryAdminDivision": false,
+        "isContainedWithinPrimaryAdminDivision": true
+      },
+      "locationUrlSegment": "New-York--NY",
+      "indexable": true,
+      "displayLocation": "New York, NY"
+    },
+    "fallback": false,
+    "states_top5": [
+      [
+        "NY",
+        127657,
+        681,
+        18.157164
+      ],
+      [
+        "CT",
+        126859,
+        119,
+        17.418549
+      ],
+      [
+        "CA",
+        123152,
+        1208,
+        13.987412
+      ],
+      [
+        "NJ",
+        119274,
+        197,
+        10.398001
+      ],
+      [
+        "ND",
+        116625,
+        8,
+        7.946131
+      ]
+    ],
+    "nationalSalaryAvg": 108040,
+    "cities_raw": [
+      [
+        "New York, NY",
+        161465.86029403695,
+        1155,
+        false
+      ],
+      [
+        "Hauppauge, NY",
+        133251.18609687933,
+        16,
+        false
+      ],
+      [
+        "Albany, NY",
+        129838.73624084108,
+        14,
+        false
+      ],
+      [
+        "Brooklyn, NY",
+        129046.18723742467,
+        16,
+        false
+      ],
+      [
+        "Buffalo, NY",
+        113769.63105602049,
+        16,
+        false
+      ],
+      [
+        "Rochester, NY",
+        103610.48355381859,
+        19,
+        false
+      ],
+      [
+        "Tonawanda, NY",
+        100000,
+        5,
+        false
+      ],
+      [
+        "Great Neck, NY",
+        98756.69610220857,
+        10,
+        false
+      ],
+      [
+        "Manhattan, NY",
+        97995.64135721132,
+        24,
+        false
+      ]
+    ],
+    "cities": [
+      [
+        "New York, NY",
+        161465.86029403695,
+        1155,
+        false
+      ],
+      [
+        "Hauppauge, NY",
+        133251.18609687933,
+        16,
+        false
+      ],
+      [
+        "Albany, NY",
+        129838.73624084108,
+        14,
+        false
+      ],
+      [
+        "Brooklyn, NY",
+        129046.18723742467,
+        16,
+        false
+      ],
+      [
+        "Buffalo, NY",
+        113769.63105602049,
+        16,
+        false
+      ],
+      [
+        "Rochester, NY",
+        103610.48355381859,
+        19,
+        false
+      ],
+      [
+        "Tonawanda, NY",
+        100000,
+        5,
+        false
+      ],
+      [
+        "Great Neck, NY",
+        98756.69610220857,
+        10,
+        false
+      ],
+      [
+        "Manhattan, NY",
+        97995.64135721132,
+        24,
+        false
+      ]
+    ],
+    "companies_raw": [
+      [
+        "Whatnot",
+        263850,
+        10,
+        "YEARLY",
+        263850
+      ],
+      [
+        "StubHub",
+        195315,
+        14,
+        "YEARLY",
+        195315
+      ],
+      [
+        "Capital One",
+        186214.2857142857,
+        14,
+        "YEARLY",
+        186214.2857142857
+      ],
+      [
+        "MERCOR",
+        null,
+        null,
+        "HOURLY",
+        90.45454545454545
+      ],
+      [
+        "BNY",
+        192454.54545454544,
+        11,
+        "YEARLY",
+        192454.54545454544
+      ],
+      [
+        "LSEG (London Stock Exchange Group)",
+        191270,
+        10,
+        "YEARLY",
+        191270
+      ],
+      [
+        "Moody's",
+        184487.91666666666,
+        24,
+        "YEARLY",
+        184487.91666666666
+      ],
+      [
+        "Oscar Health",
+        180508.70454545456,
+        11,
+        "YEARLY",
+        180508.70454545456
+      ]
+    ],
+    "companies": [
+      [
+        "Whatnot",
+        263850,
+        10,
+        "YEARLY",
+        263850
+      ],
+      [
+        "StubHub",
+        195315,
+        14,
+        "YEARLY",
+        195315
+      ],
+      [
+        "Capital One",
+        186214.2857142857,
+        14,
+        "YEARLY",
+        186214.2857142857
+      ],
+      [
+        "BNY",
+        192454.54545454544,
+        11,
+        "YEARLY",
+        192454.54545454544
+      ],
+      [
+        "LSEG (London Stock Exchange Group)",
+        191270,
+        10,
+        "YEARLY",
+        191270
+      ],
+      [
+        "Moody's",
+        184487.91666666666,
+        24,
+        "YEARLY",
+        184487.91666666666
+      ],
+      [
+        "Oscar Health",
+        180508.70454545456,
+        11,
+        "YEARLY",
+        180508.70454545456
+      ]
+    ]
+  },
+  "ladders": {
+    "Google": {
+      "levels": [
+        {
+          "company": "Google",
+          "level": "Associate Product Manager 1",
+          "level_alt": "APM1",
+          "samples": 10,
+          "p25": 224525,
+          "median": 236500,
+          "p75": 241375,
+          "avg_total": 230600,
+          "avg_base": 146455,
+          "avg_stock": 33573,
+          "avg_bonus": 50573,
+          "yoe_median": 0,
+          "reports_12mo": 3,
+          "provider_count": 11
+        },
+        {
+          "company": "Google",
+          "level": "Associate Product Manager 2",
+          "level_alt": "APM2",
+          "samples": 6,
+          "p25": 185500,
+          "median": 187794,
+          "p75": 209147,
+          "avg_total": 192263,
+          "avg_base": 136000,
+          "avg_stock": 34628,
+          "avg_bonus": 21635,
+          "yoe_median": 1,
+          "reports_12mo": 1,
+          "provider_count": 7
+        },
+        {
+          "company": "Google",
+          "level": "Product Manager 1",
+          "level_alt": "L4",
+          "samples": 19,
+          "p25": 275188,
+          "median": 308260,
+          "p75": 353342,
+          "avg_total": 310075,
+          "avg_base": 184320,
+          "avg_stock": 86390,
+          "avg_bonus": 39365,
+          "yoe_median": 4,
+          "reports_12mo": 22,
+          "provider_count": 21
+        },
+        {
+          "company": "Google",
+          "level": "Product Manager 2",
+          "level_alt": "L5",
+          "samples": 11,
+          "p25": 341755,
+          "median": 380000,
+          "p75": 459000,
+          "avg_total": 401511,
+          "avg_base": 212000,
+          "avg_stock": 155986,
+          "avg_bonus": 33525,
+          "yoe_median": 10,
+          "reports_12mo": 61,
+          "provider_count": 14
+        },
+        {
+          "company": "Google",
+          "level": "Senior PM",
+          "level_alt": "L6",
+          "samples": 12,
+          "p25": 500000,
+          "median": 561800,
+          "p75": 692303,
+          "avg_total": 618277,
+          "avg_base": 250591,
+          "avg_stock": 321474,
+          "avg_bonus": 46213,
+          "yoe_median": 12,
+          "reports_12mo": 66,
+          "provider_count": 19
+        },
+        {
+          "company": "Google",
+          "level": "Group PM",
+          "level_alt": "L7",
+          "samples": 18,
+          "p25": 713500,
+          "median": 827000,
+          "p75": 964188,
+          "avg_total": 878630,
+          "avg_base": 291304,
+          "avg_stock": 496565,
+          "avg_bonus": 90761,
+          "yoe_median": 14,
+          "reports_12mo": 23,
+          "provider_count": 23
+        },
+        {
+          "company": "Google",
+          "level": "Director",
+          "level_alt": "L8",
+          "samples": 9,
+          "p25": 1000000,
+          "median": 1140000,
+          "p75": 1300000,
+          "avg_total": 1186500,
+          "avg_base": 349500,
+          "avg_stock": 731100,
+          "avg_bonus": 105900,
+          "yoe_median": 15,
+          "reports_12mo": 11,
+          "provider_count": 10
+        },
+        {
+          "company": "Google",
+          "level": "Senior Director / VP",
+          "level_alt": "L9 / L10",
+          "samples": 6,
+          "p25": 1152000,
+          "median": 2155000,
+          "p75": 3957500,
+          "avg_total": 2450000,
+          "avg_base": 443333,
+          "avg_stock": 1708333,
+          "avg_bonus": 298333,
+          "yoe_median": 20,
+          "reports_12mo": 0,
+          "provider_count": 6
+        }
+      ],
+      "tc_percentiles": {
+        "p10": 210500,
+        "p25": 340000,
+        "p50": 567000,
+        "p75": 673500,
+        "p90": 762000
+      },
+      "locationName": "United States",
+      "location_meta": null,
+      "median": {
+        "uuid": "2dbf1357-4726-4c32-a483-3d691c89c9d2",
+        "title": "Product Manager",
+        "jobFamily": "Product Manager",
+        "level": "Product Manager 2",
+        "focusTag": "Consumer",
+        "focusSubTag": null,
+        "yearsOfExperience": 9,
+        "yearsAtCompany": 6,
+        "yearsAtLevel": 5,
+        "offerDate": "Fri Nov 06 2026 05:54:05 GMT+0000 (Coordinated Universal Time)",
+        "location": "San Bruno, CA",
+        "workArrangement": "office",
+        "compPerspective": "employee",
+        "cityId": 7413,
+        "dmaId": 807,
+        "countryId": 254,
+        "exchangeRate": 1,
+        "baseSalary": 227000,
+        "baseSalaryCurrency": "USD",
+        "salaryFormat": "gross",
+        "employmentType": "full_time",
+        "totalCompensation": 567000,
+        "firstYearTotalCompensation": 567000,
+        "avgAnnualStockGrantValue": 300000,
+        "firstYearStockGrantValue": 300000,
+        "stockGrantCurrency": "USD",
+        "avgAnnualBonusValue": 40000,
+        "firstYearBonusValue": 40000,
+        "bonusCurrency": "USD",
+        "salesComp": null,
+        "education": "Masters degree",
+        "companyInfo": {
+          "name": "Google",
+          "icon": "https://static.levels.fyi/custom/google.webp",
+          "registered": true
+        },
+        "stockType": "stock",
+        "count": 1830,
+        "medianBasis": "firstYear",
+        "monthlyTotalCompensation": 47250
+      },
+      "company": {
+        "name": "Google",
+        "slug": "google"
+      }
+    },
+    "Meta": {
+      "levels": [
+        {
+          "company": "Meta",
+          "level": "Rotational Product Manager (RPM)",
+          "level_alt": "L3",
+          "samples": 26,
+          "p25": 165000,
+          "median": 169000,
+          "p75": 185038,
+          "avg_total": 173996,
+          "avg_base": 132391,
+          "avg_stock": 30355,
+          "avg_bonus": 11250,
+          "yoe_median": 2,
+          "reports_12mo": 1,
+          "provider_count": 29
+        },
+        {
+          "company": "Meta",
+          "level": "L4 Product Manager",
+          "level_alt": null,
+          "samples": 7,
+          "p25": 248700,
+          "median": 266000,
+          "p75": 291275,
+          "avg_total": 262606,
+          "avg_base": 186889,
+          "avg_stock": 55000,
+          "avg_bonus": 20717,
+          "yoe_median": 6,
+          "reports_12mo": 2,
+          "provider_count": 9
+        },
+        {
+          "company": "Meta",
+          "level": "L5 Product Manager",
+          "level_alt": null,
+          "samples": 28,
+          "p25": 373750,
+          "median": 414250,
+          "p75": 484000,
+          "avg_total": 418865,
+          "avg_base": 221776,
+          "avg_stock": 169652,
+          "avg_bonus": 27438,
+          "yoe_median": 9,
+          "reports_12mo": 35,
+          "provider_count": 33
+        },
+        {
+          "company": "Meta",
+          "level": "L6 Product Manager",
+          "level_alt": null,
+          "samples": 18,
+          "p25": 551000,
+          "median": 621000,
+          "p75": 677750,
+          "avg_total": 611555,
+          "avg_base": 255115,
+          "avg_stock": 304041,
+          "avg_bonus": 52398,
+          "yoe_median": 10,
+          "reports_12mo": 54,
+          "provider_count": 50
+        },
+        {
+          "company": "Meta",
+          "level": "L7 Product Manager",
+          "level_alt": null,
+          "samples": 16,
+          "p25": 762500,
+          "median": 836250,
+          "p75": 1070500,
+          "avg_total": 950930,
+          "avg_base": 292286,
+          "avg_stock": 573882,
+          "avg_bonus": 84763,
+          "yoe_median": 15,
+          "reports_12mo": 18,
+          "provider_count": 17
+        },
+        {
+          "company": "Meta",
+          "level": "Director",
+          "level_alt": null,
+          "samples": 17,
+          "p25": 1250000,
+          "median": 1460150,
+          "p75": 1980000,
+          "avg_total": 1568176,
+          "avg_base": 325400,
+          "avg_stock": 1142400,
+          "avg_bonus": 100376,
+          "yoe_median": 20,
+          "reports_12mo": 3,
+          "provider_count": 25
+        },
+        {
+          "company": "Meta",
+          "level": "Senior Director",
+          "level_alt": null,
+          "samples": 5,
+          "p25": 2125000,
+          "median": 2350000,
+          "p75": 2400000,
+          "avg_total": 2358143,
+          "avg_base": 373571,
+          "avg_stock": 1846429,
+          "avg_bonus": 138143,
+          "yoe_median": 20,
+          "reports_12mo": 1,
+          "provider_count": 7
+        }
+      ],
+      "tc_percentiles": {
+        "p10": 388000,
+        "p25": 435000,
+        "p50": 618000,
+        "p75": 775000,
+        "p90": 1651312.5
+      },
+      "locationName": "United States",
+      "location_meta": null,
+      "median": {
+        "uuid": "0b307a9b-df15-42b7-9938-f728ca98cddd",
+        "title": "Product Manager",
+        "jobFamily": "Product Manager",
+        "level": "L6 Product Manager",
+        "focusTag": "General",
+        "focusSubTag": null,
+        "yearsOfExperience": 10,
+        "yearsAtCompany": 1,
+        "yearsAtLevel": 1,
+        "offerDate": "Thu Oct 15 2026 00:34:27 GMT+0000 (Coordinated Universal Time)",
+        "location": "San Francisco, CA",
+        "workArrangement": "office",
+        "compPerspective": "employee",
+        "cityId": 7419,
+        "dmaId": 807,
+        "countryId": 254,
+        "exchangeRate": 1,
+        "baseSalary": 265000,
+        "baseSalaryCurrency": "USD",
+        "salaryFormat": "gross",
+        "employmentType": "full_time",
+        "totalCompensation": 618000,
+        "firstYearTotalCompensation": 618000,
+        "avgAnnualStockGrantValue": 300000,
+        "firstYearStockGrantValue": 300000,
+        "stockGrantCurrency": "USD",
+        "avgAnnualBonusValue": 53000,
+        "firstYearBonusValue": 53000,
+        "bonusCurrency": "USD",
+        "salesComp": null,
+        "education": "Masters degree",
+        "companyInfo": {
+          "name": "Meta",
+          "icon": "https://static.levels.fyi/logos/128/facebook.webp",
+          "registered": true
+        },
+        "stockType": "stock",
+        "count": 1142,
+        "medianBasis": "annualized",
+        "monthlyTotalCompensation": 51500
+      },
+      "company": {
+        "name": "Meta",
+        "slug": "meta"
+      }
+    },
+    "Stripe": {
+      "levels": [
+        {
+          "company": "Stripe",
+          "level": "L2",
+          "level_alt": null,
+          "samples": 10,
+          "p25": 246125,
+          "median": 265500,
+          "p75": 297772,
+          "avg_total": 263112,
+          "avg_base": 176636,
+          "avg_stock": 70000,
+          "avg_bonus": 16475,
+          "yoe_median": 5,
+          "reports_12mo": 2,
+          "provider_count": 11
+        },
+        {
+          "company": "Stripe",
+          "level": "L3",
+          "level_alt": null,
+          "samples": 11,
+          "p25": 343750,
+          "median": 345300,
+          "p75": 436000,
+          "avg_total": 383645,
+          "avg_base": 232091,
+          "avg_stock": 125009,
+          "avg_bonus": 26545,
+          "yoe_median": 9,
+          "reports_12mo": 12,
+          "provider_count": 11
+        },
+        {
+          "company": "Stripe",
+          "level": "L4",
+          "level_alt": null,
+          "samples": 9,
+          "p25": 470000,
+          "median": 550000,
+          "p75": 586999,
+          "avg_total": 557400,
+          "avg_base": 278140,
+          "avg_stock": 210648,
+          "avg_bonus": 68612,
+          "yoe_median": 12,
+          "reports_12mo": 5,
+          "provider_count": 13
+        },
+        {
+          "company": "Stripe",
+          "level": "L5",
+          "level_alt": null,
+          "samples": 3,
+          "p25": 494375,
+          "median": 618750,
+          "p75": 724375,
+          "avg_total": 604688,
+          "avg_base": 293250,
+          "avg_stock": 255000,
+          "avg_bonus": 56438,
+          "yoe_median": 12,
+          "reports_12mo": 1,
+          "provider_count": 4
+        }
+      ],
+      "tc_percentiles": {
+        "p10": 242500,
+        "p25": 344500,
+        "p50": 393000,
+        "p75": 479000,
+        "p90": 550000
+      },
+      "locationName": "United States",
+      "location_meta": null,
+      "median": {
+        "uuid": "64d6e467-3e15-4fc6-aaef-ab6385aa5887",
+        "title": "Product Manager",
+        "jobFamily": "Product Manager",
+        "level": "L3",
+        "focusTag": "General",
+        "focusSubTag": null,
+        "yearsOfExperience": 12,
+        "yearsAtCompany": 5,
+        "yearsAtLevel": 2,
+        "offerDate": "Tue Jun 16 2026 23:10:12 GMT+0000 (Coordinated Universal Time)",
+        "location": "San Francisco, CA",
+        "workArrangement": "office",
+        "compPerspective": "employee",
+        "cityId": 7419,
+        "dmaId": 807,
+        "countryId": 254,
+        "exchangeRate": 1,
+        "baseSalary": 220000,
+        "baseSalaryCurrency": "USD",
+        "salaryFormat": "gross",
+        "employmentType": "full_time",
+        "totalCompensation": 393000,
+        "firstYearTotalCompensation": 393000,
+        "avgAnnualStockGrantValue": 140000,
+        "firstYearStockGrantValue": 140000,
+        "stockGrantCurrency": "USD",
+        "avgAnnualBonusValue": 33000,
+        "firstYearBonusValue": 33000,
+        "bonusCurrency": "USD",
+        "salesComp": null,
+        "education": null,
+        "companyInfo": {
+          "name": "Stripe",
+          "icon": "https://img.logo.dev/stripe.com?token=pk_Ez-J4YOpSS-Bjtug_T41Dw",
+          "registered": true
+        },
+        "stockType": "stock",
+        "count": 114,
+        "medianBasis": "annualized",
+        "monthlyTotalCompensation": 32750
+      },
+      "company": {
+        "name": "Stripe",
+        "slug": "stripe"
+      }
+    }
+  },
+  "calls": [
+    {
+      "endpoint": "indeed /get_salary_info Product Manager",
+      "run_id": "01M86ADB6Q1A84NTH9R5VXM9YB",
+      "http": 200,
+      "billed": 0.02
+    },
+    {
+      "endpoint": "indeed /get_salary_info Product Manager, New York, NY",
+      "run_id": "01M86ADY2HTX503SHSKWVZ0HC2",
+      "http": 200,
+      "billed": 0.02
+    },
+    {
+      "endpoint": "levels.fyi /get_salary_data google product-manager",
+      "run_id": "01M86AEN6JCWY8RD8G5MJ5PCNG",
+      "http": 200,
+      "billed": 0.01
+    },
+    {
+      "endpoint": "levels.fyi /get_salary_data meta product-manager",
+      "run_id": "01M86AEZ1MWH44TH7YXMVHBQZ0",
+      "http": 200,
+      "billed": 0.01
+    },
+    {
+      "endpoint": "levels.fyi /get_salary_data stripe product-manager",
+      "run_id": "01M86AF8P3M93213G6K0E7DRZA",
+      "http": 200,
+      "billed": 0.01
+    }
+  ],
+  "total_billed": 0.07
+}

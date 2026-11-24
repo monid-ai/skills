@@ -1,0 +1,646 @@
+{
+ "runId": "01M86AEZ1MWH44TH7YXMVHBQZ0",
+ "provider": "levels.fyi",
+ "endpoint": "/get_salary_data",
+ "status": "COMPLETED",
+ "providerResponse": {
+  "httpStatus": 200
+ },
+ "cost": {
+  "value": 0.01,
+  "currency": "USD"
+ },
+ "input": {
+  "queryParams": {
+   "company_slug": "meta",
+   "job_family_slug": "product-manager"
+  }
+ },
+ "createdAt": "2026-11-24T08:23:52.898Z",
+ "output_trimmed": {
+  "company": {
+   "slug": "meta",
+   "name": "Meta",
+   "hq_city": "Menlo Park",
+   "hq_state_code": "CA"
+  },
+  "job_family": "Product Manager",
+  "averages": [
+   {
+    "primaryLevelName": "Rotational Product Manager (RPM)",
+    "secondaryLevelName": "L3",
+    "titles": [
+     "Rotational Product Manager (RPM)",
+     "L3"
+    ],
+    "count": 29,
+    "count_last_12_months": 1,
+    "total": 173996,
+    "base": 132391,
+    "stock": 30355,
+    "bonus": 11250,
+    "yoeMedian": 2,
+    "samples": [
+     {
+      "totalCompensation": 124000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 143000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 150000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 163000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 163000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 163000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 165000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 165000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 165000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 166000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 166000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 166000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 168000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 170000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 170000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 170000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 175000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 179400,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 185000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 185050,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 186000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 190000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 194000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 198133,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 210000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 250000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "L4 Product Manager",
+    "secondaryLevelName": null,
+    "titles": [
+     "L4 Product Manager"
+    ],
+    "count": 9,
+    "count_last_12_months": 2,
+    "total": 262606,
+    "base": 186889,
+    "stock": 55000,
+    "bonus": 20717,
+    "yoeMedian": 6,
+    "samples": [
+     {
+      "totalCompensation": 215000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 245000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 252400,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 266000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 290050,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 292500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 305000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "L5 Product Manager",
+    "secondaryLevelName": null,
+    "titles": [
+     "L5 Product Manager"
+    ],
+    "count": 33,
+    "count_last_12_months": 35,
+    "total": 418865,
+    "base": 221776,
+    "stock": 169652,
+    "bonus": 27438,
+    "yoeMedian": 9,
+    "samples": [
+     {
+      "totalCompensation": 310000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 315000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 331600,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 338000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 354000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 367000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 370000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 375000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 385000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 390000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 400000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 405000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 406000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 414000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 414500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 420000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 421000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 431000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 435000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 460000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 480000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 496000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 500000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 502000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 515000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 526000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 530000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 539000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "L6 Product Manager",
+    "secondaryLevelName": null,
+    "titles": [
+     "L6 Product Manager"
+    ],
+    "count": 50,
+    "count_last_12_months": 54,
+    "total": 611555,
+    "base": 255115,
+    "stock": 304041,
+    "bonus": 52398,
+    "yoeMedian": 10,
+    "samples": [
+     {
+      "totalCompensation": 500000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 519000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 533805,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 540000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 550000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 554000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 564000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 602500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 618000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 624000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 645000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 650000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 665000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 682000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 684000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 710000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 725000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 870000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "L7 Product Manager",
+    "secondaryLevelName": null,
+    "titles": [
+     "L7 Product Manager"
+    ],
+    "count": 17,
+    "count_last_12_months": 18,
+    "total": 950930,
+    "base": 292286,
+    "stock": 573882,
+    "bonus": 84763,
+    "yoeMedian": 15,
+    "samples": [
+     {
+      "totalCompensation": 388000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 665000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 671250,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 725000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 775000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 775000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 800000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 812500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 860000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1000000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1008750,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1064000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1090000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1270000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1651312.5,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1730000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "Director",
+    "secondaryLevelName": null,
+    "titles": [
+     "Director"
+    ],
+    "count": 25,
+    "count_last_12_months": 3,
+    "total": 1568176,
+    "base": 325400,
+    "stock": 1142400,
+    "bonus": 100376,
+    "yoeMedian": 20,
+    "samples": [
+     {
+      "totalCompensation": 1000000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1062000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1175000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1234500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1250000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1250000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1255000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1397000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1460150,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1480000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1532000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1539050,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1980000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 2061000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 2226000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 2987500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 3000000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "Senior Director",
+    "secondaryLevelName": null,
+    "titles": [
+     "Senior Director"
+    ],
+    "count": 7,
+    "count_last_12_months": 1,
+    "total": 2358143,
+    "base": 373571,
+    "stock": 1846429,
+    "bonus": 138143,
+    "yoeMedian": 20,
+    "samples": [
+     {
+      "totalCompensation": 2115000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 2125000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 2350000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 2400000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 2730000,
+      "isRedacted": true
+     }
+    ]
+   }
+  ],
+  "percentiles": {
+   "base_salary": {
+    "p10": 219000,
+    "p25": 240000,
+    "p50": 259976,
+    "p75": 275000,
+    "p90": 303856
+   },
+   "tc": {
+    "p10": 388000,
+    "p25": 435000,
+    "p50": 618000,
+    "p75": 775000,
+    "p90": 1651312.5
+   },
+   "bonus": {
+    "p10": 0,
+    "p25": 0,
+    "p50": 50000,
+    "p75": 60500,
+    "p90": 74250
+   },
+   "stock_grant": {
+    "p10": 120000,
+    "p25": 180000,
+    "p50": 300000,
+    "p75": 400000,
+    "p90": 1190988.5
+   },
+   "count": 20,
+   "average": 758362,
+   "locationName": "United States"
+  },
+  "note": "company blobs and the data.median single submission dropped"
+ }
+}

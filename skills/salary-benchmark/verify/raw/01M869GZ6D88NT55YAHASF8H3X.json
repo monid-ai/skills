@@ -1,0 +1,439 @@
+{
+ "runId": "01M869GZ6D88NT55YAHASF8H3X",
+ "provider": "levels.fyi",
+ "endpoint": "/get_salary_data",
+ "status": "COMPLETED",
+ "providerResponse": {
+  "httpStatus": 200
+ },
+ "cost": {
+  "value": 0.01,
+  "currency": "USD"
+ },
+ "createdAt": "2026-11-24T08:07:30.013Z",
+ "input": {
+  "queryParams": {
+   "company_slug": "amazon",
+   "job_family_slug": "software-engineer"
+  }
+ },
+ "output_trimmed": {
+  "company": {
+   "slug": "amazon",
+   "name": "Amazon",
+   "hq_city": "Seattle",
+   "hq_state_code": "WA",
+   "emp_count": 1576000
+  },
+  "job_family": "Software Engineer",
+  "averages": [
+   {
+    "primaryLevelName": "SDE I",
+    "secondaryLevelName": "L4",
+    "titles": [
+     "SDE I",
+     "L4"
+    ],
+    "count": 60,
+    "count_last_12_months": 1058,
+    "total": 185706,
+    "base": 136679,
+    "stock": 34247,
+    "bonus": 14780,
+    "yoeMedian": 1,
+    "samples": [
+     {
+      "totalCompensation": 150250,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 155000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 160000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 168600,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 175000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 180000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 182200,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 186100,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 189000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 192000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 200000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 202000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 205000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 208000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 212250,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 223000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "SDE II",
+    "secondaryLevelName": "L5",
+    "titles": [
+     "SDE II",
+     "L5"
+    ],
+    "count": 127,
+    "count_last_12_months": 2303,
+    "total": 275198,
+    "base": 178512,
+    "stock": 90858,
+    "bonus": 5828,
+    "yoeMedian": 6,
+    "samples": [
+     {
+      "totalCompensation": 227000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 239500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 245000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 250000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 250000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 254000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 255000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 258000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 275000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 280000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 280000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 290000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 300000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 300000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 317000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 336600,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 351000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "SDE III",
+    "secondaryLevelName": "L6",
+    "titles": [
+     "SDE III",
+     "L6",
+     "Senior SDE"
+    ],
+    "count": 56,
+    "count_last_12_months": 934,
+    "total": 384455,
+    "base": 212681,
+    "stock": 168786,
+    "bonus": 2988,
+    "yoeMedian": 10,
+    "samples": [
+     {
+      "totalCompensation": 290000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 326000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 328300,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 330000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 345000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 345500,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 348000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 350000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 354000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 357000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 360000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 370800,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 378000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 395000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 400000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 400000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 415000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 436857,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 450000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 482000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "Principal SDE",
+    "secondaryLevelName": "L7",
+    "titles": [
+     "Principal SDE",
+     "L7"
+    ],
+    "count": 8,
+    "count_last_12_months": 108,
+    "total": 606486,
+    "base": 250900,
+    "stock": 355586,
+    "bonus": 0,
+    "yoeMedian": 15,
+    "samples": [
+     {
+      "totalCompensation": 490000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 500000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 509000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "Senior Principal SDE",
+    "secondaryLevelName": "L8",
+    "titles": [
+     "Senior Principal SDE",
+     "L8"
+    ],
+    "count": 7,
+    "count_last_12_months": 7,
+    "total": 1155429,
+    "base": 309714,
+    "stock": 845714,
+    "bonus": 0,
+    "yoeMedian": 20,
+    "samples": [
+     {
+      "totalCompensation": 585000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 788000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 960000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1100000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1600000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1820000,
+      "isRedacted": true
+     }
+    ]
+   },
+   {
+    "primaryLevelName": "Distinguished Engineer",
+    "secondaryLevelName": "L10",
+    "titles": [
+     "Distinguished Engineer",
+     "L10"
+    ],
+    "count": 5,
+    "count_last_12_months": 1,
+    "total": 1660400,
+    "base": 296400,
+    "stock": 1340000,
+    "bonus": 24000,
+    "yoeMedian": 15,
+    "samples": [
+     {
+      "totalCompensation": 1212000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1280000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1300000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 1660000,
+      "isRedacted": true
+     },
+     {
+      "totalCompensation": 2850000,
+      "isRedacted": true
+     }
+    ]
+   }
+  ],
+  "percentiles": {
+   "base_salary": {
+    "p10": 129000,
+    "p25": 154900,
+    "p50": 180000,
+    "p75": 200000,
+    "p90": 220000
+   },
+   "tc": {
+    "p10": 177514,
+    "p25": 223000,
+    "p50": 274000,
+    "p75": 339400,
+    "p90": 400000
+   },
+   "bonus": {
+    "p10": 0,
+    "p25": 0,
+    "p50": 0,
+    "p75": 0,
+    "p90": 33000
+   },
+   "stock_grant": {
+    "p10": 27239,
+    "p25": 50000,
+    "p50": 94816,
+    "p75": 125000,
+    "p90": 186016
+   },
+   "count": 266,
+   "average": 283368,
+   "locationName": "United States"
+  },
+  "median_tc": 274000,
+  "location_meta": null,
+  "note": "company description, culture, related companies and technology lists dropped"
+ }
+}
